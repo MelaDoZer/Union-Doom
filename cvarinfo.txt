@@ -54,7 +54,7 @@ server int psxed_demon_infighting = 0;
 
 /* psxed_lostsoul_health - affects Lost Soul's health points
 0 - 100 (like PC version of Doom 2) 
-1 - 75 (like PS1 version of Doom) */
+1 - 60 (like PS1 version of Doom) */
 
 server int psxed_lostsoul_health = 0;
 
