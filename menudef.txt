@@ -17,6 +17,8 @@ OptionValue "HUD_OPTION_psxed_colored_lighting"
 OptionMenu "PSXed Doom: Levels Options"
 {
 Title "PSXed Doom: Levels Options"
+StaticText "Changes made to these options requires the level to", 1
+StaticText "be restarted or they will take effect on next level.", 1
 StaticText " "
 option "PSX Doom Colored Lighting", "psxed_colored_lighting", "HUD_OPTION_psxed_colored_lighting"
 }
@@ -87,6 +89,8 @@ OptionValue "HUD_OPTION_psxed_bruiser_infighting"
 OptionMenu "PSXed Doom: Monster Options"
 {
 Title "PSXed Doom: Monster Options"
+StaticText "Changes made to these options requires the level to", 1
+StaticText "be restarted or they will take effect on next level.", 1
 StaticText " "
 StaticText "Zombieman", 1
 option "Damage", "psxed_zombieman_damage", "HUD_OPTION_psxed_zombieman_damage"
@@ -103,18 +107,12 @@ option "Speed", "psxed_cacodemon_speed", "HUD_OPTION_psxed_cacodemon_speed"
 StaticText " "
 StaticText " "
 StaticText "Lost Soul", 1
-//StaticText "Changes made to this option requires the level to", 1
-//StaticText "be restarted or take effect on next level.", 1
 option "Health", "psxed_lostsoul_health", "HUD_OPTION_psxed_lostsoul_health"
 StaticText " "
 StaticText " "
 StaticText "Revenant", 1
-//StaticText "Changes made to this option requires the level to", 1
-//StaticText "be restarted or take effect on next level.", 1
 option "Speed", "psxed_revenant_speed", "HUD_OPTION_psxed_revenant_speed"
 StaticText " "
-//StaticText "Changes made to this option requires the level to", 1
-//StaticText "be restarted or take effect on next level.", 1
 option "Rocket Speed", "psxed_revenant_tracer_speed", "HUD_OPTION_psxed_revenant_tracer_speed"
 StaticText " "
 StaticText " "
@@ -137,6 +135,8 @@ OptionValue "HUD_OPTION_healthbonus"
 OptionMenu "PSXed Doom: Items Options"
 {
 Title "PSXed Doom: Items Options"
+StaticText "Changes made to these options requires the level to", 1
+StaticText "be restarted or they will take effect on next level.", 1
 StaticText " "
 StaticText "Armor Bonus", 1
 option "Armor Bonus Amount", "psxed_armorbonus", "HUD_OPTION_armorbonus"
