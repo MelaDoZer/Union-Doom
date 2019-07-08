@@ -1,0 +1,30 @@
+//PSXed Colored Lighting
+server int psxed_colored_lighting = 1;
+
+//PSXed Spawn Variables
+server bool psxed_monster_placement = true; //psx monster placement toggle
+server bool psxed_nightmare_spectres_placement = true; //psx nightmare spectres
+server bool psxed_nightmare_imps_placement = false;
+
+
+
+//PSXed Monster Variables
+server int psxed_bruiser_infighting = 0;
+
+server int psxed_cacodemon_speed = 0;
+
+server int psxed_demon_damage = 0; //psx demon damage
+server int psxed_demon_infighting = 0;
+
+server int psxed_lostsoul_health = 0; //psx lost souls health
+
+server int psxed_zombieman_damage = 2; //psx zombieman damage
+
+server int psxed_revenant_speed = 0;
+server int psxed_revenant_tracer_speed = 0;
+
+
+
+//PSXed Items Variables
+server int psxed_healthbonus = 0;
+server int psxed_armorbonus = 0;

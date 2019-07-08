@@ -1,0 +1,5 @@
+DoomEdNums
+{
+	16000 = NightmareDoomImp
+	16001 = NightmareSpectre
+}

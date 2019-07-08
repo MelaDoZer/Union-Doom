@@ -1,0 +1,19 @@
+version "4.1"
+//Levels Changes 
+#include "zscript/levels/zscript_levels.txt"
+
+//Nightmare Spectre
+#include "zscript/psxed_actors/nightmare_spectre.txt"
+
+//Nightmare Imp
+#include "zscript/psxed_actors/nightmare_doomimp.txt"
+
+#include "zscript/psxed_actors/bruiser.txt"
+#include "zscript/psxed_actors/cacodemon.txt"
+#include "zscript/psxed_actors/demon.txt"
+#include "zscript/psxed_actors/lostsoul.txt"
+#include "zscript/psxed_actors/possessed.txt"
+#include "zscript/psxed_actors/revenant.txt"
+
+#include "zscript/psxed_actors/doomhealth.txt"
+#include "zscript/psxed_actors/doomarmor.txt"

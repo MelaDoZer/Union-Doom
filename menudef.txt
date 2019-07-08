@@ -1,0 +1,147 @@
+AddOptionMenu "OptionsMenu"
+{
+StaticText " "
+StaticText "PSXed Doom"
+Submenu "PSXed Doom: Levels Options","PSXed Doom: Levels Options"
+Submenu "PSXed Doom: Spawn Options","PSXed Doom: Spawn Options"
+Submenu "PSXed Doom: Monster Options","PSXed Doom: Monster Options"
+Submenu "PSXed Doom: Items Options","PSXed Doom: Items Options"
+}
+
+OptionValue "HUD_OPTION_psxed_colored_lighting"
+{
+	0, "No"
+	1, "Yes"
+}
+
+OptionMenu "PSXed Doom: Levels Options"
+{
+Title "PSXed Doom: Levels Options"
+StaticText " "
+option "PSX Doom Colored Lighting", "psxed_colored_lighting", "HUD_OPTION_psxed_colored_lighting"
+}
+
+OptionMenu "PSXed Doom: Spawn Options"
+{
+Title "PSXed Doom: Spawn Options"
+StaticText " "
+StaticText "Changes made to these options requires the level to", 1
+StaticText "be restarted or take effect on next level.", 1
+StaticText " "
+option "PSX Doom Monsters Placement", "psxed_monster_placement", "onoff"
+StaticText " "
+option "PSX Doom Nightmare Spectres", "psxed_nightmare_spectres_placement", "onoff"
+StaticText " "
+option "Custom PSX Doom Nightmare Imps", "psxed_nightmare_imps_placement", "onoff"
+}
+
+OptionValue "HUD_OPTION_psxed_zombieman_damage"
+{
+	0, "PC Doom (3-15)"
+	1, "Doom 64 (3-21)"
+	2, "PSX Doom (3-24)"
+}
+
+OptionValue "HUD_OPTION_psxed_demon_damage"
+{
+	0, "PC Doom (4-40)"
+	1, "PSX Doom (4-32)"
+}
+
+OptionValue "HUD_OPTION_psxed_demon_infighting"
+{
+	0, "No (PC)"
+	1, "Yes (PSX)"
+}
+
+OptionValue "HUD_OPTION_psxed_cacodemon_speed"
+{
+	0, "8 (PC)"
+	1, "16 (GBA)"
+}
+
+OptionValue "HUD_OPTION_psxed_lostsoul_health"
+{
+	0, "PC Doom (Max. 100)"
+	1, "PSX Doom (Max. 60)"
+}
+
+OptionValue "HUD_OPTION_psxed_revenant_speed"
+{
+	0, "PC Doom (Max. 10)"
+	1, "PSX Doom (Max. 5)"
+}
+
+OptionValue "HUD_OPTION_psxed_revenant_tracer_speed"
+{
+	0, "PC Doom (Max. 10)"
+	1, "PSX Doom (Max. 5)"
+}
+
+OptionValue "HUD_OPTION_psxed_bruiser_infighting"
+{
+	0, "No (PC)"
+	1, "Yes (PSX)"
+}
+
+OptionMenu "PSXed Doom: Monster Options"
+{
+Title "PSXed Doom: Monster Options"
+StaticText " "
+StaticText "Zombieman", 1
+option "Damage", "psxed_zombieman_damage", "HUD_OPTION_psxed_zombieman_damage"
+StaticText " "
+StaticText " "
+StaticText "Demon / Spectre / Nightmare Spectre", 1
+option "Damage", "psxed_demon_damage", "HUD_OPTION_psxed_demon_damage"
+StaticText " "
+option "Allow infighting", "psxed_demon_infighting", "HUD_OPTION_psxed_demon_infighting"
+StaticText " "
+StaticText " "
+StaticText "Cacodemon", 1
+option "Speed", "psxed_cacodemon_speed", "HUD_OPTION_psxed_cacodemon_speed"
+StaticText " "
+StaticText " "
+StaticText "Lost Soul", 1
+//StaticText "Changes made to this option requires the level to", 1
+//StaticText "be restarted or take effect on next level.", 1
+option "Health", "psxed_lostsoul_health", "HUD_OPTION_psxed_lostsoul_health"
+StaticText " "
+StaticText " "
+StaticText "Revenant", 1
+//StaticText "Changes made to this option requires the level to", 1
+//StaticText "be restarted or take effect on next level.", 1
+option "Speed", "psxed_revenant_speed", "HUD_OPTION_psxed_revenant_speed"
+StaticText " "
+//StaticText "Changes made to this option requires the level to", 1
+//StaticText "be restarted or take effect on next level.", 1
+option "Rocket Speed", "psxed_revenant_tracer_speed", "HUD_OPTION_psxed_revenant_tracer_speed"
+StaticText " "
+StaticText " "
+StaticText "Baron of Hell / Hell Knight ", 1
+option "Allow infighting", "psxed_bruiser_infighting", "HUD_OPTION_psxed_bruiser_infighting"
+}
+
+OptionValue "HUD_OPTION_armorbonus"
+{
+	0, "PC Doom (1)"
+	1, "PSX Doom (2)"
+}
+
+OptionValue "HUD_OPTION_healthbonus"
+{
+	0, "PC Doom (1)"
+	1, "PSX Doom (2)"
+}
+
+OptionMenu "PSXed Doom: Items Options"
+{
+Title "PSXed Doom: Items Options"
+StaticText " "
+StaticText "Armor Bonus", 1
+option "Armor Bonus Amount", "psxed_armorbonus", "HUD_OPTION_armorbonus"
+StaticText " "
+StaticText " "
+StaticText "Health Bonus", 1
+option "Health Bonus Amount", "psxed_healthbonus", "HUD_OPTION_healthbonus"
+}
