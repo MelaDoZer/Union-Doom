@@ -12,8 +12,8 @@ psxed_monster_placement - spawns of non-custom monsters, like Doom 2 monsters at
 psxed_nightmare_spectres_placement - spawns of non-custom monster from PS1 version of game, nightmarish version of spectre
 psxed_nightmare_imps_placement - spawns of custom implementation of Nightmare Imp monsters, that was deleted from released PS1 version of game*/
 
-server bool psxed_monster_placement = true; //psx monster placement toggle
-server bool psxed_nightmare_spectres_placement = true; //psx nightmare spectres
+server bool psxed_monster_placement = true;
+server bool psxed_nightmare_spectres_placement = true;
 server bool psxed_nightmare_imps_placement = false;
 
 
