@@ -1,0 +1,68 @@
+//===========================================================================
+//
+// Nightmare Imp
+//
+//===========================================================================
+class NightmareDoomImp : DoomImp
+{
+	Default
+	{
+	Speed 16;
+	renderstyle "Subtract";
+    health 120;
+	Alpha 0.7;
+	}
+	States
+	{
+	Melee:
+	Missile:
+		TROO EF 8 A_FaceTarget;
+		TROO G 6 A_PSXTroopAttack ;
+		Goto See;
+	}
+}
+
+//===========================================================================
+//
+// NightmareImp fireball
+//
+//===========================================================================
+class NightmareDoomImpBall : DoomImpBall
+{
+	Default
+	{
+		//Translation "168:191=201:207", "212:233=192:207";
+		Translation "168:191=201:207", "208:235=192:207";
+		Speed 20;
+		FastSpeed 40;
+	}
+}
+
+//===========================================================================
+//
+// Code (must be attached to Actor)
+//
+//===========================================================================
+
+extend class NightmareDoomImp
+{
+	void A_PSXTroopAttack()
+	{
+		let targ = target;
+		if (targ)
+		{
+			if (CheckMeleeRange())
+			{
+				int damage = random[pr_troopattack](1, 8) * 3;
+				A_PlaySound ("imp/melee", CHAN_WEAPON);
+				int newdam = targ.DamageMobj (self, self, damage, "Melee");
+				targ.TraceBleed (newdam > 0 ? newdam : damage, self);
+			}
+			else
+			{
+				// launch a missile
+				SpawnMissile (targ, "NightmareDoomImpBall");
+			}
+		}
+	}
+}

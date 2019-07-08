@@ -1,0 +1,37 @@
+class DoomE1M8ColoredLights : LevelCompatibility
+{
+    protected void Apply(Name checksum, String mapname)
+    {
+        if ('058FB092EA1B70DA1E3CBF501C4A91A1' == checksum)
+        {
+			if(psxed_colored_lighting == 1)
+				{
+				//Soulsphere Secret
+				Level.Sectors[24].SetColor("043E8B", 0.0);
+		
+				//"+" Room
+				Level.Sectors[32].SetColor("FFAFAF", 0.0);
+				
+				//Torches Ledges
+				Level.Sectors[34].SetColor("D97C45", 0.0);
+				Level.Sectors[36].SetColor("D97C45", 0.0);
+				Level.Sectors[37].SetColor("D97C45", 0.0);
+				Level.Sectors[39].SetColor("D97C45", 0.0);
+				
+				//Blue Torches 
+				Level.Sectors[26].SetColor("5D6A95", 0.0);
+				
+				//Star Room
+				Level.Sectors[31].SetColor("FF3030", 0.0);
+				
+				}
+			else
+				{
+				for(int i = 0; i < 177; i++)
+				{
+				Level.Sectors[i].SetColor("FFFFFF", 0.0);
+				}
+				}
+        }
+    }
+}

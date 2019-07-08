@@ -1,0 +1,10 @@
+//Doom & Ultimate Doom
+#include "zscript/levels/colored_lights/iwads/doom/e1m1.txt"
+#include "zscript/levels/colored_lights/iwads/doom/e1m2.txt"
+#include "zscript/levels/colored_lights/iwads/doom/e1m3.txt"
+#include "zscript/levels/colored_lights/iwads/doom/e1m4.txt"
+#include "zscript/levels/colored_lights/iwads/doom/e1m5.txt"
+#include "zscript/levels/colored_lights/iwads/doom/e1m6.txt"
+#include "zscript/levels/colored_lights/iwads/doom/e1m7.txt"
+#include "zscript/levels/colored_lights/iwads/doom/e1m8.txt"
+#include "zscript/levels/colored_lights/iwads/doom/e1m9.txt"
