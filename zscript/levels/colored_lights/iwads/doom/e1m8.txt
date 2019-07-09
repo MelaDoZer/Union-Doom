@@ -23,15 +23,14 @@ class DoomE1M8ColoredLights : LevelCompatibility
 				
 				//Star Room
 				Level.Sectors[31].SetColor("FF3030", 0.0);
-				
-				}
+			}
 			else
-				{
+			{
 				for(int i = 0; i < 177; i++)
 				{
-				Level.Sectors[i].SetColor("FFFFFF", 0.0);
+					Level.Sectors[i].SetColor("FFFFFF", 0.0);
 				}
-				}
+			}
         }
     }
 }

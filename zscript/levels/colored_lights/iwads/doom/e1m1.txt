@@ -1,4 +1,4 @@
-class DoomE1M1ColoredLights : LevelCompatibility
+class UltimateDoomE1M1ColoredLights : LevelCompatibility
 {
     protected void Apply(Name checksum, String mapname)
     {
@@ -68,15 +68,14 @@ class DoomE1M1ColoredLights : LevelCompatibility
 				Level.Sectors[70].SetColor("FF7F7F", 0.0);
 				Level.Sectors[71].SetColor("FF7F7F", 0.0);
 				Level.Sectors[72].SetColor("FF7F7F", 0.0);
-				
-				}
+			}
 			else
-				{
+			{
 				for(int i = 0; i < 88; i++)
 				{
-				Level.Sectors[i].SetColor("FFFFFF", 0.0);
+					Level.Sectors[i].SetColor("FFFFFF", 0.0);
 				}
-				}
+			}
         }
     }
 }

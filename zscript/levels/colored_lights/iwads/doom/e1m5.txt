@@ -47,15 +47,14 @@ class DoomE1M5ColoredLights : LevelCompatibility
 				
 				//Exit
 				Level.Sectors[113].SetColor("FF7F7F", 0.0);
-				
-				}
+			}
 			else
-				{
+			{
 				for(int i = 0; i < 139; i++)
 				{
-				Level.Sectors[i].SetColor("FFFFFF", 0.0);
+					Level.Sectors[i].SetColor("FFFFFF", 0.0);
 				}
-				}
+			}
         }
     }
 }
