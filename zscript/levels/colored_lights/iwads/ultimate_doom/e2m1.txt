@@ -35,8 +35,9 @@ class UltimateDoomE2M1ColoredLights : LevelCompatibility
 				Level.Sectors[40].SetColor("ECB866", 0.0);
 				
 				//Blood and bridges
-				Level.Sectors[46].SetColor("C63F23", 0.0);
 				Level.Sectors[45].SetColor("C63F23", 0.0);
+				Level.Sectors[46].SetColor("C63F23", 0.0);
+				Level.Sectors[47].SetColor("C63F23", 0.0);
 				Level.Sectors[49].SetColor("C63F23", 0.0);
 				Level.Sectors[50].SetColor("C63F23", 0.0);
 				Level.Sectors[51].SetColor("C63F23", 0.0);
