@@ -3,24 +3,25 @@
 // PSXed Revenant
 //
 //===========================================================================
+
 class PSXedRevenant : Revenant Replaces Revenant
 {
-int psxed_speed_value;
+	int psxed_speed_value;
 
-property Speed: psxed_speed_value;
+	property Speed: psxed_speed_value;
 
-override void PostBeginPlay()
+	override void PostBeginPlay()
 	{
-	CVar psxed_speed = Cvar.FindCVar('psxed_revenant_speed');
-	if (psxed_speed)
-			{
-				switch(psxed_speed.GetInt())
+		CVar psxed_speed = Cvar.FindCVar('psxed_revenant_speed');
+		if (psxed_speed)
+		{
+			switch(psxed_speed.GetInt())
 				{
-				case 0: Speed = 10; break;
-				case 1: Speed = 5; break;
+					case 0: Speed = 10; break;
+					case 1: Speed = 5; break;
 				}
-			}
-	Super.PostBeginPlay();
+		}
+		Super.PostBeginPlay();
 	}
 }
 
@@ -29,24 +30,25 @@ override void PostBeginPlay()
 // PSXed Revenant Tracer
 //
 //===========================================================================
+
 class PSXedRevenantTracer : RevenantTracer Replaces RevenantTracer
 {
-int psxed_speed_value;
+	int psxed_speed_value;
 
-property Speed: psxed_speed_value;
+	property Speed: psxed_speed_value;
 
-override void PostBeginPlay()
+	override void PostBeginPlay()
 	{
-	CVar psxed_speed = Cvar.FindCVar('psxed_revenant_tracer_speed');
-	if (psxed_speed)
-			{
-				switch(psxed_speed.GetInt())
+		CVar psxed_speed = Cvar.FindCVar('psxed_revenant_tracer_speed');
+		if (psxed_speed)
+		{
+			switch(psxed_speed.GetInt())
 				{
-				case 0: Speed = 10; break;
-				case 1: Speed = 5; break;
+					case 0: Speed = 10; break;
+					case 1: Speed = 5; break;
 				}
-			}
-	Super.PostBeginPlay();
+		}
+		Super.PostBeginPlay();
 	}
 }
 

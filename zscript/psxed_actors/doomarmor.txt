@@ -2,22 +2,22 @@
 
 class PSXedArmorBonus : ArmorBonus Replaces ArmorBonus
 {
-int psxed_armor_value;
+	int psxed_armor_value;
 
-property Saveamount: psxed_armor_value;
+	property Saveamount: psxed_armor_value;
 
-override void PostBeginPlay()
+	override void PostBeginPlay()
 	{
-	CVar psxed_armor = Cvar.FindCVar('psxed_armorbonus');
-	if (psxed_armor)
+		CVar psxed_armor = Cvar.FindCVar('psxed_armorbonus');
+		if (psxed_armor)
 			{
 				switch(psxed_armor.GetInt())
-				{
-				default:
-				case 0: Saveamount = 1; break;
-				case 1: Saveamount = 2; break;
-				}
+					{
+						default:
+						case 0: Saveamount = 1; break;
+						case 1: Saveamount = 2; break;
+					}
 			}
-	Super.PostBeginPlay();
+		Super.PostBeginPlay();
 	}
 }

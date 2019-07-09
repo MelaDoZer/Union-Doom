@@ -1,17 +1,25 @@
+//===========================================================================
+//
+// PSXed Zombieman
+//
+//===========================================================================
+
 class PSXedZombieman : Zombieman replaces Zombieman
 {
 	Default
 	{
+	
 	}
 		States
 		{
-		Missile:
-			POSS E 10 A_FaceTarget;
-			POSS F 8 A_PSXedPosAttack;
-			POSS E 8;
-			Goto See;
+			Missile:
+				POSS E 10 A_FaceTarget;
+				POSS F 8 A_PSXedPosAttack;
+				POSS E 8;
+				Goto See;
 		}
 }
+
 //===========================================================================
 //
 // Code (must be attached to Actor)
@@ -36,11 +44,11 @@ extend class PSXedZombieMan
 			if (attack_damage)
 			{
 				switch(attack_damage.GetInt())
-				{
-				case 0: damage = Random[PSXedPosAttack](1, 5) * 3; break;
-				case 1: damage = Random[PSXedPosAttack](1, 7) * 3; break;
-				case 2: damage = Random[PSXedPosAttack](1, 8) * 3; break;
-				}
+					{
+						case 0: damage = Random[PSXedPosAttack](1, 5) * 3; break;
+						case 1: damage = Random[PSXedPosAttack](1, 7) * 3; break;
+						case 2: damage = Random[PSXedPosAttack](1, 8) * 3; break;
+					}
 			}
 			LineAttack(ang, MISSILERANGE, slope, damage, "Hitscan", "Bulletpuff");
 		}
