@@ -3,6 +3,7 @@
 // Nightmare Spectre
 //
 //===========================================================================
+
 class NightmareSpectre : Spectre
 {
 	int psxed_species_value;
@@ -13,18 +14,18 @@ class NightmareSpectre : Spectre
 	{
 		CVar psxed_species = Cvar.FindCVar('psxed_demon_infighting');
 		if (psxed_species)
+		{
+			switch(psxed_species.GetInt())
 			{
-				switch(psxed_species.GetInt())
-					{
-						case 0: Species = "PSXedDemons"; break;
-						case 1: Species = "PSXedNightmareSpectre"; break;
-					}
+				case 0: Species = "PSXedDemons"; break;
+				case 1: Species = "PSXedNightmareSpectre"; break;
 			}
-			Super.PostBeginPlay();
+		}
+		Super.PostBeginPlay();
 	}
 	Default
-		{
-			renderstyle "Subtract";
+	{
+		renderstyle "Subtract";
 		health 300;
-		}
+	}
 }

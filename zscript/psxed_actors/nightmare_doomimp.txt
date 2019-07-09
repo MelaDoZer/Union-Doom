@@ -7,12 +7,12 @@
 class NightmareDoomImp : DoomImp
 {
 	Default
-		{
-			Speed 16;
-			renderstyle "Subtract";
-			health 120;
-			Alpha 0.7;
-		}
+	{
+		Speed 16;
+		renderstyle "Subtract";
+		health 120;
+		Alpha 0.7;
+	}
 	States
 	{
 		Melee:

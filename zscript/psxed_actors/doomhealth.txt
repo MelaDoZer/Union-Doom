@@ -10,13 +10,13 @@ class PSXedHealthBonus : HealthBonus Replaces HealthBonus
 	{
 		CVar psxed_health = Cvar.FindCVar('psxed_healthbonus');
 		if (psxed_health)
+		{
+			switch(psxed_health.GetInt())
 			{
-				switch(psxed_health.GetInt())
-					{
-						case 0: Amount = 1; break;
-						case 1: Amount = 2; break;
-					}
+				case 0: Amount = 1; break;
+				case 1: Amount = 2; break;
 			}
+		}
 		Super.PostBeginPlay();
 	}
 }
