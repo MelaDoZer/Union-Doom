@@ -4,7 +4,7 @@ version "4.1"
 
 //PWADs Colored Lightning
 #include "zscript/levels/colored_lights/pwads/pwads_colored_lights.txt"
-//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA test AAAAAAAAAAAAAAAAAAAAA
+
 //Nightmare Spectre
 #include "zscript/psxed_actors/nightmare_spectre.txt"
 
