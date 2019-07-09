@@ -1,4 +1,0 @@
-//IWADS
-#include "zscript/levels/colored_lights/iwads/iwads_colored_lights.txt"
-
-#include "zscript/levels/colored_lights/pwads/s/sigil.txt"

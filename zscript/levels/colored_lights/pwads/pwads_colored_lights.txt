@@ -1,0 +1,2 @@
+/* SIGIL */
+#include "zscript/levels/colored_lights/pwads/s/sigil.txt"
