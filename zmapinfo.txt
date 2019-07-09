@@ -1,3 +1,9 @@
+GameInfo
+{
+	
+	AddEventHandlers = "DoomE1M1ColoredLights"
+}
+
 DoomEdNums
 {
 	16000 = NightmareDoomImp
