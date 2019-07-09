@@ -6,6 +6,11 @@ class UltimateDoomE2M4ColoredLights : LevelCompatibility
         {
 			if(psxed_colored_lighting == 1)
 			{
+				//Torch Light - there is only lamp sidedef in PC-sectors
+				Level.Sectors[200].SetColor("FFF588", 0.0);
+				Level.Sectors[203].SetColor("FFF588", 0.0);
+				Level.Sectors[204].SetColor("FFF588", 0.0);
+				
 				//Portals
 				Level.Sectors[21].SetColor("B30202", 0.0);
 				Level.Sectors[147].SetColor("B30202", 0.0);
@@ -35,11 +40,6 @@ class UltimateDoomE2M4ColoredLights : LevelCompatibility
 				Level.Sectors[193].SetColor("D97C45", 0.0);
 				Level.Sectors[194].SetColor("D97C45", 0.0);
 				Level.Sectors[196].SetColor("D97C45", 0.0);
-				
-				//Torch Light - there is only lamp sidedef in PC-sectors
-				Level.Sectors[204].SetColor("FFF588", 0.0);
-				Level.Sectors[203].SetColor("FFF588", 0.0);
-				Level.Sectors[204].SetColor("FFF588", 0.0);
 				
 				//Baron barelief
 				Level.Sectors[155].SetColor("FFF588", 0.0);
@@ -95,7 +95,7 @@ class UltimateDoomE2M4ColoredLights : LevelCompatibility
 				Level.Sectors[182].SetColor("043E8B", 0.0);
 				
 				//Wall with faces
-				Level.Sectors[173].SetColor("FF7F7F", 0.0);
+				Level.Sectors[167].SetColor("FF7F7F", 0.0);
 				
 				//Blood Before Exit (Lava in PS1)
 				Level.Sectors[173].SetColor("C63F23", 0.0);
