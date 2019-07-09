@@ -13,3 +13,4 @@
 #include "zscript/levels/colored_lights/iwads/ultimate_doom/e2m1.txt"
 
 #include "zscript/levels/colored_lights/iwads/ultimate_doom/e2m3.txt"
+#include "zscript/levels/colored_lights/iwads/ultimate_doom/e2m4.txt"
