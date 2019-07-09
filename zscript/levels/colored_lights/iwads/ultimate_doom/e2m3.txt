@@ -20,6 +20,7 @@ class UltimateDoomE2M3ColoredLights : LevelCompatibility
 				Level.Sectors[16].SetColor("55B828", 0.0);
 				Level.Sectors[34].SetColor("55B828", 0.0);
 				Level.Sectors[46].SetColor("55B828", 0.0);
+				Level.Sectors[99].SetColor("55B828", 0.0);
 				Level.Sectors[116].SetColor("55B828", 0.0);
 				Level.Sectors[119].SetColor("55B828", 0.0);
 				Level.Sectors[120].SetColor("55B828", 0.0);
