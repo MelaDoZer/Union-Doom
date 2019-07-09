@@ -1,4 +1,5 @@
 version "4.1"
+
 //IWADs Colored Lightning
 #include "zscript/levels/colored_lights/iwads/iwads_colored_lights.txt"
 
