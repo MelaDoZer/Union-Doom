@@ -1,0 +1,44 @@
+class PSXedDoom_ColoredLights : StaticEventHandler
+{
+	int OldColoredLightsMode;
+	
+	override void WorldLoaded(WorldEvent e)
+	{
+		if(psxed_colored_lighting)
+		{
+			PSXedDoom_MapHashesChecker.PSXedDoom_CheckMapHashes();
+		}
+		else
+		{
+			for(int i = 0; i < Level.Sectors.Size(); i++)
+			{
+				Level.Sectors[i].SetColor("FFFFFF", 0.0);
+			}
+		}
+	}
+	
+	override void UiTick() 
+	{
+		EventHandler.SendNetworkEvent("UpdateColoredLights");
+	}
+	
+	override void NetworkProcess(ConsoleEvent e)
+	{
+		if(e.Name == "UpdateColoredLights") ChangeColoredLighting();
+	}
+	
+	void ChangeColoredLighting() 
+	{
+		if(psxed_colored_lighting)
+		{
+			PSXedDoom_MapHashesChecker.PSXedDoom_CheckMapHashes();
+		}
+		else
+		{
+			for(int i = 0; i < Level.Sectors.Size(); i++)
+			{
+				Level.Sectors[i].SetColor("FFFFFF", 0.0);
+			}
+		}
+	}
+}

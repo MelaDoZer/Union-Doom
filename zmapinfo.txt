@@ -1,6 +1,6 @@
 GameInfo
 {
-	AddEventHandlers = "DoomE1M1ColoredLights"
+	AddEventHandlers = "PSXedDoom_ColoredLights"
 }
 
 DoomEdNums

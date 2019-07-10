@@ -1,0 +1,529 @@
+class UltimateDoomColoredLightsValues play
+{
+	static void UltimateDoomE1M1ColoredLights()	//B49F7A6C519757D390D52667DB7D8793 - Ultimate Doom E1M1: Hangar
+	{
+		//Start Room
+		Level.Sectors[29].SetColor("EEC06B", 0.0);
+		Level.Sectors[30].SetColor("EEC06B", 0.0);
+		
+		//Pathway to Green Armor
+		Level.Sectors[32].SetColor("FF7F7F", 0.0);
+		Level.Sectors[33].SetColor("FF7F7F", 0.0);
+		Level.Sectors[34].SetColor("FF7F7F", 0.0);
+		Level.Sectors[35].SetColor("FF7F7F", 0.0);
+		Level.Sectors[36].SetColor("FF7F7F", 0.0);
+		Level.Sectors[37].SetColor("FF7F7F", 0.0);
+		Level.Sectors[38].SetColor("FF7F7F", 0.0);
+		Level.Sectors[39].SetColor("FF7F7F", 0.0);
+		Level.Sectors[48].SetColor("FF7F7F", 0.0);
+		
+		//Green Armor
+		Level.Sectors[44].SetColor("55B828", 0.0);
+		
+		//Computer Room
+		Level.Sectors[16].SetColor("949DB9", 0.0);
+		Level.Sectors[17].SetColor("949DB9", 0.0);
+		Level.Sectors[18].SetColor("949DB9", 0.0);
+		Level.Sectors[19].SetColor("949DB9", 0.0);
+		Level.Sectors[20].SetColor("949DB9", 0.0);
+		Level.Sectors[22].SetColor("949DB9", 0.0);
+		Level.Sectors[59].SetColor("949DB9", 0.0);
+		Level.Sectors[60].SetColor("949DB9", 0.0);
+		
+		//Computer Room - Computers
+		Level.Sectors[14].SetColor("4F5D8B", 0.0);
+		Level.Sectors[21].SetColor("4F5D8B", 0.0);
+		Level.Sectors[23].SetColor("4F5D8B", 0.0);
+		
+		//Zigzag Acid Room
+		Level.Sectors[51].SetColor("55B828", 0.0);
+		Level.Sectors[53].SetColor("55B828", 0.0);
+		Level.Sectors[56].SetColor("55B828", 0.0);
+		Level.Sectors[57].SetColor("55B828", 0.0);
+		
+		//Zigzag Acid Room Lift
+		Level.Sectors[55].SetColor("BBE357", 0.0);
+		
+		//Secret Upper Corridor
+		Level.Sectors[58].SetColor("50ADAC", 0.0);
+		
+		//Secret Pathway to Outside - Square Light
+		Level.Sectors[79].SetColor("D97C45", 0.0);
+		
+		//Acid Pool Outside
+		Level.Sectors[0].SetColor("BBE357", 0.0);
+		
+		//Room Before Exit
+		Level.Sectors[65].SetColor("2A2F6B", 0.0);
+		Level.Sectors[66].SetColor("2A2F6B", 0.0);
+		Level.Sectors[67].SetColor("2A2F6B", 0.0);
+		Level.Sectors[68].SetColor("2A2F6B", 0.0);
+		Level.Sectors[69].SetColor("2A2F6B", 0.0);
+		
+		//Exit Room
+		Level.Sectors[70].SetColor("FF7F7F", 0.0);
+		Level.Sectors[71].SetColor("FF7F7F", 0.0);
+		Level.Sectors[72].SetColor("FF7F7F", 0.0);
+	}
+	
+	
+	static void UltimateDoomE1M2ColoredLights()	//81A4CC5136CBFA49345654190A626C09 - Ultimate Doom E1M2: Nuclear Plant
+	{
+		//Start Room
+		Level.Sectors[24].SetColor("CCE4A5", 0.0);
+		Level.Sectors[38].SetColor("CCE4A5", 0.0);
+		Level.Sectors[104].SetColor("CCE4A5", 0.0);
+		
+		//Secret Room with Switch
+		Level.Sectors[29].SetColor("B87A15", 0.0);
+		Level.Sectors[115].SetColor("B87A15", 0.0);
+		
+		//Near Secret Switch
+		Level.Sectors[110].SetColor("FFD000", 0.0);
+		Level.Sectors[112].SetColor("FFD000", 0.0);
+		Level.Sectors[113].SetColor("FFD000", 0.0);
+		
+		//Secret Switch
+		Level.Sectors[111].SetColor("FFDE4C", 0.0);
+		
+		//Corridor and Lift Area opposite to Start
+		Level.Sectors[33].SetColor("5FB2B2", 0.0);
+		Level.Sectors[107].SetColor("5FB2B2", 0.0);
+		Level.Sectors[108].SetColor("5FB2B2", 0.0);
+		Level.Sectors[109].SetColor("5FB2B2", 0.0);
+		
+		//Corridor and Lift Area opposite to Start - Light Sidedefs
+		Level.Sectors[32].SetColor("04918B", 0.0);
+		
+		//On top of Lift
+		Level.Sectors[34].SetColor("50ADAC", 0.0);
+
+		//Computer with Green Armor
+		Level.Sectors[28].SetColor("CCEA5F", 0.0);
+		
+		//Computers near Red Key
+		Level.Sectors[0].SetColor("B30202", 0.0);
+		Level.Sectors[1].SetColor("B30202", 0.0);
+		Level.Sectors[63].SetColor("B30202", 0.0);
+		
+		//Acid Areas of Map
+		Level.Sectors[39].SetColor("55B828", 0.0);
+		Level.Sectors[141].SetColor("55B828", 0.0);
+		Level.Sectors[144].SetColor("55B828", 0.0);
+		Level.Sectors[163].SetColor("55B828", 0.0);
+		
+		//Near Acid Areas of Map
+		Level.Sectors[40].SetColor("BBE357", 0.0);
+		Level.Sectors[41].SetColor("BBE357", 0.0);
+		Level.Sectors[142].SetColor("BBE357", 0.0);
+		
+		//Labyrinth Part of Map
+		Level.Sectors[87].SetColor("043E8B", 0.0);
+		
+		//West Area of Labyrinth
+		Level.Sectors[183].SetColor("FFF588", 0.0);
+		
+		////Ledges Before Exit Room
+		Level.Sectors[122].SetColor("FFF588", 0.0);
+		Level.Sectors[125].SetColor("FFF588", 0.0);
+		Level.Sectors[130].SetColor("FFF588", 0.0);
+		
+		//Exit Room
+		Level.Sectors[43].SetColor("FF7F7F", 0.0);
+		Level.Sectors[48].SetColor("FF7F7F", 0.0);
+		Level.Sectors[49].SetColor("FF7F7F", 0.0);
+		Level.Sectors[51].SetColor("FF7F7F", 0.0);
+	}
+	
+	
+	
+	static void UltimateDoomE1M3ColoredLights()	//C7FF2282BC606FFB28DDCB90357094E6 - Ultimate Doom E1M3: Toxin Refinery
+	{
+		//Acid Pit
+		Level.Sectors[65].SetColor("55B828", 0.0);
+		Level.Sectors[66].SetColor("55B828", 0.0);
+		Level.Sectors[68].SetColor("55B828", 0.0);
+		
+		//Soulsphere Lift and Window
+		Level.Sectors[129].SetColor("043E8B", 0.0);
+		Level.Sectors[130].SetColor("043E8B", 0.0);
+		
+		//Northern Acid Pit
+		Level.Sectors[39].SetColor("BBE357", 0.0);
+		Level.Sectors[46].SetColor("BBE357", 0.0);
+		
+		//"O" entrance to Blue Key Corridor
+		Level.Sectors[24].SetColor("949DB9", 0.0);
+		
+		//Blue Key Place
+		Level.Sectors[28].SetColor("043E8B", 0.0);
+		
+		//Corridor with Yellow Key
+		Level.Sectors[117].SetColor("2A2F6B", 0.0);
+		Level.Sectors[118].SetColor("2A2F6B", 0.0);
+		Level.Sectors[119].SetColor("2A2F6B", 0.0);
+		Level.Sectors[120].SetColor("2A2F6B", 0.0);
+		Level.Sectors[124].SetColor("2A2F6B", 0.0);
+		Level.Sectors[125].SetColor("2A2F6B", 0.0);
+		Level.Sectors[126].SetColor("2A2F6B", 0.0);
+		Level.Sectors[127].SetColor("2A2F6B", 0.0);
+		Level.Sectors[131].SetColor("2A2F6B", 0.0);
+		
+		//Computers in corridor with Yellow Key
+		Level.Sectors[132].SetColor("9FCB5E", 0.0);
+		Level.Sectors[133].SetColor("9FCB5E", 0.0);
+		Level.Sectors[160].SetColor("9FCB5E", 0.0);
+		Level.Sectors[163].SetColor("9FCB5E", 0.0);
+		Level.Sectors[164].SetColor("9FCB5E", 0.0);
+		
+		//Yellow Key Place
+		Level.Sectors[162].SetColor("FFF588", 0.0);
+		
+		//Near Acid in Secret Room
+		Level.Sectors[154].SetColor("BBE357", 0.0);
+		Level.Sectors[159].SetColor("BBE357", 0.0);
+		Level.Sectors[173].SetColor("BBE357", 0.0);
+		
+		//Acid in Secret Room
+		Level.Sectors[153].SetColor("55B828", 0.0);
+		Level.Sectors[155].SetColor("55B828", 0.0);
+		Level.Sectors[156].SetColor("55B828", 0.0);
+		Level.Sectors[157].SetColor("55B828", 0.0);
+		Level.Sectors[158].SetColor("55B828", 0.0);
+		Level.Sectors[161].SetColor("55B828", 0.0);
+		
+		//Pathway to Soulsphere
+		Level.Sectors[128].SetColor("5B4318", 0.0);
+		Level.Sectors[134].SetColor("5B4318", 0.0);
+		Level.Sectors[135].SetColor("5B4318", 0.0);
+		Level.Sectors[136].SetColor("5B4318", 0.0);
+		Level.Sectors[137].SetColor("5B4318", 0.0);
+		Level.Sectors[138].SetColor("5B4318", 0.0);
+		Level.Sectors[139].SetColor("5B4318", 0.0);
+		Level.Sectors[140].SetColor("5B4318", 0.0);
+		Level.Sectors[141].SetColor("5B4318", 0.0);
+		Level.Sectors[142].SetColor("5B4318", 0.0);
+		Level.Sectors[143].SetColor("5B4318", 0.0);
+		Level.Sectors[144].SetColor("5B4318", 0.0);
+		Level.Sectors[145].SetColor("5B4318", 0.0);
+		Level.Sectors[146].SetColor("5B4318", 0.0);
+		Level.Sectors[147].SetColor("5B4318", 0.0);
+		Level.Sectors[148].SetColor("5B4318", 0.0);
+		Level.Sectors[149].SetColor("5B4318", 0.0);
+		Level.Sectors[150].SetColor("5B4318", 0.0);
+		Level.Sectors[151].SetColor("5B4318", 0.0);
+		Level.Sectors[152].SetColor("5B4318", 0.0);
+		
+		//Exits
+		Level.Sectors[3].SetColor("FF7F7F", 0.0);
+		Level.Sectors[4].SetColor("FF7F7F", 0.0);
+		Level.Sectors[5].SetColor("FF7F7F", 0.0);
+		Level.Sectors[6].SetColor("FF7F7F", 0.0);
+		Level.Sectors[35].SetColor("FF7F7F", 0.0);
+		Level.Sectors[40].SetColor("FF7F7F", 0.0);
+		Level.Sectors[42].SetColor("FF7F7F", 0.0);
+		Level.Sectors[43].SetColor("FF7F7F", 0.0);
+		
+		//Near Acid - Behind Blue Door
+		Level.Sectors[56].SetColor("BBE357", 0.0);
+		
+		// Acid - Behind Blue Door
+		Level.Sectors[58].SetColor("55B828", 0.0);
+		
+		//Computers - Behind Blue Door
+		Level.Sectors[57].SetColor("FFF588", 0.0);
+		Level.Sectors[59].SetColor("FFF588", 0.0);
+		
+		//Room Before Exit
+		Level.Sectors[7].SetColor("4F5D8B", 0.0);
+		Level.Sectors[8].SetColor("4F5D8B", 0.0);
+		Level.Sectors[9].SetColor("4F5D8B", 0.0);
+		Level.Sectors[10].SetColor("4F5D8B", 0.0);
+		Level.Sectors[11].SetColor("4F5D8B", 0.0);
+		Level.Sectors[12].SetColor("4F5D8B", 0.0);
+		Level.Sectors[13].SetColor("4F5D8B", 0.0);
+		Level.Sectors[14].SetColor("4F5D8B", 0.0);
+		Level.Sectors[16].SetColor("4F5D8B", 0.0);
+		Level.Sectors[17].SetColor("4F5D8B", 0.0);
+		Level.Sectors[18].SetColor("4F5D8B", 0.0);
+		Level.Sectors[19].SetColor("4F5D8B", 0.0);
+	}
+	
+	
+	
+	static void UltimateDoomE1M4ColoredLights()	//5B26545FF21B051CA06D389CE535684C - Ultimate Doom E1M4: Command Control
+	{
+		//Acid River
+		Level.Sectors[95].SetColor("55B828", 0.0);
+		Level.Sectors[98].SetColor("55B828", 0.0);
+		Level.Sectors[110].SetColor("55B828", 0.0);
+		
+		//Switch to Soulsphere
+		Level.Sectors[101].SetColor("FFF588", 0.0);
+		
+		//Acid Circle
+		Level.Sectors[5].SetColor("BBE357", 0.0);
+		Level.Sectors[7].SetColor("BBE357", 0.0);
+		Level.Sectors[107].SetColor("BBE357", 0.0);
+		Level.Sectors[135].SetColor("BBE357", 0.0);
+		
+		//Acid Pool
+		Level.Sectors[42].SetColor("55B828", 0.0);
+		
+		//Near Acid Pool - Stairs
+		Level.Sectors[43].SetColor("BBE357", 0.0);
+		Level.Sectors[44].SetColor("BBE357", 0.0);
+		Level.Sectors[47].SetColor("BBE357", 0.0);
+		
+		//Computers
+		Level.Sectors[46].SetColor("FFF588", 0.0);
+		Level.Sectors[78].SetColor("FFF588", 0.0);
+		Level.Sectors[79].SetColor("FFF588", 0.0);
+		Level.Sectors[81].SetColor("FFF588", 0.0);
+		Level.Sectors[94].SetColor("FFF588", 0.0);
+		Level.Sectors[122].SetColor("FFF588", 0.0);
+		Level.Sectors[123].SetColor("FFF588", 0.0);
+		
+		//Labyrinth
+		Level.Sectors[12].SetColor("31A29F", 0.0);
+		Level.Sectors[14].SetColor("31A29F", 0.0);
+		Level.Sectors[15].SetColor("31A29F", 0.0);
+		Level.Sectors[17].SetColor("31A29F", 0.0);
+		Level.Sectors[18].SetColor("31A29F", 0.0);
+		Level.Sectors[19].SetColor("31A29F", 0.0);
+		Level.Sectors[20].SetColor("31A29F", 0.0);
+		Level.Sectors[28].SetColor("31A29F", 0.0);
+		Level.Sectors[30].SetColor("31A29F", 0.0);
+		Level.Sectors[31].SetColor("31A29F", 0.0);
+		
+		//Blue Room
+		Level.Sectors[49].SetColor("043E8B", 0.0);
+		
+		//Exit
+		Level.Sectors[57].SetColor("FF7F7F", 0.0);
+	}
+	
+	
+	
+	static void UltimateDoomE1M5ColoredLights()	//66D8E54B173041F981A11CCE766C4215 - Ultimate Doom E1M5: Phobos Lab
+	{
+		//Acid River
+		Level.Sectors[33].SetColor("55B828", 0.0);
+		Level.Sectors[59].SetColor("55B828", 0.0);
+		Level.Sectors[61].SetColor("55B828", 0.0);
+		
+		//Acid Room
+		Level.Sectors[90].SetColor("55B828", 0.0);
+		Level.Sectors[91].SetColor("55B828", 0.0);
+		Level.Sectors[102].SetColor("55B828", 0.0);
+		Level.Sectors[103].SetColor("55B828", 0.0);
+		
+		//Secret Room Below Acid Room
+		Level.Sectors[94].SetColor("949DB9", 0.0);
+		
+		//Secret Room with Map
+		Level.Sectors[99].SetColor("D46D3D", 0.0);
+		
+		//Computer Rooms
+		Level.Sectors[89].SetColor("949DB9", 0.0);
+		Level.Sectors[118].SetColor("949DB9", 0.0);
+		Level.Sectors[124].SetColor("949DB9", 0.0);
+		Level.Sectors[125].SetColor("949DB9", 0.0);
+		Level.Sectors[126].SetColor("949DB9", 0.0);
+		Level.Sectors[127].SetColor("949DB9", 0.0);
+		Level.Sectors[128].SetColor("949DB9", 0.0);
+		Level.Sectors[129].SetColor("949DB9", 0.0);
+		
+		//Central Acid Pool
+		Level.Sectors[72].SetColor("BBE357", 0.0);
+		
+		//West Acid Pool
+		Level.Sectors[19].SetColor("55B828", 0.0);
+		
+		//Star
+		Level.Sectors[55].SetColor("B30202", 0.0);
+		
+		//Final Area
+		Level.Sectors[106].SetColor("4F5D8B", 0.0);
+		
+		//Exit
+		Level.Sectors[113].SetColor("FF7F7F", 0.0);
+	}
+	
+	
+	
+	static void UltimateDoomE1M6ColoredLights()	//66D8E54B173041F981A11CCE766C4215 - Ultimate Doom E1M6: Central Processing
+	{
+		//Acid at Start, North-East, and small part at South-West
+		Level.Sectors[118].SetColor("BBE357", 0.0);
+	    Level.Sectors[119].SetColor("BBE357", 0.0);
+	    Level.Sectors[145].SetColor("BBE357", 0.0);
+	    Level.Sectors[149].SetColor("BBE357", 0.0);
+		Level.Sectors[150].SetColor("BBE357", 0.0);
+        Level.Sectors[153].SetColor("BBE357", 0.0);
+        Level.Sectors[184].SetColor("BBE357", 0.0);
+        
+        //Every other Acid 
+        Level.Sectors[34].SetColor("55B828", 0.0);
+        Level.Sectors[41].SetColor("55B828", 0.0);
+        Level.Sectors[52].SetColor("55B828", 0.0);
+        Level.Sectors[57].SetColor("55B828", 0.0);
+        Level.Sectors[64].SetColor("55B828", 0.0);
+        Level.Sectors[81].SetColor("55B828", 0.0);
+        Level.Sectors[178].SetColor("55B828", 0.0);
+        Level.Sectors[183].SetColor("55B828", 0.0);
+        Level.Sectors[222].SetColor("55B828", 0.0);
+        Level.Sectors[223].SetColor("55B828", 0.0);
+        Level.Sectors[224].SetColor("55B828", 0.0);
+        Level.Sectors[225].SetColor("55B828", 0.0);
+        Level.Sectors[226].SetColor("55B828", 0.0);
+        Level.Sectors[228].SetColor("55B828", 0.0);
+        Level.Sectors[230].SetColor("55B828", 0.0);
+        Level.Sectors[231].SetColor("55B828", 0.0);
+        Level.Sectors[234].SetColor("55B828", 0.0);
+        Level.Sectors[235].SetColor("55B828", 0.0);
+        Level.Sectors[236].SetColor("55B828", 0.0);
+        Level.Sectors[237].SetColor("55B828", 0.0);
+        Level.Sectors[239].SetColor("55B828", 0.0);
+        Level.Sectors[243].SetColor("55B828", 0.0);
+        Level.Sectors[244].SetColor("55B828", 0.0);
+        Level.Sectors[245].SetColor("55B828", 0.0);
+        Level.Sectors[246].SetColor("55B828", 0.0);
+        Level.Sectors[247].SetColor("55B828", 0.0);
+        Level.Sectors[249].SetColor("55B828", 0.0);
+        
+        //Corridors at Eest
+        Level.Sectors[219].SetColor("2A2F6B", 0.0);
+        Level.Sectors[220].SetColor("2A2F6B", 0.0);
+        Level.Sectors[227].SetColor("2A2F6B", 0.0);
+        Level.Sectors[229].SetColor("2A2F6B", 0.0);
+        Level.Sectors[238].SetColor("2A2F6B", 0.0);
+        Level.Sectors[248].SetColor("2A2F6B", 0.0);
+        
+        //Yellow Key Room
+        Level.Sectors[208].SetColor("FFF588", 0.0);
+        
+        //Lights directed to Lift with Pinkys
+        Level.Sectors[90].SetColor("4F5D8B", 0.0);
+        
+        //Final room
+        Level.Sectors[20].SetColor("4F5D8B", 0.0);
+        Level.Sectors[26].SetColor("4F5D8B", 0.0);
+        
+        //Exit
+        Level.Sectors[31].SetColor("FF7F7F", 0.0);
+        Level.Sectors[32].SetColor("FF7F7F", 0.0);
+        Level.Sectors[33].SetColor("FF7F7F", 0.0);
+	}
+	
+	
+	
+	static void UltimateDoomE1M7ColoredLights()	//9007F68E7F351A5758198933336F6B9F - Ultimate Doom E1M7: Computer Station
+	{
+		//Near Acid
+		Level.Sectors[5].SetColor("BBE357", 0.0);
+		Level.Sectors[6].SetColor("BBE357", 0.0);
+		Level.Sectors[71].SetColor("BBE357", 0.0);
+		Level.Sectors[76].SetColor("BBE357", 0.0);
+		Level.Sectors[77].SetColor("BBE357", 0.0);
+		Level.Sectors[147].SetColor("BBE357", 0.0);
+		Level.Sectors[148].SetColor("BBE357", 0.0);
+		
+		//Acid
+		Level.Sectors[3].SetColor("55B828", 0.0);
+		Level.Sectors[74].SetColor("55B828", 0.0);
+		Level.Sectors[119].SetColor("55B828", 0.0);
+		Level.Sectors[145].SetColor("55B828", 0.0);
+		Level.Sectors[150].SetColor("55B828", 0.0);
+		Level.Sectors[151].SetColor("55B828", 0.0);
+		Level.Sectors[152].SetColor("55B828", 0.0);
+		
+		//Pathway to Red Key
+		Level.Sectors[73].SetColor("FF3030", 0.0);
+		
+		//South-West Room
+		Level.Sectors[125].SetColor("4F5D8B", 0.0);
+		Level.Sectors[139].SetColor("4F5D8B", 0.0);
+		Level.Sectors[140].SetColor("4F5D8B", 0.0);
+		Level.Sectors[141].SetColor("4F5D8B", 0.0);
+		Level.Sectors[142].SetColor("4F5D8B", 0.0);
+		
+		//East Walkway
+		Level.Sectors[23].SetColor("043E8B", 0.0);
+		Level.Sectors[27].SetColor("043E8B", 0.0);
+		
+		//Platform in Central Room
+		Level.Sectors[36].SetColor("04918B", 0.0);
+		
+		//Final Rooms
+		Level.Sectors[80].SetColor("311A59", 0.0);
+		Level.Sectors[81].SetColor("311A59", 0.0);
+		Level.Sectors[86].SetColor("311A59", 0.0);
+		Level.Sectors[87].SetColor("311A59", 0.0);
+		
+		//Exit
+		Level.Sectors[108].SetColor("FF7F7F", 0.0);
+		Level.Sectors[109].SetColor("FF7F7F", 0.0);
+		Level.Sectors[113].SetColor("FF7F7F", 0.0);
+	}
+	
+	
+	
+	static void UltimateDoomE1M8ColoredLights()	//9007F68E7F351A5758198933336F6B9F - Ultimate Doom E1M8: Phobos Anomaly
+	{
+		//Soulsphere Secret
+		Level.Sectors[24].SetColor("043E8B", 0.0);
+		
+		//"+" Room
+		Level.Sectors[32].SetColor("FFAFAF", 0.0);
+		
+		//Torches Ledges
+		Level.Sectors[34].SetColor("D97C45", 0.0);
+		Level.Sectors[36].SetColor("D97C45", 0.0);
+		Level.Sectors[37].SetColor("D97C45", 0.0);
+		Level.Sectors[39].SetColor("D97C45", 0.0);
+		
+		//Blue Torches 
+		Level.Sectors[26].SetColor("5D6A95", 0.0);
+		
+		//Star Room
+		Level.Sectors[31].SetColor("FF3030", 0.0);
+	}
+	
+	
+	
+	static void UltimateDoomE1M9ColoredLights()	//1DBF91738492FB0E29836A2D66406CF1 - Ultimate Doom E1M9: Phobos Anomaly
+	{
+		//Near Acid
+		Level.Sectors[4].SetColor("BBE357", 0.0);
+		Level.Sectors[15].SetColor("BBE357", 0.0);
+		Level.Sectors[16].SetColor("BBE357", 0.0);
+		Level.Sectors[44].SetColor("BBE357", 0.0);
+		Level.Sectors[49].SetColor("BBE357", 0.0);
+		Level.Sectors[62].SetColor("BBE357", 0.0);
+		Level.Sectors[64].SetColor("BBE357", 0.0);
+		Level.Sectors[65].SetColor("BBE357", 0.0);
+		Level.Sectors[73].SetColor("BBE357", 0.0);
+		Level.Sectors[74].SetColor("BBE357", 0.0);
+		Level.Sectors[75].SetColor("BBE357", 0.0);
+		Level.Sectors[76].SetColor("BBE357", 0.0);
+		Level.Sectors[77].SetColor("BBE357", 0.0);
+		
+		//Acid and Star
+		Level.Sectors[14].SetColor("55B828", 0.0);
+		Level.Sectors[17].SetColor("55B828", 0.0);
+		Level.Sectors[21].SetColor("55B828", 0.0);
+		Level.Sectors[37].SetColor("55B828", 0.0);
+		Level.Sectors[47].SetColor("55B828", 0.0);
+		Level.Sectors[48].SetColor("55B828", 0.0);
+		Level.Sectors[52].SetColor("55B828", 0.0);
+		Level.Sectors[63].SetColor("55B828", 0.0);
+		Level.Sectors[66].SetColor("55B828", 0.0);
+		
+		//Yellow Key Area
+		Level.Sectors[88].SetColor("FFF588", 0.0);
+		
+		//Exit
+		Level.Sectors[45].SetColor("FF7F7F", 0.0);
+	}
+}

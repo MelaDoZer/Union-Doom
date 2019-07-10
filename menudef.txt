@@ -24,9 +24,6 @@ OptionMenu "PSXed Doom: Levels Options"
 {
 	Title "PSXed Doom: Levels Options"
 	StaticText " "
-	StaticText "Changes made to these options requires the level to", 1
-	StaticText "be restarted or they will take effect on next level.", 1
-	StaticText " "
 	option "PSX Doom Colored Lighting", "psxed_colored_lighting", "HUD_OPTION_psxed_colored_lighting"
 }
 
