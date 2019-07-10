@@ -1,6 +1,5 @@
 GameInfo
 {
-	
 	AddEventHandlers = "DoomE1M1ColoredLights"
 }
 
