@@ -55,6 +55,57 @@ class PSXedDoom_MapHashesChecker play
 		
 		/*																  ////
 		
+		//////////////				Ultimate Doom				//////////////
+								The Shores of Hell
+		////																*/
+		
+		if(level.GetChecksum() == '65455AC523799F8DCE19F3D1968776A2') // - Ultimate Doom E2M1: Deimos Anomaly
+		{
+			UltimateDoomColoredLightsValues.UltimateDoomE2M1ColoredLights();
+		}
+		
+		if(level.GetChecksum() == 'A24FE135D5B6FD427FE27BEF89717A65') // - Ultimate Doom E2M2: Deimos Anomaly
+		{
+			UltimateDoomColoredLightsValues.UltimateDoomE2M2ColoredLights();
+		}
+		
+		if(level.GetChecksum() == '918436B3C2D0AD4F2C108183414B4612') // - Ultimate Doom E2M3: Refinery
+		{
+			UltimateDoomColoredLightsValues.UltimateDoomE2M3ColoredLights();
+		}
+		
+		if(level.GetChecksum() == '1BC04D646B32D3A3E411DAF3C1A38FF8') // - Ultimate Doom E2M4: Deimos Lab
+		{
+			UltimateDoomColoredLightsValues.UltimateDoomE2M4ColoredLights();
+		}
+		
+		if(level.GetChecksum() == '99C580AD8FABE923CAB485CB7F3C5E5D') // - Ultimate Doom E2M5: Command Center
+		{
+			
+		}
+		
+		if(level.GetChecksum() == '3838AB29292587A7EE3CA71E7040868D') // - Ultimate Doom E2M6: Halls of the Damned
+		{
+			
+		}
+		
+		if(level.GetChecksum() == '8590F489879870C098CD7029C3187159') // - Ultimate Doom E2M7: Spawning Vats
+		{
+			
+		}
+		
+		if(level.GetChecksum() == 'EFFE91DF41AD41F6973C06F0AD67DDB9') // - Ultimate Doom E2M8: Tower of Babel
+		{
+			
+		}
+		
+		if(level.GetChecksum() == '8A6399FAAA2E68649D4E4B16642074BE') // - Ultimate Doom E2M9: Fortress of Mystery
+		{
+			
+		}
+		
+		/*																  ////
+		
 		//////////////			Sigil by John Romero			//////////////
 								
 		////																*/
