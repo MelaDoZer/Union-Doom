@@ -81,28 +81,34 @@ class PSXedDoom_MapHashesChecker play
 		
 		if(level.GetChecksum() == '99C580AD8FABE923CAB485CB7F3C5E5D') // - Ultimate Doom E2M5: Command Center
 		{
-			
+			UltimateDoomColoredLightsValues.UltimateDoomE2M5ColoredLights();
 		}
 		
 		if(level.GetChecksum() == '3838AB29292587A7EE3CA71E7040868D') // - Ultimate Doom E2M6: Halls of the Damned
 		{
-			
+			UltimateDoomColoredLightsValues.UltimateDoomE2M6ColoredLights();
 		}
 		
 		if(level.GetChecksum() == '8590F489879870C098CD7029C3187159') // - Ultimate Doom E2M7: Spawning Vats
 		{
-			
+			UltimateDoomColoredLightsValues.UltimateDoomE2M7ColoredLights();
 		}
 		
 		if(level.GetChecksum() == 'EFFE91DF41AD41F6973C06F0AD67DDB9') // - Ultimate Doom E2M8: Tower of Babel
 		{
-			
+			//No such map in PS1 Doom
 		}
 		
 		if(level.GetChecksum() == '8A6399FAAA2E68649D4E4B16642074BE') // - Ultimate Doom E2M9: Fortress of Mystery
 		{
-			
+			//Only colored doors, no way to implement right now
 		}
+		
+		/*																  ////
+		
+		//////////////				Ultimate Doom				//////////////
+										Inferno
+		////																*/
 		
 		/*																  ////
 		
