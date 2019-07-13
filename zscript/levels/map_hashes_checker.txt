@@ -94,9 +94,9 @@ class PSXedDoom_MapHashesChecker play
 			UltimateDoomColoredLightsValues.UltimateDoomE2M7ColoredLights();
 		}
 		
-		if(level.GetChecksum() == 'EFFE91DF41AD41F6973C06F0AD67DDB9') // - Ultimate Doom E2M8: Tower of Babel
+		if(level.GetChecksum() == 'EFFE91DF41AD41F6973C06F0AD67DDB9') // - Ultimate Doom E2M8: Tower of Babel (it's map23 (e3m8) in PS1)
 		{
-			//No such map in PS1 Doom
+			UltimateDoomColoredLightsValues.UltimateDoomE2M8ColoredLights();
 		}
 		
 		if(level.GetChecksum() == '8A6399FAAA2E68649D4E4B16642074BE') // - Ultimate Doom E2M9: Fortress of Mystery
