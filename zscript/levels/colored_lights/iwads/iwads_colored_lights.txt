@@ -1,2 +1,0 @@
-/* Ultimate Doom 1.9 */
-#include "zscript/levels/colored_lights/iwads/ultimate_doom/ultimate_doom_colored_light.txt"

@@ -1,9 +1,0 @@
-class PSXed_Colors play
-{
-	uint8 psxed_green1;
-	
-	void PSXed_ColorsDefine()
-	{
-	Color psxed_green1 = Color(255, 128, 180, 80);
-	}
-}
