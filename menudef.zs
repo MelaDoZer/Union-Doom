@@ -1,16 +1,16 @@
 AddOptionMenu "OptionsMenu"
 {
 	StaticText " "
-	Submenu "PSXed Doom","PSXed Doom"
+	Submenu "Union Doom","Union Doom"
 }
 
-OptionMenu "PSXed Doom"
+OptionMenu "Union Doom"
 {
-	Title "PSXed Doom Settings"
-	Submenu "Levels Options","PSXed Doom: Levels Options"
-	Submenu "Spawn Options","PSXed Doom: Spawn Options"
-	Submenu "Monster Options","PSXed Doom: Monster Options"
-	Submenu "Items Options","PSXed Doom: Items Options"
+	Title "Union Doom Settings"
+	Submenu "Levels Options","Union Doom: Levels Options"
+	Submenu "Spawn Options","Union Doom: Spawn Options"
+	Submenu "Monster Options","Union Doom: Monster Options"
+	Submenu "Items Options","Union Doom: Items Options"
 	Submenu "Weapon Options","Union Doom: Weapon Options"
 	StaticText " "
 	Submenu "Union Doom: Credits","Union Doom: Credits"
@@ -22,16 +22,24 @@ OptionValue "HUD_OPTION_psxed_colored_lighting"
 	1, "Yes"
 }
 
-OptionMenu "PSXed Doom: Levels Options"
+OptionValue "HUD_OPTION_No-PC_Yes-PSX"
 {
-	Title "PSXed Doom: Levels Options"
-	StaticText " "
-	option "PSX Doom Colored Lighting", "psxed_colored_lighting", "HUD_OPTION_psxed_colored_lighting"
+	0, "No (PC)"
+	1, "Yes (PSX)"
 }
 
-OptionMenu "PSXed Doom: Spawn Options"
+OptionMenu "Union Doom: Levels Options"
 {
-	Title "PSXed Doom: Spawn Options"
+	Title "Union Doom: Levels Options"
+	StaticText " "
+	option "PSX Doom Colored Lighting", "psxed_colored_lighting", "HUD_OPTION_psxed_colored_lighting"
+	StaticText " "
+	option "PSX Doom Sounds Reverb", "union_reverb", "HUD_OPTION_No-PC_Yes-PSX"
+}
+
+OptionMenu "Union Doom: Spawn Options"
+{
+	Title "Union Doom: Spawn Options"
 	StaticText " "
 	StaticText "Changes made to these options requires the level to", 1
 	StaticText "be restarted or they will take effect on next level.", 1
@@ -54,12 +62,6 @@ OptionValue "HUD_OPTION_psxed_demon_damage"
 {
 	0, "PC Doom (4-40)"
 	1, "PSX Doom (4-32)"
-}
-
-OptionValue "HUD_OPTION_psxed_demon_infighting"
-{
-	0, "No (PC)"
-	1, "Yes (PSX)"
 }
 
 OptionValue "HUD_OPTION_psxed_cacodemon_speed"
@@ -86,15 +88,9 @@ OptionValue "HUD_OPTION_psxed_revenant_tracer_speed"
 	1, "PSX Doom (Max. 5)"
 }
 
-OptionValue "HUD_OPTION_psxed_bruiser_infighting"
+OptionMenu "Union Doom: Monster Options"
 {
-	0, "No (PC)"
-	1, "Yes (PSX)"
-}
-
-OptionMenu "PSXed Doom: Monster Options"
-{
-	Title "PSXed Doom: Monster Options"
+	Title "Union Doom: Monster Options"
 	StaticText " "
 	StaticText "Changes made to these options requires the level to", 1
 	StaticText "be restarted or they will take effect on next level.", 1
@@ -106,7 +102,7 @@ OptionMenu "PSXed Doom: Monster Options"
 	StaticText "Demon / Spectre / Nightmare Spectre", 1
 	Option "Damage", "psxed_demon_damage", "HUD_OPTION_psxed_demon_damage"
 	StaticText " "
-	Option "Allow infighting", "psxed_demon_infighting", "HUD_OPTION_psxed_demon_infighting"
+	Option "Allow infighting", "psxed_demon_infighting", "HUD_OPTION_No-PC_Yes-PSX"
 	StaticText " "
 	StaticText " "
 	StaticText "Cacodemon", 1
@@ -124,7 +120,7 @@ OptionMenu "PSXed Doom: Monster Options"
 	StaticText " "
 	StaticText " "
 	StaticText "Baron of Hell / Hell Knight ", 1
-	Option "Allow infighting", "psxed_bruiser_infighting", "HUD_OPTION_psxed_bruiser_infighting"
+	Option "Allow infighting", "psxed_bruiser_infighting", "HUD_OPTION_No-PC_Yes-PSX"
 }
 
 OptionValue "HUD_OPTION_armorbonus"
@@ -139,9 +135,9 @@ OptionValue "HUD_OPTION_healthbonus"
 	1, "PSX Doom (2)"
 }
 
-OptionMenu "PSXed Doom: Items Options"
+OptionMenu "Union Doom: Items Options"
 {
-	Title "PSXed Doom: Items Options"
+	Title "Union Doom: Items Options"
 	StaticText " "
 	StaticText "Changes made to these options requires the level to", 1
 	StaticText "be restarted or they will take effect on next level.", 1
@@ -157,7 +153,7 @@ OptionMenu "PSXed Doom: Items Options"
 OptionValue "HUD_OPTION_union_pitched"
 {
 	0, "Off"
-	1, "Yes - Doom 64 alike"
+	1, "On - Doom 64 alike"
 }
 
 OptionMenu "Union Doom: Weapon Options"
