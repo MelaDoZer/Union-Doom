@@ -1,4 +1,4 @@
-class UnionDoom_Events : StaticEventHandler
+class UnionDoom_Events : EventHandler
 {
 	//Colored Lights 
 	int old_union_colored_lighting;
@@ -65,10 +65,6 @@ class UnionDoom_Events : StaticEventHandler
 		if((union_psx_monster_placement)&&(!e.IsSaveGame)&&(!e.IsReopen))
 		{
 			PSXedDoom_MapHashesChecker_Monsters.PSXedDoom_CheckMapHashes_Monsters();
-		}
-		else
-		{
-			return;
 		}
 	}
 	
