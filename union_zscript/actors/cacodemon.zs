@@ -11,7 +11,7 @@ class PSXedCacodemon : Cacodemon Replaces Cacodemon
 
 	override void PostBeginPlay()
 	{
-		CVar psxed_speed = Cvar.FindCVar('psxed_cacodemon_speed');
+		CVar psxed_speed = Cvar.FindCVar('union_cacodemon_speed');
 		if (psxed_speed)
 		{
 			switch(psxed_speed.GetInt())

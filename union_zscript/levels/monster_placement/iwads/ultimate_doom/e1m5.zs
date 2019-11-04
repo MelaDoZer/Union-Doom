@@ -1,6 +1,6 @@
-extend class UltimateDoomMonsters
+class IWADsMonsters_UltimateDoom_E1M5 : LevelCompatibility
 {
-	static void UltimateDoomE1M5Monsters() // 66D8E54B173041F981A11CCE766C4215 - Ultimate Doom E1M5: Phobos Lab
+	static void PlaceMonsters() // 66D8E54B173041F981A11CCE766C4215 - Ultimate Doom E1M5: Phobos Lab
     {
 		int skill_level = G_SkillPropertyInt(SKILLP_ACSReturn);
 		
@@ -69,7 +69,7 @@ extend class UltimateDoomMonsters
 		}
 	}
 	
-	void E1M5_Apply(Name checksum, String mapname)
+	protected void Apply(Name checksum, String mapname)
     {
 	if ((psxed_nightmare_spectres_placement) && ('66D8E54B173041F981A11CCE766C4215' == checksum)) // - Ultimate Doom E1M5: Phobos Lab
 		{

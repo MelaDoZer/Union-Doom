@@ -8,7 +8,7 @@ class PSXedHealthBonus : HealthBonus Replaces HealthBonus
 
 	override void PostBeginPlay()
 	{
-		CVar psxed_health = Cvar.FindCVar('psxed_healthbonus');
+		CVar psxed_health = Cvar.FindCVar('union_healthbonus');
 		if (psxed_health)
 		{
 			switch(psxed_health.GetInt())

@@ -8,6 +8,7 @@ class UnionShotgun : DoomWeapon Replaces Shotgun
 {
 	Default
 	{
+		Weapon.SlotNumber 3;
 		Weapon.SelectionOrder 1300;
 		Weapon.AmmoUse 1;
 		Weapon.AmmoGive 8;

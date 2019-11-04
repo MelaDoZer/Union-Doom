@@ -12,7 +12,7 @@ class NightmareSpectre : Spectre
 
 	override void PostBeginPlay()
 	{
-		CVar psxed_species = Cvar.FindCVar('psxed_demon_infighting');
+		CVar psxed_species = Cvar.FindCVar('union_demon_infighting');
 		if (psxed_species)
 		{
 			switch(psxed_species.GetInt())

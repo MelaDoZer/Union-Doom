@@ -10,32 +10,32 @@ class UnionDoom_MapHashesChecker_Reverbs play
 																			
 		if((level.GetChecksum() == 'B49F7A6C519757D390D52667DB7D8793')&&(union_reverb)) // - Ultimate Doom E1M1: Hangar
 		{
-			IWADs_Reverbs.UltimateDoomE1M1Reverbs();
+			IWADsReverbs_UltimateDoom_E1M1.PlaceReverb();
 		}
 		
 		if((level.GetChecksum() == 'B49F7A6C519757D390D52667DB7D8793')&&(!union_reverb)) // - Ultimate Doom E1M1: Hangar
 		{
-			IWADs_Reverbs.UltimateDoomE1M1Reverbs_Remove();
+			IWADsReverbs_UltimateDoom_E1M1.RemoveReverb();
 		}
 			
 		if((level.GetChecksum() == '81A4CC5136CBFA49345654190A626C09')&&(union_reverb)) // - Ultimate Doom E1M2: Nuclear Plant
 		{
-			IWADs_Reverbs.UltimateDoomE1M2Reverbs();
+			IWADsReverbs_UltimateDoom_E1M2.PlaceReverb();
 		}
 		
 		if((level.GetChecksum() == '81A4CC5136CBFA49345654190A626C09')&&(!union_reverb)) // - Ultimate Doom E1M2: Nuclear Plant
 		{
-			IWADs_Reverbs.UltimateDoomE1M2Reverbs_Remove();
+			IWADsReverbs_UltimateDoom_E1M2.RemoveReverb();
 		}
 			
 		if((level.GetChecksum() == 'C7FF2282BC606FFB28DDCB90357094E6')&&(union_reverb)) // - Ultimate Doom E1M3: Toxin Refinery
 		{
-			IWADs_Reverbs.UltimateDoomE1M3Reverbs(); // 
+			IWADsReverbs_UltimateDoom_E1M3.PlaceReverb(); // 
 		}
 		
 		if((level.GetChecksum() == 'C7FF2282BC606FFB28DDCB90357094E6')&&(!union_reverb)) // - Ultimate Doom E1M3: Toxin Refinery
 		{
-			IWADs_Reverbs.UltimateDoomE1M3Reverbs_Remove();
+			IWADsReverbs_UltimateDoom_E1M3.RemoveReverb();
 		}
 		
 		/*if(level.GetChecksum() == '5B26545FF21B051CA06D389CE535684C') // - Ultimate Doom E1M4: Command Control

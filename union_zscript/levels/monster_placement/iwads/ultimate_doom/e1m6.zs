@@ -1,6 +1,6 @@
-extend class UltimateDoomMonsters
+class IWADsMonsters_UltimateDoom_E1M6 : LevelCompatibility
 {
-	static void UltimateDoomE1M6Monsters() // 5FAA25F5A6AAB3409CAE0AF87F910341 - Ultimate Doom E1M6: Central Processing
+	static void PlaceMonsters() // 5FAA25F5A6AAB3409CAE0AF87F910341 - Ultimate Doom E1M6: Central Processing
     {
 		int skill_level = G_SkillPropertyInt(SKILLP_ACSReturn);
 		
@@ -92,7 +92,7 @@ extend class UltimateDoomMonsters
 		}	
 	}
 	
-	void E1M6_Apply(Name checksum, String mapname)
+	protected void Apply(Name checksum, String mapname)
     {
 	if ((psxed_nightmare_spectres_placement) && ('5FAA25F5A6AAB3409CAE0AF87F910341' == checksum)) // - Ultimate Doom E1M6: Central Processing
 		{

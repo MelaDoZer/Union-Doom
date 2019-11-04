@@ -10,47 +10,47 @@ class PSXedDoom_MapHashesChecker_Monsters play
 																			
 		if(level.GetChecksum() == 'B49F7A6C519757D390D52667DB7D8793') // - Ultimate Doom E1M1: Hangar
 		{
-			UltimateDoomMonsters.UltimateDoomE1M1Monsters();
+			IWADsMonsters_UltimateDoom_E1M1.PlaceMonsters();
 		}
 			
 		if(level.GetChecksum() == '81A4CC5136CBFA49345654190A626C09') // - Ultimate Doom E1M2: Nuclear Plant
 		{
-			UltimateDoomMonsters.UltimateDoomE1M2Monsters();
+			IWADsMonsters_UltimateDoom_E1M2.PlaceMonsters();
 		}
 			
 		if(level.GetChecksum() == 'C7FF2282BC606FFB28DDCB90357094E6') // - Ultimate Doom E1M3: Toxin Refinery
 		{
-			UltimateDoomMonsters.UltimateDoomE1M3Monsters();
+			IWADsMonsters_UltimateDoom_E1M3.PlaceMonsters();
 		}
 		
 		if(level.GetChecksum() == '5B26545FF21B051CA06D389CE535684C') // - Ultimate Doom E1M4: Command Control
 		{
-			UltimateDoomMonsters.UltimateDoomE1M4Monsters();
+			IWADsMonsters_UltimateDoom_E1M4.PlaceMonsters();
 		}
 		
 		if(level.GetChecksum() == '66D8E54B173041F981A11CCE766C4215') // - Ultimate Doom E1M5: Phobos Lab
 		{
-			UltimateDoomMonsters.UltimateDoomE1M5Monsters(); // 
+			IWADsMonsters_UltimateDoom_E1M5.PlaceMonsters(); // 
 		}
 		
 		if(level.GetChecksum() == '5FAA25F5A6AAB3409CAE0AF87F910341') // - Ultimate Doom E1M6: Central Processing
 		{
-			UltimateDoomMonsters.UltimateDoomE1M6Monsters();
+			IWADsMonsters_UltimateDoom_E1M6.PlaceMonsters();
 		}
 		
 		if(level.GetChecksum() == '9007F68E7F351A5758198933336F6B9F') // - Ultimate Doom E1M7: Computer Station
 		{
-			UltimateDoomMonsters.UltimateDoomE1M7Monsters();
+			IWADsMonsters_UltimateDoom_E1M7.PlaceMonsters();
 		}
 		
 		if(level.GetChecksum() == '058FB092EA1B70DA1E3CBF501C4A91A1') // - Ultimate Doom E1M8: Phobos Anomaly
 		{
-			UltimateDoomMonsters.UltimateDoomE1M8Monsters();
+			IWADsMonsters_UltimateDoom_E1M8.PlaceMonsters();
 		}
 		
 		if(level.GetChecksum() == '1DBF91738492FB0E29836A2D66406CF1') // - Ultimate Doom E1M9: Military Base
 		{
-			UltimateDoomMonsters.UltimateDoomE1M9Monsters();
+			IWADsMonsters_UltimateDoom_E1M9.PlaceMonsters();
 		}
 
 		
@@ -60,7 +60,7 @@ class PSXedDoom_MapHashesChecker_Monsters play
 		//////////////				Ultimate Doom				//////////////
 								The Shores of Hell
 		////																*/
-		
+		/*
 		if(level.GetChecksum() == '65455AC523799F8DCE19F3D1968776A2') // - Ultimate Doom E2M1: Deimos Anomaly
 		{
 			IWADs_ColoredLightsValues.UltimateDoomE2M1ColoredLights();
@@ -117,10 +117,11 @@ class PSXedDoom_MapHashesChecker_Monsters play
 		//////////////			Sigil by John Romero			//////////////
 								
 		////																*/
-		
+		/*
 		if(level.GetChecksum() == 'C9E4A1B09187A7C2B6AFDE0E63C3C173') // - Sigil E5M1: Baphomet's Demesne
 		{
 			PWADs_ColoredLightsValues.SigilE5M1ColoredLights();
 		}
+		*/
 	}
 }

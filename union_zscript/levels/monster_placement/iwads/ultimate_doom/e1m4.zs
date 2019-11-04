@@ -1,6 +1,6 @@
-extend class UltimateDoomMonsters
+class IWADsMonsters_UltimateDoom_E1M4 : LevelCompatibility
 {
-	static void UltimateDoomE1M4Monsters() // 5B26545FF21B051CA06D389CE535684C - Ultimate Doom E1M4: Command Control
+	static void PlaceMonsters() // 5B26545FF21B051CA06D389CE535684C - Ultimate Doom E1M4: Command Control
     {
 		int skill_level = G_SkillPropertyInt(SKILLP_ACSReturn);
 		
@@ -33,7 +33,7 @@ extend class UltimateDoomMonsters
 		}
 	}
 	
-	override void Apply()
+	protected void Apply(Name checksum, String mapname)
     {
 	if ((psxed_nightmare_imps_placement) && ('5B26545FF21B051CA06D389CE535684C' == checksum)) // - Ultimate Doom E1M4: Command Control
 		{

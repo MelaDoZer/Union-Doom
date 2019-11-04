@@ -8,7 +8,7 @@ class PSXedArmorBonus : ArmorBonus Replaces ArmorBonus
 
 	override void PostBeginPlay()
 	{
-		CVar psxed_armor = Cvar.FindCVar('psxed_armorbonus');
+		CVar psxed_armor = Cvar.FindCVar('union_armorbonus');
 		if (psxed_armor)
 		{
 			switch(psxed_armor.GetInt())

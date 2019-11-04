@@ -1,6 +1,6 @@
-extend class UltimateDoomMonsters
+class IWADsMonsters_UltimateDoom_E1M7 : LevelCompatibility
 {
-	static void UltimateDoomE1M7Monsters() // 9007F68E7F351A5758198933336F6B9F - Ultimate Doom E1M7: Computer Station
+	static void PlaceMonsters() // 9007F68E7F351A5758198933336F6B9F - Ultimate Doom E1M7: Computer Station
     {
 		int skill_level = G_SkillPropertyInt(SKILLP_ACSReturn);
 		
@@ -81,7 +81,7 @@ extend class UltimateDoomMonsters
 		}
 	}
 	
-	void E1M7_Apply(Name checksum, String mapname)
+	protected void Apply(Name checksum, String mapname)
     {
 	if ((psxed_nightmare_imps_placement) && ('9007F68E7F351A5758198933336F6B9F' == checksum)) // - Ultimate Doom E1M7: Computer Station
 		{

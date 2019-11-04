@@ -1,6 +1,6 @@
-extend class UltimateDoomMonsters
+class IWADsMonsters_UltimateDoom_E1M9 : LevelCompatibility
 {
-	static void UltimateDoomE1M9Monsters() // 1DBF91738492FB0E29836A2D66406CF1 - Ultimate Doom E1M9: Military Base
+	static void PlaceMonsters() // 1DBF91738492FB0E29836A2D66406CF1 - Ultimate Doom E1M9: Military Base
     {
 		int skill_level = G_SkillPropertyInt(SKILLP_ACSReturn);
 		
@@ -66,7 +66,7 @@ extend class UltimateDoomMonsters
 		}
 	}
 	
-	void E1M9_Apply(Name checksum, String mapname)
+	protected void Apply(Name checksum, String mapname)
     {
 	if ((psxed_monster_placement) && ('1DBF91738492FB0E29836A2D66406CF1' == checksum)) // - Ultimate Doom E1M9: Military Base
 		{

@@ -40,7 +40,7 @@ extend class PSXedZombieMan
 
 			int damage;
 
-			CVar attack_damage = Cvar.FindCVar("psxed_zombieman_damage");
+			CVar attack_damage = Cvar.FindCVar("union_zombieman_damage");
 			if (attack_damage)
 			{
 				switch(attack_damage.GetInt())

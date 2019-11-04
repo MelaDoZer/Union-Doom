@@ -1,8 +1,6 @@
 GameInfo
 {
-	AddEventHandlers = "UnionDoom_ColoredLights"
-	AddEventHandlers = "PSXedDoom_Monsters"
-	AddEventHandlers = "UnionDoom_Reverbs" 
+	AddEventHandlers = "UnionDoom_Events"
 }
 
 DoomEdNums

@@ -11,7 +11,7 @@ class PSXedDemon : Demon replaces Demon
 
 	override void PostBeginPlay()
 	{
-		CVar psxed_species = Cvar.FindCVar('psxed_demon_infighting');
+		CVar psxed_species = Cvar.FindCVar('union_demon_infighting');
 		if (psxed_species)
 		{
 			switch(psxed_species.GetInt())
@@ -50,7 +50,7 @@ extend class PSXedDemon
 		{
 			int damage;
 
-			CVar attack_damage = Cvar.FindCVar("psxed_demon_damage");
+			CVar attack_damage = Cvar.FindCVar("union_demon_damage");
 			if (attack_damage)
 			{
 				switch(attack_damage.GetInt())

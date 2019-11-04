@@ -1,6 +1,6 @@
-extend class UltimateDoomMonsters
+class IWADsMonsters_UltimateDoom_E1M3 : LevelCompatibility
 {
-	static void UltimateDoomE1M3Monsters() // C7FF2282BC606FFB28DDCB90357094E6 - Ultimate Doom E1M3: Toxin Refinery
+	static void PlaceMonsters() // C7FF2282BC606FFB28DDCB90357094E6 - Ultimate Doom E1M3: Toxin Refinery
     {
 		int skill_level = G_SkillPropertyInt(SKILLP_ACSReturn);
 		
@@ -21,5 +21,10 @@ extend class UltimateDoomMonsters
 			ChaingunGuy3.Angle = 270.0;
 			ChaingunGuy3.bAmbush = True;
 		}
+	}
+	
+	protected void Apply(Name checksum, String mapname)
+    {
+	
 	}
 }

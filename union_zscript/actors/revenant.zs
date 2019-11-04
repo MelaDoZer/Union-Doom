@@ -11,7 +11,7 @@ class PSXedRevenant : Revenant Replaces Revenant
 
 	override void PostBeginPlay()
 	{
-		CVar psxed_speed = Cvar.FindCVar('psxed_revenant_speed');
+		CVar psxed_speed = Cvar.FindCVar('union_revenant_speed');
 		if (psxed_speed)
 		{
 			switch(psxed_speed.GetInt())
@@ -38,7 +38,7 @@ class PSXedRevenantTracer : RevenantTracer Replaces RevenantTracer
 
 	override void PostBeginPlay()
 	{
-		CVar psxed_speed = Cvar.FindCVar('psxed_revenant_tracer_speed');
+		CVar psxed_speed = Cvar.FindCVar('union_revenant_tracer_speed');
 		if (psxed_speed)
 		{
 			switch(psxed_speed.GetInt())

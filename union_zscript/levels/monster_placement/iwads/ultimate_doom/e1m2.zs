@@ -1,6 +1,6 @@
-extend class UltimateDoomMonsters
+class IWADsMonsters_UltimateDoom_E1M2 : LevelCompatibility
 {
-	static void UltimateDoomE1M2Monsters() // 81A4CC5136CBFA49345654190A626C09 - Ultimate Doom E1M2: Nuclear Plant
+	static void PlaceMonsters() // 81A4CC5136CBFA49345654190A626C09 - Ultimate Doom E1M2: Nuclear Plant
     {
 		int skill_level = G_SkillPropertyInt(SKILLP_ACSReturn);
 		
@@ -39,5 +39,10 @@ extend class UltimateDoomMonsters
 			Demon2.Angle = 180.0;
 			Demon2.bAmbush = True;
 		}
+	}
+	
+	protected void Apply(Name checksum, String mapname)
+    {
+	
 	}
 }

@@ -12,7 +12,7 @@ class PSXedBaronOfHell : BaronOfHell Replaces BaronOfHell
 
 	override void PostBeginPlay()
 	{
-		CVar psxed_species = Cvar.FindCVar('psxed_bruiser_infighting');
+		CVar psxed_species = Cvar.FindCVar('union_bruiser_infighting');
 		if (psxed_species)
 			{
 				switch(psxed_species.GetInt())
@@ -42,7 +42,7 @@ class PSXedHellKnight : HellKnight Replaces HellKnight
 
 	override void PostBeginPlay()
 	{
-		CVar psxed_species = Cvar.FindCVar('psxed_bruiser_infighting');
+		CVar psxed_species = Cvar.FindCVar('union_bruiser_infighting');
 		if (psxed_species)
 		{
 			switch(psxed_species.GetInt())

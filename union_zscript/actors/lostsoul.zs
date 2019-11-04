@@ -11,7 +11,7 @@ class PSXedLostSoul : LostSoul Replaces LostSoul
 
 	override void PostBeginPlay()
 	{
-		CVar psxed_health = Cvar.FindCVar('psxed_lostsoul_health');
+		CVar psxed_health = Cvar.FindCVar('union_lostsoul_health');
 		if (psxed_health)
 		{
 			switch(psxed_health.GetInt())

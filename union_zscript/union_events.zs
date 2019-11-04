@@ -1,15 +1,24 @@
-class UnionDoom_ColoredLights : EventHandler
+class UnionDoom_Events : StaticEventHandler
 {
-	int old_psxed_colored_lighting;
-	bool changed;
+	//Colored Lights 
+	int old_union_colored_lighting;
+	bool colored_lighting_changed;
 	
+	//Monsters
+	bool isSaveGame;
+	
+	//Reverbs
+	actor GlobalReverb;
+	int old_union_reverb;
+	bool reverb_changed;
+
 	void ChangeColoredLighting() 
 	{
-		bool changed = (old_psxed_colored_lighting != psxed_colored_lighting);
+		bool colored_lighting_changed = (old_union_colored_lighting != union_colored_lighting);
 		
-		if(changed)
+		if(colored_lighting_changed)
 		{
-			switch(psxed_colored_lighting)
+			switch(union_colored_lighting)
 			{
 				case 0:
 				for(int i = 0; i < Level.Sectors.Size(); i++)
@@ -25,57 +34,14 @@ class UnionDoom_ColoredLights : EventHandler
 				break;
 			}
 		}
-		old_psxed_colored_lighting = psxed_colored_lighting;
+		old_union_colored_lighting = union_colored_lighting;
 	}
-	
-	override void WorldLoaded(WorldEvent e)
-	{
-		ChangeColoredLighting();
-	}
-	
-	override void UiTick() 
-	{
-		EventHandler.SendNetworkEvent("UpdateColoredLights");
-	}
-	
-	override void NetworkProcess(ConsoleEvent e)
-	{
-		if(e.Name == "UpdateColoredLights") ChangeColoredLighting();
-	}
-}
-
-
-
-class PSXedDoom_Monsters : StaticEventHandler
-{
-	bool isSaveGame;
-	
-	override void WorldLoaded(WorldEvent e)
-	{
-		if((psxed_monster_placement)&&(!e.IsSaveGame)&&(!e.IsReopen))
-		{
-			PSXedDoom_MapHashesChecker_Monsters.PSXedDoom_CheckMapHashes_Monsters();
-		}
-		else
-		{
-			return;
-		}
-	}
-}
-
-
-
-class UnionDoom_Reverbs : EventHandler
-{
-	actor GlobalReverb;
-	int old_union_reverb;
-	bool changed;
 	
 	void ChangeReverbs() 
 	{
-		bool changed = (old_union_reverb != union_reverb);
+		bool reverb_changed = (old_union_reverb != union_reverb);
 		
-		if(changed)
+		if(reverb_changed)
 		{
 		switch(union_reverb)
 			{
@@ -93,16 +59,28 @@ class UnionDoom_Reverbs : EventHandler
 	
 	override void WorldLoaded(WorldEvent e)
 	{
+		ChangeColoredLighting();
 		ChangeReverbs();
+		
+		if((union_psx_monster_placement)&&(!e.IsSaveGame)&&(!e.IsReopen))
+		{
+			PSXedDoom_MapHashesChecker_Monsters.PSXedDoom_CheckMapHashes_Monsters();
+		}
+		else
+		{
+			return;
+		}
 	}
 	
 	override void UiTick() 
 	{
+		EventHandler.SendNetworkEvent("UpdateColoredLights");
 		EventHandler.SendNetworkEvent("UpdateReverbs");
 	}
 	
 	override void NetworkProcess(ConsoleEvent e)
 	{
+		if(e.Name == "UpdateColoredLights") ChangeColoredLighting();
 		if(e.Name == "UpdateReverbs") ChangeReverbs();
 	}
 }

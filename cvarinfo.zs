@@ -5,7 +5,7 @@
 /* PSXed Colored Lighting - responsible for scripted apply of colored lighting.
 Disable - 0 / Enable - 1 */
 
-server int psxed_colored_lighting = 1;
+server int union_colored_lighting = 1;
 
 /* PSX-like Reverbs - responsible for scripted apply of reverbs.
 Disable - 0 / Enable - 1 */
@@ -17,9 +17,9 @@ psxed_monster_placement - spawns of non-custom monsters, like Doom 2 monsters at
 psxed_nightmare_spectres_placement - spawns of non-custom monster from PS1 version of game, nightmarish version of spectre
 psxed_nightmare_imps_placement - spawns of custom implementation of Nightmare Imp monsters, that was deleted from released PS1 version of game*/
 
-server bool psxed_monster_placement = true;
-server bool psxed_nightmare_spectres_placement = true;
-server bool psxed_nightmare_imps_placement = false;
+server bool union_psx_monster_placement = true;
+server bool union_psx_nightmare_spectres_placement = true;
+server bool union_nightmare_imps_placement = false;
 
 
 
@@ -29,7 +29,7 @@ server bool psxed_nightmare_imps_placement = false;
 Disable - 0 (like PC version of Doom 2) 
 Enable - 1 (like PS1 version of Doom) */
 
-server int psxed_bruiser_infighting = 0;
+server int union_bruiser_infighting = 0;
 
 
 
@@ -37,7 +37,7 @@ server int psxed_bruiser_infighting = 0;
 0 - 8 (like PC version of Doom) 
 1 - 16 (Custom speed guess, like GBA version of Doom) */
 
-server int psxed_cacodemon_speed = 0;
+server int union_cacodemon_speed = 0;
 
 
 
@@ -45,7 +45,7 @@ server int psxed_cacodemon_speed = 0;
 0 - 4-40 (like PC version of Doom) 
 1 - 4-32 (like PS1 version of Doom) */
 
-server int psxed_demon_damage  = 0;
+server int union_demon_damage  = 0;
 
 
 
@@ -53,7 +53,7 @@ server int psxed_demon_damage  = 0;
 Disable - 0 (like PC version of Doom 2) 
 Enable - 1 (like PS1 version of Doom) */
 
-server int psxed_demon_infighting = 0;
+server int union_demon_infighting = 0;
 
 
 
@@ -61,7 +61,7 @@ server int psxed_demon_infighting = 0;
 0 - 100 (like PC version of Doom 2) 
 1 - 60 (like PS1 version of Doom) */
 
-server int psxed_lostsoul_health = 0;
+server int union_lostsoul_health = 0;
 
 
 
@@ -70,7 +70,7 @@ server int psxed_lostsoul_health = 0;
 1 - 3-21 (like Doom 64) 
 2 - 3-24 (like PS1 version of Doom) */
 
-server int psxed_zombieman_damage = 2;
+server int union_zombieman_damage = 2;
 
 
 
@@ -78,7 +78,7 @@ server int psxed_zombieman_damage = 2;
 0 - 10 (like PC version of Doom 2)
 1 - 5 (like PS1 version of Doom) */
 
-server int psxed_revenant_speed = 0;
+server int union_revenant_speed = 0;
 
 
 
@@ -86,7 +86,7 @@ server int psxed_revenant_speed = 0;
 0 - 10 (like PC version of Doom 2)
 1 - 5 (like PS1 version of Doom) */
 
-server int psxed_revenant_tracer_speed = 0;
+server int union_revenant_tracer_speed = 0;
 
 
 
@@ -95,7 +95,7 @@ server int psxed_revenant_tracer_speed = 0;
 0 - 1 (like PC version of Doom)
 1 - 2 (like PS1 version of Doom) */
 
-server int psxed_healthbonus = 0;
+server int union_healthbonus = 0;
 
 
 
@@ -103,7 +103,7 @@ server int psxed_healthbonus = 0;
 0 - 1 (like PC version of Doom)
 1 - 2 (like PS1 version of Doom) */
 
-server int psxed_armorbonus = 0;
+server int union_armorbonus = 0;
 
 
 /* union_shotgun_pitched - affects shotgun fire recoil

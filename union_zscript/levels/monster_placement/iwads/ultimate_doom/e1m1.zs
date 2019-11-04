@@ -1,6 +1,6 @@
-extend class UltimateDoomMonsters
+class IWADsMonsters_UltimateDoom_E1M1 : LevelCompatibility
 {
-	static void UltimateDoomE1M1Monsters() // B49F7A6C519757D390D52667DB7D8793 - Ultimate Doom E1M1: Hangar
+	static void PlaceMonsters() // B49F7A6C519757D390D52667DB7D8793 - Ultimate Doom E1M1: Hangar
     {
 		int skill_level = G_SkillPropertyInt(SKILLP_ACSReturn);
 		
@@ -23,7 +23,7 @@ extend class UltimateDoomMonsters
 		}
 	}
 	
-	override void Apply()
+	protected void Apply(Name checksum, String mapname)
     {
 	if ((psxed_monster_placement) && ('B49F7A6C519757D390D52667DB7D8793' == checksum)) // - Ultimate Doom E1M1: Hangar
 		{
