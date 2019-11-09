@@ -46,11 +46,11 @@ version "4.1"
 #include "union_zscript/actors/demon.zs"
 #include "union_zscript/actors/lostsoul.zs"
 #include "union_zscript/actors/possessed.zs"
-#include "union_zscript/actors/revenant.zs"
+//#include "union_zscript/actors/revenant.zs"
 
 //Items
-#include "union_zscript/items/health.zs"
-#include "union_zscript/items/armor.zs"
+//#include "union_zscript/items/health.zs"
+//#include "union_zscript/items/armor.zs"
 
 //Weapons
 #include "union_zscript/weapons/shotgun.zs"

@@ -6,8 +6,7 @@ class IWADsMonsters_UltimateDoom_E1M1 : LevelCompatibility
 		
 		if (skill_level >= 3)
 		{
-			actor Zombieman1;
-			Zombieman1 = Actor.Spawn("Zombieman", (1368.0,-2520.0,0), ALLOW_REPLACE);
+			actor Zombieman1 = Actor.Spawn("Zombieman", (1368.0,-2520.0,0), ALLOW_REPLACE);
 			Zombieman1.Angle = 225.0;
 			Zombieman1.bAmbush = True;
 			
@@ -25,7 +24,7 @@ class IWADsMonsters_UltimateDoom_E1M1 : LevelCompatibility
 	
 	protected void Apply(Name checksum, String mapname)
     {
-	if ((psxed_monster_placement) && ('B49F7A6C519757D390D52667DB7D8793' == checksum)) // - Ultimate Doom E1M1: Hangar
+	if ((union_psx_monster_placement) && ('B49F7A6C519757D390D52667DB7D8793' == checksum)) // - Ultimate Doom E1M1: Hangar
 		{
 			//Remove ShotgunGuy (UV only) to place ChaingunGuy
 			SetThingFlags(90, 0);
