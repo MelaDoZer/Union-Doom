@@ -8,19 +8,17 @@ extend class UnionDoom_Events
 	
 	void ApplySpeedToCacodemon(Actor thing)
 	{
-		if (union_old_cacodemon_speed != union_cacodemon_speed) 
+		switch(union_cacodemon_speed)
 		{
-			switch(union_cacodemon_speed)
-			{
-				case 0:
-				thing.Speed = 8;
-				break;
+			case 0:
+			thing.Speed = 8;
+			break;
 				
-				case 1:
-				thing.Speed = 16;
-				break;
-			}
+			case 1:
+			thing.Speed = 16;
+			break;
 		}
+
 		union_old_cacodemon_speed = union_cacodemon_speed;
 	}
 	

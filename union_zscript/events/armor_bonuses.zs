@@ -18,7 +18,7 @@ extend class UnionDoom_Events
 			thing.SaveAmount = 2;
 			break;
 		}
-		union_old_armorbonus != union_armorbonus;
+		union_old_armorbonus = union_armorbonus;
 	}
 
 	void ChangeArmorBonus()

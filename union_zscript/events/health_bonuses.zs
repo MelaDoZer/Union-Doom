@@ -18,7 +18,7 @@ extend class UnionDoom_Events
 			thing.Amount = 2;
 			break;
 		}
-		union_old_healthbonus != union_healthbonus;
+		union_old_healthbonus = union_healthbonus;
 	}
 	
 	void ChangeHealthBonus()
