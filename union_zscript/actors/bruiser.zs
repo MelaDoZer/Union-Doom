@@ -4,9 +4,9 @@
 //
 //===========================================================================
 
-class PSXedBaronOfHell : BaronOfHell Replaces BaronOfHell
+class UnionBaronOfHell : BaronOfHell
 {
-	int psxed_species_value;
+	/*int psxed_species_value;
 
 	property Species: psxed_species_value;
 
@@ -26,7 +26,7 @@ class PSXedBaronOfHell : BaronOfHell Replaces BaronOfHell
 		Default
 	{
 		BloodColor "0 78 0";
-	}
+	}*/
 }
 
 //===========================================================================
@@ -35,7 +35,7 @@ class PSXedBaronOfHell : BaronOfHell Replaces BaronOfHell
 //
 //===========================================================================
 
-class PSXedHellKnight : HellKnight Replaces HellKnight
+/*class PSXedHellKnight : HellKnight Replaces HellKnight
 {
 	int psxed_species_value;
 	property Species: psxed_species_value;
@@ -57,4 +57,4 @@ class PSXedHellKnight : HellKnight Replaces HellKnight
 	{
 		BloodColor "0 78 0";
 	}
-}
+}/*

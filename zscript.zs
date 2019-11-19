@@ -41,11 +41,11 @@ version "4.1"
 //Nightmare Imp
 #include "union_zscript/actors/nightmare_doomimp.zs"
 
-#include "union_zscript/actors/bruiser.zs"
-#include "union_zscript/actors/cacodemon.zs"
-#include "union_zscript/actors/demon.zs"
-#include "union_zscript/actors/lostsoul.zs"
-#include "union_zscript/actors/possessed.zs"
+//#include "union_zscript/actors/bruiser.zs"
+//#include "union_zscript/actors/cacodemon.zs"
+//#include "union_zscript/actors/demon.zs"
+//#include "union_zscript/actors/lostsoul.zs"
+//#include "union_zscript/actors/possessed.zs"
 //#include "union_zscript/actors/revenant.zs"
 
 //Items

@@ -116,4 +116,4 @@ server int union_shotgun_pitched = 1;
 0 - No Recoil
 1 - Doom 64 like*/
 
-server int union_chaingun_pitched = 1;
+server int union_chaingun_pitched = 0;

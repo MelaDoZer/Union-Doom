@@ -123,7 +123,7 @@ OptionMenu "Union Doom: Monster Options"
 	Option "Allow infighting", "union_bruiser_infighting", "HUD_OPTION_No-PC_Yes-PSX"
 }
 
-OptionValue "HUD_OPTION_union_bonus"
+OptionValue "HUD_OPTION_union_bonuses"
 {
 	0, "PC Doom (1)"
 	1, "PSX Doom (2)"
@@ -137,11 +137,11 @@ OptionMenu "Union Doom: Items Options"
 	StaticText "be restarted or they will take effect on next level.", 1
 	StaticText " "
 	StaticText "Armor Bonus", 1
-	Option "Armor Bonus Amount", "union_healthbonus", "HUD_OPTION_union_bonus"
+	Option "Armor Bonus Amount", "union_armorbonus", "HUD_OPTION_union_bonuses"
 	StaticText " "
 	StaticText " "
 	StaticText "Health Bonus", 1
-	Option "Health Bonus Amount", "union_healthbonus", "HUD_OPTION_union_bonus"
+	Option "Health Bonus Amount", "union_healthbonus", "HUD_OPTION_union_bonuses"
 }
 
 OptionValue "HUD_OPTION_union_pitched"
@@ -171,6 +171,7 @@ OptionMenu "Union Doom: Credits"
 	StaticText "Code", 1
 	StaticText "MelaDoZer"
 	StaticText "DragonRasp"
+	StaticText "KaMiKaZa"
 	StaticText " "
 	StaticText "Testing", 1
 	StaticText "Warrior"

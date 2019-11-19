@@ -54,22 +54,3 @@ extend class PSXedZombieMan
 		}
 	}
 }
-
-//===========================================================================
-//
-// Event for Damage Change
-//
-//===========================================================================
-/*
-extend class PSXedZombieMan
-{
-	int DamageMode;
-	int OldDamageMode;
-	
-	override void WorldLoaded(WorldEvent e)
-	{
-		switch(psxed_zombieman_damage)
-		{
-			case 0: level.GetChecksum
-		}
-	} */

@@ -10,13 +10,11 @@ class IWADsMonsters_UltimateDoom_E1M1 : LevelCompatibility
 			Zombieman1.Angle = 225.0;
 			Zombieman1.bAmbush = True;
 			
-			actor ChaingunGuy1;
-			ChaingunGuy1 = Actor.Spawn("ChaingunGuy", (2464.0,-2432.0,0), ALLOW_REPLACE); //90
+			actor ChaingunGuy1 = Actor.Spawn("ChaingunGuy", (2464.0,-2432.0,0), ALLOW_REPLACE); //90
 			ChaingunGuy1.Angle = 180.0;
 			ChaingunGuy1.bAmbush = True;
 			
-			actor PainElemental1;
-			PainElemental1 = Actor.Spawn("PainElemental", (3616.0,-3520.0,104.0), ALLOW_REPLACE);
+			actor PainElemental1 = Actor.Spawn("PainElemental", (3616.0,-3520.0,104.0), ALLOW_REPLACE);
 			PainElemental1.Angle = 270.0;
 			PainElemental1.bAmbush = True;
 		}
