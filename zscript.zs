@@ -54,4 +54,6 @@ version "4.1"
 
 //Weapons
 #include "union_zscript/weapons/shotgun.zs"
-#include "union_zscript/weapons/chaingun.zs"
+//#include "union_zscript/weapons/chaingun.zs"
+#include "union_zscript/weapons/ssg.zs"
+#include "union_zscript/weapons/rlaunch.zs"

@@ -92,19 +92,14 @@ OptionMenu "Union Doom: Monster Options"
 {
 	Title "Union Doom: Monster Options"
 	StaticText " "
-	StaticText "Changes made to these options requires the level to", 1
-	StaticText "be restarted or they will take effect on next level.", 1
-	StaticText " "
-	StaticText "Zombieman", 1
-	Option "Damage", "union_zombieman_damage", "HUD_OPTION_psxed_zombieman_damage"
-	StaticText " "
-	StaticText " "
-	StaticText "Demon / Spectre / Nightmare Spectre", 1
-	Option "Damage", "union_demon_damage", "HUD_OPTION_psxed_demon_damage"
-	StaticText " "
-	Option "Allow infighting", "union_demon_infighting", "HUD_OPTION_No-PC_Yes-PSX"
-	StaticText " "
-	StaticText " "
+	//StaticText "Zombieman", 1
+	//Option "Damage", "union_zombieman_damage", "HUD_OPTION_psxed_zombieman_damage"
+	//StaticText " "
+	//StaticText " "
+	//StaticText "Demon / Spectre / Nightmare Spectre", 1
+	//Option "Damage", "union_demon_damage", "HUD_OPTION_psxed_demon_damage"
+	//StaticText " "
+	//StaticText " "
 	StaticText "Cacodemon", 1
 	Option "Speed", "union_cacodemon_speed", "HUD_OPTION_psxed_cacodemon_speed"
 	StaticText " "
@@ -150,15 +145,31 @@ OptionValue "HUD_OPTION_union_pitched"
 	1, "On - Doom 64 alike"
 }
 
+
+OptionValue "HUD_OPTION_union_pitched_and_recoiled"
+{
+	0, "Off"
+	1, "On - Doom 64 alike - Pitch and Recoil"
+	2, "On - Doom 64 alike - Pitch only"
+	3, "On - Doom 64 alike - Recoil Only"
+}
+
 OptionMenu "Union Doom: Weapon Options"
 {
 	Title "Union Doom: Weapon Options"
 	StaticText " "
 	StaticText "Shotgun", 1
-	option "Shotgun Recoil", "union_shotgun_pitched", "HUD_OPTION_union_pitched"
-	//StaticText " "
-	//StaticText "Chaingun", 1
-	//option "Chaingun Recoil", "union_chaingun_pitched", "HUD_OPTION_union_pitched"
+	option "Shotgun Pitch", "union_shotgun_pitched", "HUD_OPTION_union_pitched"
+	StaticText " "
+	StaticText "Super Shotgun", 1
+	option "Super Shotgun Pitch", "union_ssg_pitched", "HUD_OPTION_union_pitched_and_recoiled"
+	StaticText " "
+	StaticText "Chaingun (Not Working Currently)", 1
+	option "Chaingun Recoil", "union_chaingun_pitched", "HUD_OPTION_union_pitched"
+	StaticText " "
+	StaticText "Rocket Launcher", 1
+	option "Rocket Launcher Pitch", "union_rlaunch_pitched", "HUD_OPTION_union_pitched_and_recoiled"
+	
 }
 
 OptionMenu "Union Doom: Credits"
