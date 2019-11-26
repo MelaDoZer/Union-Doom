@@ -5,6 +5,7 @@
 #include "union_zscript/events/cacodemon_speed.zs"
 #include "union_zscript/events/bruisers_infighting.zs"
 #include "union_zscript/events/revenant_speed.zs"
+#include "union_zscript/events/revenant_tracer_speed.zs"
 
 #include "union_zscript/events/health_bonuses.zs"
 #include "union_zscript/events/armor_bonuses.zs"
@@ -33,6 +34,20 @@ class UnionDoom_Events : EventHandler
 		if (e.Thing.GetClassName() == "Revenant")
 		{
 			switch (union_revenant_speed)			
+			{
+				case 0:
+				e.Thing.Speed = 10;
+				break;
+				
+				case 1:
+				e.Thing.Speed = 5;
+				break;
+			}
+		}
+
+		if (e.Thing.GetClassName() == "RevenantTracer")
+		{
+			switch (union_revenant_tracer_speed)			
 			{
 				case 0:
 				e.Thing.Speed = 10;
@@ -123,6 +138,11 @@ class UnionDoom_Events : EventHandler
 		{
 			EventHandler.SendNetworkEvent("UpdateRevenantSpeed");
 		}
+
+		if (union_old_revenant_tracer_speed != union_revenant_tracer_speed)
+		{
+			EventHandler.SendNetworkEvent("UpdateRevenantTracerSpeed");
+		}
 		
 		if (union_old_bruiser_infighting != union_bruiser_infighting)
 		EventHandler.SendNetworkEvent("UpdateSpeciesBaronOfHell");
@@ -147,6 +167,8 @@ class UnionDoom_Events : EventHandler
 		
 		if (e.Name == "UpdateCacodemonSpeed") ChangeCacodemonSpeed();
 		if (e.Name == "UpdateRevenantSpeed") ChangeRevenantSpeed();
+
+		if (e.Name == "UpdateRevenantTracerSpeed") ChangeRevenantTracerSpeed();
 		
 		if(e.Name == "UpdateSpeciesBaronOfHell") ChangeSpeciesBaronOfHell();
 		

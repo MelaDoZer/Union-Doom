@@ -29,11 +29,15 @@ class UnionChaingun : DoomWeapon Replaces Chaingun
 		CHGG A 1 A_Raise;
 		Loop;
 	Fire:
-		//TNT1 A 0 A_JumpIf(GetCVAR("union_chaingun_pitched") == 1, "PitchedFire");
-		CHGG AB 0 A_SetPitch(pitch-1.0);
+		TNT1 A 0 A_JumpIf(GetCVAR("union_chaingun_pitched") == 1, "PitchedFire");
 		CHGG AB 4 A_FireCGun;
-		CHGG AB 0 A_SetPitch(pitch+1.0);
-		//CHGG AB 1 A_SetPitch(pitch+0.4);
+		CHGG B 0 A_ReFire;
+		Goto Ready;
+	PitchedFire:
+		TNT1 A 0 A_JumpIf(GetCVAR("union_chaingun_pitched") == 0, "Fire");
+		TNT1 A 0 A_SetPitch(pitch-1.0);
+		CHGG AB 4 A_FireCGun;
+		TNT1 A 0 A_SetPitch(pitch+1.0);
 		CHGG B 0 A_ReFire;
 		Goto Ready;
 	Flash:
@@ -44,13 +48,5 @@ class UnionChaingun : DoomWeapon Replaces Chaingun
 	Spawn:
 		MGUN A -1;
 		Stop;
-	PitchedFire:
-		TNT1 A 0 A_JumpIf(GetCVAR("union_chaingun_pitched") == 0, "Fire");
-		CHGG AB 0 A_FireCGun;
-		CHGG AB 1 A_SetPitch(pitch-1.0);
-		CHGG AB 1 A_SetPitch(pitch+0.6);
-		CHGG AB 2 A_SetPitch(pitch+0.4);
-		CHGG B 0 A_ReFire;
-		Goto Ready;
 	}
 }
