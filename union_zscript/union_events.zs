@@ -36,10 +36,14 @@ class UnionDoom_Events : EventHandler
 			switch (union_revenant_speed)			
 			{
 				case 0:
+				e.thing.Speed = e.thing.Default.Speed;
+				break;
+
+				case 1:
 				e.Thing.Speed = 10;
 				break;
 				
-				case 1:
+				case 2:
 				e.Thing.Speed = 5;
 				break;
 			}
@@ -50,10 +54,14 @@ class UnionDoom_Events : EventHandler
 			switch (union_revenant_tracer_speed)			
 			{
 				case 0:
+				e.thing.Speed = e.thing.Default.Speed;
+				break;
+
+				case 1:
 				e.Thing.Speed = 10;
 				break;
 				
-				case 1:
+				case 2:
 				e.Thing.Speed = 5;
 				break;
 			}
@@ -64,10 +72,14 @@ class UnionDoom_Events : EventHandler
 			switch (union_cacodemon_speed)			
 			{
 				case 0:
+				e.thing.Speed = e.thing.Default.Speed;
+				break;
+
+				case 1:
 				e.Thing.Speed = 8;
 				break;
 				
-				case 1:
+				case 2:
 				e.Thing.Speed = 16;
 				break;
 			}
@@ -78,13 +90,15 @@ class UnionDoom_Events : EventHandler
 			switch (union_lostsoul_health)
 			{
 				case 0:
-				e.thing.Health = e.thing.Health / (1.0 * 60) * 100;
-				//console.printf("Set Health to 100");
+				e.thing.Health = e.thing.Default.Health;
+				break;
+
+				case 1:
+				e.thing.Health = 100;
 				break;
 				
-				case 1:
-				e.Thing.Health = e.Thing.Health / (1.0 * 100) * 60;
-				//console.printf("Set Health to 60");
+				case 2:
+				e.thing.Health = 60;
 				break;
 			}
 		}
@@ -97,10 +111,14 @@ class UnionDoom_Events : EventHandler
 			switch (union_revenant_speed)			
 			{
 				case 0:
+				e.thing.Speed = e.thing.Default.Speed;
+				break;
+
+				case 1:
 				e.Thing.Speed = 10;
 				break;
 				
-				case 1:
+				case 2:
 				e.Thing.Speed = 5;
 				break;
 			}
@@ -111,10 +129,14 @@ class UnionDoom_Events : EventHandler
 			switch (union_cacodemon_speed)			
 			{
 				case 0:
+				e.thing.Speed = e.thing.Default.Speed;
+				break;
+
+				case 1:
 				e.Thing.Speed = 8;
 				break;
 				
-				case 1:
+				case 2:
 				e.Thing.Speed = 16;
 				break;
 			}

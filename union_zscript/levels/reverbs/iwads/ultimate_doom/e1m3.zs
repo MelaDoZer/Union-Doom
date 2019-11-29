@@ -11,12 +11,12 @@ class IWADsReverbs_UltimateDoom_E1M3 : LevelCompatibility
 				Event.GlobalReverb.Destroy();
 			}
 			Event.GlobalReverb = Actor.Spawn("SoundEnvironment", (-1504.0, -3296.0, 64.0), ALLOW_REPLACE);
-			Event.GlobalReverb.Args[0] = 255; //242
-			Event.GlobalReverb.Args[1] = 255; //0
+			Event.GlobalReverb.Args[0] = 242; //242
+			Event.GlobalReverb.Args[1] = 0; //0
 
 			Event.GlobalReverb = Actor.Spawn("SoundEnvironment", (-160.0, -704.0, 96.0), ALLOW_REPLACE);
-			Event.GlobalReverb.Args[0] = 255; //242
-			Event.GlobalReverb.Args[1] = 255; //0
+			Event.GlobalReverb.Args[0] = 242; //242
+			Event.GlobalReverb.Args[1] = 0; //0
 		}
 	}
 

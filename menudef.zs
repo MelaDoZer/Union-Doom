@@ -24,8 +24,9 @@ OptionValue "HUD_OPTION_union_colored_lighting"
 
 OptionValue "HUD_OPTION_No-PC_Yes-PSX"
 {
-	0, "No (PC)"
-	1, "Yes (PSX)"
+	0, "Default"
+	1, "No (PC)"
+	2, "Yes (PSX)"
 }
 
 OptionMenu "Union Doom: Levels Options"
@@ -53,39 +54,45 @@ OptionMenu "Union Doom: Spawn Options"
 
 OptionValue "HUD_OPTION_psxed_zombieman_damage"
 {
-	0, "PC Doom (3-15)"
-	1, "Doom 64 (3-21)"
-	2, "PSX Doom (3-24)"
+	0, "Default"
+	1, "PC Doom (3-15)"
+	2, "Doom 64 (3-21)"
+	3, "PSX Doom (3-24)"
 }
 
 OptionValue "HUD_OPTION_psxed_demon_damage"
 {
-	0, "PC Doom (4-40)"
-	1, "PSX Doom (4-32)"
+	0, "Default"
+	1, "PC Doom (4-40)"
+	2, "PSX Doom (4-32)"
 }
 
 OptionValue "HUD_OPTION_psxed_cacodemon_speed"
 {
-	0, "8 (PC)"
-	1, "16 (GBA)"
+	0, "Default"
+	1, "8 (PC)"
+	2, "16 (GBA)"
 }
 
 OptionValue "HUD_OPTION_psxed_lostsoul_health"
 {
-	0, "PC Doom (Max. 100)"
-	1, "PSX Doom (Max. 60)"
+	0, "Default"
+	1, "PC Doom (Max. 100)"
+	2, "PSX Doom (Max. 60)"
 }
 
 OptionValue "HUD_OPTION_psxed_revenant_speed"
 {
-	0, "PC Doom (Max. 10)"
-	1, "PSX Doom (Max. 5)"
+	0, "Default"
+	1, "PC Doom (Max. 10)"
+	2, "PSX Doom (Max. 5)"
 }
 
 OptionValue "HUD_OPTION_psxed_revenant_tracer_speed"
 {
-	0, "PC Doom (Max. 10)"
-	1, "PSX Doom (Max. 5)"
+	0, "Default"
+	1, "PC Doom (Max. 10)"
+	2, "PSX Doom (Max. 5)"
 }
 
 OptionMenu "Union Doom: Monster Options"
@@ -120,16 +127,14 @@ OptionMenu "Union Doom: Monster Options"
 
 OptionValue "HUD_OPTION_union_bonuses"
 {
-	0, "PC Doom (1)"
-	1, "PSX Doom (2)"
+	0, "Default"
+	1, "PC Doom (1)"
+	2, "PSX Doom (2)"
 }
 
 OptionMenu "Union Doom: Items Options"
 {
 	Title "Union Doom: Items Options"
-	StaticText " "
-	StaticText "Changes made to these options requires the level to", 1
-	StaticText "be restarted or they will take effect on next level.", 1
 	StaticText " "
 	StaticText "Armor Bonus", 1
 	Option "Armor Bonus Amount", "union_armorbonus", "HUD_OPTION_union_bonuses"
@@ -149,9 +154,9 @@ OptionValue "HUD_OPTION_union_pitched"
 OptionValue "HUD_OPTION_union_pitched_and_recoiled"
 {
 	0, "Off"
-	1, "On - Doom 64 alike - Pitch and Recoil"
+	1, "On - Doom 64 alike - Pitch and recoil"
 	2, "On - Doom 64 alike - Pitch only"
-	3, "On - Doom 64 alike - Recoil Only"
+	3, "On - Doom 64 alike - Recoil only"
 }
 
 OptionMenu "Union Doom: Weapon Options"

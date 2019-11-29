@@ -6,28 +6,24 @@ class IWADsMonsters_UltimateDoom_E1M4 : LevelCompatibility
 		
 		if (skill_level >= 2)
 		{
-			actor ShotgunGuy1;
-			ShotgunGuy1 = Actor.Spawn("ShotgunGuy", (1712.0,-160.0,-56.0), ALLOW_REPLACE);
+			actor ShotgunGuy1 = Actor.Spawn("ShotgunGuy", (1712.0,-160.0,-56.0), ALLOW_REPLACE);
 			ShotgunGuy1.Angle = 225.0;
 			ShotgunGuy1.bAmbush = True;
 		}
 		
 		if ((skill_level >= 2) && (psxed_nightmare_imps_placement))
 		{
-			actor NightmareDoomImp1;
-			NightmareDoomImp1 = Actor.Spawn("NightmareDoomImp", (-848.0,-496.0,112.0), ALLOW_REPLACE);
+			actor NightmareDoomImp1 = Actor.Spawn("NightmareDoomImp", (-848.0,-496.0,112.0), ALLOW_REPLACE);
 			NightmareDoomImp1.Angle = 180.0;
 			
-			actor NightmareDoomImp2;
-			NightmareDoomImp2 = Actor.Spawn("NightmareDoomImp", (-896.0,640.0,128.0), ALLOW_REPLACE);
+			actor NightmareDoomImp2 = Actor.Spawn("NightmareDoomImp", (-896.0,640.0,128.0), ALLOW_REPLACE);
 			NightmareDoomImp2.Angle = 135.0;
 			NightmareDoomImp2.bAmbush = True;
 		}
 		
 		if (skill_level >= 3)
 		{
-			actor PainElemental1;
-			PainElemental1 = Actor.Spawn("PainElemental", (-1304.0,576.0,104.0), ALLOW_REPLACE); //Not 304.0 on y, need to move
+			actor PainElemental1 = Actor.Spawn("PainElemental", (-1304.0,576.0,104.0), ALLOW_REPLACE); //Not 304.0 on y, need to move
 			PainElemental1.Angle = 270.0;
 			PainElemental1.bAmbush = True;
 		}

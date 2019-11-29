@@ -11,10 +11,14 @@ extend class UnionDoom_Events
 		switch(union_bruiser_infighting)
 		{
 			case 0:
+			thing.A_SetSpecies(thing.Default.Species);
+			break;
+
+			case 1:
 			thing.A_SetSpecies("BaronofHell");
 			break;
 				
-			case 1:
+			case 2:
 			thing.A_SetSpecies("UnionHellKnight");
 			break;
 		}

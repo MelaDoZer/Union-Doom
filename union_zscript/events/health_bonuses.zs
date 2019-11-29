@@ -11,10 +11,14 @@ extend class UnionDoom_Events
 		switch(union_healthbonus)
 		{
 			case 0:
-			thing.Amount = 1;
+			thing.Amount = thing.Default.Amount;
 			break;
 				
 			case 1:
+			thing.Amount = 1;
+			break;
+
+			case 2:
 			thing.Amount = 2;
 			break;
 		}

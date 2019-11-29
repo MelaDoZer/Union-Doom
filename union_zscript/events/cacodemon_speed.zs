@@ -11,10 +11,14 @@ extend class UnionDoom_Events
 		switch(union_cacodemon_speed)
 		{
 			case 0:
+			thing.Speed = thing.Default.Speed;
+			break;
+
+			case 1:
 			thing.Speed = 8;
 			break;
 				
-			case 1:
+			case 2:
 			thing.Speed = 16;
 			break;
 		}
