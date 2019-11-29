@@ -23,7 +23,7 @@ class IWADsMonsters_UltimateDoom_E1M6 : LevelCompatibility
 			ChaingunGuy4.bAmbush = True;
 		}
 		
-		if ((skill_level >= 3) && (psxed_nightmare_spectres_placement))
+		if ((skill_level >= 3) && (union_psx_nightmare_spectres_placement))
 		{
 			actor NightmareSpectre1 = Actor.Spawn("NightmareSpectre", (-256.0,1472.0,48.0), ALLOW_REPLACE); //185
 			NightmareSpectre1.Angle = 270.0;
@@ -34,7 +34,7 @@ class IWADsMonsters_UltimateDoom_E1M6 : LevelCompatibility
 			NightmareSpectre2.bAmbush = True;
 		}
 		
-		if (psxed_nightmare_imps_placement)
+		if (union_nightmare_imps_placement)
 		{
 			actor NightmareDoomImp1 = Actor.Spawn("NightmareDoomImp", (-416.0,128.0,48.0), ALLOW_REPLACE); //92
 			NightmareDoomImp1.Angle = 0.0;
@@ -45,7 +45,7 @@ class IWADsMonsters_UltimateDoom_E1M6 : LevelCompatibility
 			NightmareDoomImp6.bAmbush = True;
 		}
 		
-		if ((skill_level >= 2) && (psxed_nightmare_imps_placement))
+		if ((skill_level >= 2) && (union_nightmare_imps_placement))
 		{
 			actor NightmareDoomImp2 = Actor.Spawn("NightmareDoomImp", (-384.0,-64.0,56.0), ALLOW_REPLACE); //94
 			NightmareDoomImp2.Angle = 270.0;
@@ -55,7 +55,7 @@ class IWADsMonsters_UltimateDoom_E1M6 : LevelCompatibility
 			NightmareDoomImp3.bAmbush = True;
 		}
 		
-		if ((skill_level >= 3) && (psxed_nightmare_imps_placement))
+		if ((skill_level >= 3) && (union_nightmare_imps_placement))
 		{
 			actor NightmareDoomImp4 = Actor.Spawn("NightmareDoomImp", (256.0,-64.0,56.0), ALLOW_REPLACE); //95
 			NightmareDoomImp4.Angle = 270.0;
@@ -79,13 +79,13 @@ class IWADsMonsters_UltimateDoom_E1M6 : LevelCompatibility
 	
 	protected void Apply(Name checksum, String mapname)
     {
-	if ((psxed_nightmare_spectres_placement) && ('5FAA25F5A6AAB3409CAE0AF87F910341' == checksum)) // - Ultimate Doom E1M6: Central Processing
+	if ((union_psx_nightmare_spectres_placement) && ('5FAA25F5A6AAB3409CAE0AF87F910341' == checksum)) // - Ultimate Doom E1M6: Central Processing
 		{
 			SetThingFlags(185, 0);
 			SetThingFlags(244, 0);
 		}
 		
-	if ((psxed_nightmare_imps_placement) && ('5FAA25F5A6AAB3409CAE0AF87F910341' == checksum)) // - Ultimate Doom E1M6: Central Processing
+	if ((union_nightmare_imps_placement) && ('5FAA25F5A6AAB3409CAE0AF87F910341' == checksum)) // - Ultimate Doom E1M6: Central Processing
 		{
 			SetThingFlags(92, 0);
 			SetThingFlags(93, 0);

@@ -11,7 +11,7 @@ class IWADsMonsters_UltimateDoom_E1M4 : LevelCompatibility
 			ShotgunGuy1.bAmbush = True;
 		}
 		
-		if ((skill_level >= 2) && (psxed_nightmare_imps_placement))
+		if ((skill_level >= 2) && (union_nightmare_imps_placement))
 		{
 			actor NightmareDoomImp1 = Actor.Spawn("NightmareDoomImp", (-848.0,-496.0,112.0), ALLOW_REPLACE);
 			NightmareDoomImp1.Angle = 180.0;
@@ -31,7 +31,7 @@ class IWADsMonsters_UltimateDoom_E1M4 : LevelCompatibility
 	
 	protected void Apply(Name checksum, String mapname)
     {
-	if ((psxed_nightmare_imps_placement) && ('5B26545FF21B051CA06D389CE535684C' == checksum)) // - Ultimate Doom E1M4: Command Control
+	if ((union_nightmare_imps_placement) && ('5B26545FF21B051CA06D389CE535684C' == checksum)) // - Ultimate Doom E1M4: Command Control
 		{
 			//Remove Imps to place old-new astonishing (oh no) Nightmare Imps
 			SetThingFlags(110, 0);

@@ -1,14 +1,15 @@
 //===========================================================================
 //
-// Nightmare Spectre
+// Nightmare Lost Soul
 //
 //===========================================================================
-
-class NightmareSpectre : Spectre
+class NightmareLostSoul : LostSoul
 {
 	Default
 	{
-		renderstyle "Subtract";
-		health 300;
+		Health 200;
+		Speed 16;
+        renderstyle "Subtract";
+        Alpha 0.7;
 	}
 }

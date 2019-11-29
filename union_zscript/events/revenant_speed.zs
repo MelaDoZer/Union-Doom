@@ -32,7 +32,7 @@ extend class UnionDoom_Events
 		
 		while (a = Actor(iterator.Next()))
 		{
-			console.printf("Revenant Speed tick");
+			//console.printf("Revenant Speed tick");
 			ApplySpeedToRevenant(a);
 		}
 	}

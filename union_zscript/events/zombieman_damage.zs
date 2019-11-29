@@ -3,6 +3,7 @@ extend class UnionDoom_Events
 	//
 	//Zombieman Damage
 	//
+	
 	bool union_zombieman_damage_changed;
 	int union_old_zombieman_damage;
 	
@@ -12,7 +13,7 @@ extend class UnionDoom_Events
 		{
 			case 0:
 			//thing.SetDamage(Random(1, 5) * 3);
-			thing.SetDamage(Random(75, 100));
+			thing.SetDamage(thing.Default.Damage);
 			break;
 			
 			case 1:
@@ -23,10 +24,6 @@ extend class UnionDoom_Events
 			case 2:
 			//thing.SetDamage(Random(1, 8) * 3);
 			thing.SetDamage(Random(75, 100));
-			break;
-
-			default:
-			console.printf("AAAAAAAAAAAAAAAAA");
 			break;
 		}
 	}

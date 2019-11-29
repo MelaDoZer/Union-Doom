@@ -1,14 +1,15 @@
 //===========================================================================
 //
-// Nightmare Spectre
+// Nightmare Hell Knight
 //
 //===========================================================================
-
-class NightmareSpectre : Spectre
+class NightmareHellKnight : HellKnight
 {
 	Default
 	{
-		renderstyle "Subtract";
-		health 300;
-	}
+		Health 1000;
+        Speed 16;
+        renderstyle "Subtract";
+        Alpha 0.7;
+    }
 }

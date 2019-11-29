@@ -10,139 +10,22 @@
 #include "union_zscript/events/health_bonuses.zs"
 #include "union_zscript/events/armor_bonuses.zs"
 
+#include "union_zscript/events/demon_damage.zs"
+
+#include "union_zscript/events/world_loaded.zs"
+#include "union_zscript/events/world_thing_spawned.zs"
+#include "union_zscript/events/world_thing_revived.zs"
+
 
 class UnionDoom_Events : EventHandler
 {	
-	//
-	//World loading (Monster Spawning)
-	//
-	//bool isSaveGame;
+	/*private static readonly<Actor> getDefault(Actor thing)
+	{
+		class<Actor> type = thing.GetClassName();
+		let tmp = GetDefaultByType(type);
+		return tmp;
+	}*/
 	
-	override void WorldLoaded(WorldEvent e)
-	{
-		ChangeColoredLighting();
-		ChangeReverbs();
-		
-		if ((union_psx_monster_placement)&&(!e.IsSaveGame)&&(!e.IsReopen))
-		{
-			PSXedDoom_MapHashesChecker_Monsters.PSXedDoom_CheckMapHashes_Monsters();
-		}
-	}
-	
-	override void WorldThingSpawned(WorldEvent e)
-	{
-		if (e.Thing.GetClassName() == "Revenant")
-		{
-			switch (union_revenant_speed)			
-			{
-				case 0:
-				e.thing.Speed = e.thing.Default.Speed;
-				break;
-
-				case 1:
-				e.Thing.Speed = 10;
-				break;
-				
-				case 2:
-				e.Thing.Speed = 5;
-				break;
-			}
-		}
-
-		if (e.Thing.GetClassName() == "RevenantTracer")
-		{
-			switch (union_revenant_tracer_speed)			
-			{
-				case 0:
-				e.thing.Speed = e.thing.Default.Speed;
-				break;
-
-				case 1:
-				e.Thing.Speed = 10;
-				break;
-				
-				case 2:
-				e.Thing.Speed = 5;
-				break;
-			}
-		}
-
-		if (e.Thing.GetClassName() == "Cacodemon")
-		{
-			switch (union_cacodemon_speed)			
-			{
-				case 0:
-				e.thing.Speed = e.thing.Default.Speed;
-				break;
-
-				case 1:
-				e.Thing.Speed = 8;
-				break;
-				
-				case 2:
-				e.Thing.Speed = 16;
-				break;
-			}
-		}
-
-		if (e.Thing.GetClassName() == "LostSoul")
-		{
-			switch (union_lostsoul_health)
-			{
-				case 0:
-				e.thing.Health = e.thing.Default.Health;
-				break;
-
-				case 1:
-				e.thing.Health = 100;
-				break;
-				
-				case 2:
-				e.thing.Health = 60;
-				break;
-			}
-		}
-	}
-
-	override void WorldThingRevived(WorldEvent e)
-	{
-		if (e.Thing.GetClassName() == "Revenant")
-		{
-			switch (union_revenant_speed)			
-			{
-				case 0:
-				e.thing.Speed = e.thing.Default.Speed;
-				break;
-
-				case 1:
-				e.Thing.Speed = 10;
-				break;
-				
-				case 2:
-				e.Thing.Speed = 5;
-				break;
-			}
-		}
-
-		if (e.Thing.GetClassName() == "Cacodemon")
-		{
-			switch (union_cacodemon_speed)			
-			{
-				case 0:
-				e.thing.Speed = e.thing.Default.Speed;
-				break;
-
-				case 1:
-				e.Thing.Speed = 8;
-				break;
-				
-				case 2:
-				e.Thing.Speed = 16;
-				break;
-			}
-		}
-	}
-
 	override void UiTick() 
 	{
 		if(old_union_colored_lighting != union_colored_lighting)
@@ -180,6 +63,9 @@ class UnionDoom_Events : EventHandler
 
 		if (union_old_lostsoul_health_speed != union_lostsoul_health)
 		EventHandler.SendNetworkEvent("UpdateLostSoulMaxHealth");
+
+		if(union_old_demon_damage != union_demon_damage)
+		EventHandler.SendNetworkEvent("UpdateDemonDamage");
 	}
 	
 	override void NetworkProcess(ConsoleEvent e)
@@ -198,5 +84,7 @@ class UnionDoom_Events : EventHandler
 		if (e.Name == "UpdateArmorBonus") ChangeArmorBonus();
 
 		if (e.Name == "UpdateLostSoulMaxHealth") ChangeLostSoulMaxHealth();
+
+		if (e.Name == "UpdateDemonDamage") ChangeDemonDamage();
 	}
 }

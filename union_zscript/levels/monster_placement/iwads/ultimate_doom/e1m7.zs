@@ -15,13 +15,13 @@ class IWADsMonsters_UltimateDoom_E1M7 : LevelCompatibility
 			Revenant2.bAmbush = True;
 		}
 		
-		if (psxed_nightmare_spectres_placement)
+		if (union_psx_nightmare_spectres_placement)
 		{
 			actor NightmareSpectre1 = Actor.Spawn("NightmareSpectre", (192.0,-192.0,0.0), ALLOW_REPLACE); //319
 			NightmareSpectre1.Angle = 90.0;
 		}
 		
-		if (psxed_nightmare_imps_placement)
+		if (union_nightmare_imps_placement)
 		{
 			actor NightmareDoomImp8 = Actor.Spawn("NightmareDoomImp", (352.0,-1328.0,0.0), ALLOW_REPLACE); //36
 			NightmareDoomImp8.Angle = 90.0;
@@ -30,7 +30,7 @@ class IWADsMonsters_UltimateDoom_E1M7 : LevelCompatibility
 			NightmareDoomImp12.Angle = 135.0;
 		}
 			
-		if ((skill_level >= 2)&&(psxed_nightmare_imps_placement))
+		if ((skill_level >= 2)&&(union_nightmare_imps_placement))
 		{
 			actor NightmareDoomImp1 = Actor.Spawn("NightmareDoomImp", (0.0,192.0,0.0), ALLOW_REPLACE); //161
 			NightmareDoomImp1.Angle = 45.0;
@@ -68,7 +68,7 @@ class IWADsMonsters_UltimateDoom_E1M7 : LevelCompatibility
 	
 	protected void Apply(Name checksum, String mapname)
     {
-	if ((psxed_nightmare_imps_placement) && ('9007F68E7F351A5758198933336F6B9F' == checksum)) // - Ultimate Doom E1M7: Computer Station
+	if ((union_nightmare_imps_placement) && ('9007F68E7F351A5758198933336F6B9F' == checksum)) // - Ultimate Doom E1M7: Computer Station
 		{
 			SetThingFlags(35, 0);
 			SetThingFlags(36, 0);
@@ -84,7 +84,7 @@ class IWADsMonsters_UltimateDoom_E1M7 : LevelCompatibility
 			SetThingFlags(226, 0);
 		}
 		
-	if ((psxed_nightmare_spectres_placement) && ('9007F68E7F351A5758198933336F6B9F' == checksum)) // - Ultimate Doom E1M7: Computer Station
+	if ((union_psx_nightmare_spectres_placement) && ('9007F68E7F351A5758198933336F6B9F' == checksum)) // - Ultimate Doom E1M7: Computer Station
 		{
 			SetThingFlags(319, 0);
 		}

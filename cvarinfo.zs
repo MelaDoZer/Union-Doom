@@ -58,7 +58,7 @@ server int union_lostsoul_health = 0;
 1 - 3-21 (like Doom 64) 
 2 - 3-24 (like PS1 version of Doom) */
 
-server int union_zombieman_damage = 2;
+server int union_zombieman_damage = 0;
 
 /* psxed_revenant_speed - affects Revenant's move speed
 0 - 10 (like PC version of Doom 2)
@@ -80,8 +80,9 @@ server int union_revenant_tracer_speed = 0;
 server int union_healthbonus = 0;
 
 /* psxed_armorbonus - affects armor, awarded for picking up armor bonus item
-0 - 1 (like PC version of Doom)
-1 - 2 (like PS1 version of Doom) */
+0 - No Changes
+1 - 1 (like PC version of Doom)
+2 - 2 (like PS1 version of Doom) */
 
 server int union_armorbonus = 0;
 

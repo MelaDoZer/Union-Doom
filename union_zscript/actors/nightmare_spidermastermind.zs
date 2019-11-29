@@ -1,14 +1,15 @@
 //===========================================================================
 //
-// Nightmare Spectre
+// Nightmare Spider boss
 //
 //===========================================================================
-
-class NightmareSpectre : Spectre
+class NightmareSpiderMastermind : SpiderMastermind
 {
 	Default
 	{
-		renderstyle "Subtract";
-		health 300;
+		Health 6000;
+		Speed 24;
+        renderstyle "Subtract";
+		Alpha 0.7;
 	}
 }

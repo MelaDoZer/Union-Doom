@@ -4,7 +4,7 @@ class IWADsMonsters_UltimateDoom_E1M8 : LevelCompatibility
     {
 		int skill_level = G_SkillPropertyInt(SKILLP_ACSReturn);
 		
-		if ((skill_level >= 2)&&(!psxed_nightmare_spectres_placement))
+		if ((skill_level >= 2)&&(!union_psx_nightmare_spectres_placement))
 		{
 			actor Spectre1 = Actor.Spawn("Spectre", (872.0,1040.0,-112.0), ALLOW_REPLACE);
 			Spectre1.Angle = 225.0;
@@ -15,7 +15,7 @@ class IWADsMonsters_UltimateDoom_E1M8 : LevelCompatibility
 			Spectre2.bAmbush = True;
 		}
 	
-		if ((skill_level >= 2)&&(psxed_nightmare_spectres_placement))
+		if ((skill_level >= 2)&&(union_psx_nightmare_spectres_placement))
 		{
 			actor NightmareSpectre1 = Actor.Spawn("NightmareSpectre", (872.0,1040.0,-112.0), ALLOW_REPLACE);
 			NightmareSpectre1.Angle = 225.0;

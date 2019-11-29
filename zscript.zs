@@ -35,22 +35,23 @@ version "4.1"
 
 
 
-//Nightmare Spectre
-#include "union_zscript/actors/nightmare_spectre.zs"
+#include "union_zscript/actors/nightmare_zombieman.zs"
+#include "union_zscript/actors/nightmare_shotgunguy.zs"
+#include "union_zscript/actors/nightmare_chaingunguy.zs"
+#include "union_zscript/actors/nightmare_cacodemon.zs"
+#include "union_zscript/actors/nightmare_lostsoul.zs"
+#include "union_zscript/actors/nightmare_baronofhell.zs"
+#include "union_zscript/actors/nightmare_spidermastermind.zs"
+#include "union_zscript/actors/nightmare_cyberdemon.zs"
+
+#include "union_zscript/actors/nightmare_hellknight.zs"
+#include "union_zscript/actors/nightmare_fatso.zs"
 
 //Nightmare Imp
 #include "union_zscript/actors/nightmare_doomimp.zs"
 
-//#include "union_zscript/actors/bruiser.zs"
-//#include "union_zscript/actors/cacodemon.zs"
-//#include "union_zscript/actors/demon.zs"
-//#include "union_zscript/actors/lostsoul.zs"
-//#include "union_zscript/actors/possessed.zs"
-//#include "union_zscript/actors/revenant.zs"
-
-//Items
-//#include "union_zscript/items/health.zs"
-//#include "union_zscript/items/armor.zs"
+//Nightmare Spectre
+#include "union_zscript/actors/nightmare_spectre.zs"
 
 //Weapons
 #include "union_zscript/weapons/shotgun.zs"

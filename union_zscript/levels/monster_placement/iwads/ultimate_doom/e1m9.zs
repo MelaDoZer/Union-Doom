@@ -54,7 +54,7 @@ class IWADsMonsters_UltimateDoom_E1M9 : LevelCompatibility
 	
 	protected void Apply(Name checksum, String mapname)
     {
-	if ((psxed_monster_placement) && ('1DBF91738492FB0E29836A2D66406CF1' == checksum)) // - Ultimate Doom E1M9: Military Base
+	if ((union_psx_monster_placement) && ('1DBF91738492FB0E29836A2D66406CF1' == checksum)) // - Ultimate Doom E1M9: Military Base
 		{
 			SetThingFlags(4, 0);
 			SetThingFlags(5, 0);

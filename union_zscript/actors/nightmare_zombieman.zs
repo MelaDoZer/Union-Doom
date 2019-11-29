@@ -1,14 +1,15 @@
 //===========================================================================
 //
-// Nightmare Spectre
+// Nightmare Zombie man
 //
 //===========================================================================
-
-class NightmareSpectre : Spectre
+class NightmareZombieMan : ZombieMan
 {
 	Default
 	{
-		renderstyle "Subtract";
-		health 300;
+		Health 40;
+		Speed 16;
+        renderstyle "Subtract";
+        Alpha 0.7;
 	}
 }

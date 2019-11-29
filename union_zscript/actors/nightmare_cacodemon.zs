@@ -1,14 +1,15 @@
 //===========================================================================
 //
-// Nightmare Spectre
+// Nightmare Cacodemon
 //
 //===========================================================================
-
-class NightmareSpectre : Spectre
+class NightmareCacodemon : Cacodemon
 {
 	Default
 	{
-		renderstyle "Subtract";
-		health 300;
+		Health 800;
+		Speed 16;
+        renderstyle "Subtract";
+        Alpha 0.5;
 	}
 }

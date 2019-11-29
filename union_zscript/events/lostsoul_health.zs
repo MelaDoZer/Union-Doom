@@ -5,21 +5,49 @@ extend class UnionDoom_Events
 	//
 	bool union_lostsoul_health_changed;
 	int union_old_lostsoul_health_speed;
-	
+
 	void ApplyMaxHealthToLostSoul(Actor thing)
 	{
+		int	DefaultStartHealth;//; = GetDefault(thing).SpawnHealth();
+		int	OldStartHealth;// = thing.SpawnHealth();
+		int	OldHealth;// = thing.health;
+		double HealthPercent;// = thing.health / thing.SpawnHealth();
+		int	NewStartHealth;// = 60; //(defStartHealth * multiplier * ldlMultiplier);
+		int	NewHealth;// = (60 * HealthPercent) + 0.5;
+		//thing.StartHealth = NewStartHealth;
+
 		switch (union_lostsoul_health)
 			{         
 				case 0:
-				thing.Health = thing.Health / (1.0 * thing.SpawnHealth()) * thing.Default.Health;
+				//DefaultStartHealth = thing.Default.SpawnHealth();
+				OldStartHealth = thing.SpawnHealth();
+				OldHealth = thing.health;
+				HealthPercent = double(OldHealth) / OldStartHealth;
+				NewHealth = (thing.Default.SpawnHealth() * HealthPercent) + 0.5;
+				thing.StartHealth = thing.Default.SpawnHealth();
+				thing.A_SetHealth(NewHealth);
 				break;
 
 				case 1:
-				thing.Health = thing.Health / (1.0 * thing.Default.Health) * 100;
+				//DefaultStartHealth = thing.Default.SpawnHealth();
+				OldStartHealth = thing.SpawnHealth();
+				OldHealth = thing.health;
+				HealthPercent = double(OldHealth) / OldStartHealth;
+				newStartHealth = 100;
+				NewHealth = (newStartHealth * HealthPercent) + 0.5;
+				thing.StartHealth = 100;
+				thing.A_SetHealth(NewHealth);
 				break;
 				
 				case 2:
-				thing.Health = thing.Health / (1.0 * thing.Default.Health) * 60 + 1.0;
+				//DefaultStartHealth = thing.Default.SpawnHealth();
+				OldStartHealth = thing.SpawnHealth();
+				OldHealth = thing.health;
+				HealthPercent = double(OldHealth) / OldStartHealth;
+				newStartHealth = 60;
+				NewHealth = (newStartHealth * HealthPercent) + 0.5;
+				thing.StartHealth = 60;
+				thing.A_SetHealth(NewHealth);
 				break;
 			}
 		union_old_lostsoul_health_speed = union_lostsoul_health;

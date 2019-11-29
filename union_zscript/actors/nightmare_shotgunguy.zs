@@ -1,14 +1,15 @@
 //===========================================================================
 //
-// Nightmare Spectre
+// Nigthmare Sergeant / Shotgun guy
 //
 //===========================================================================
-
-class NightmareSpectre : Spectre
+class NightmareShotgunGuy : ShotgunGuy
 {
 	Default
 	{
-		renderstyle "Subtract";
-		health 300;
+		Health 60;
+		Speed 16;
+        renderstyle "Subtract";
+        Alpha 0.7;
 	}
 }

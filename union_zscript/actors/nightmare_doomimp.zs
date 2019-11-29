@@ -8,9 +8,9 @@ class NightmareDoomImp : DoomImp
 {
 	Default
 	{
+		Health 120;
 		Speed 16;
 		renderstyle "Subtract";
-		health 120;
 		Alpha 0.7;
 	}
 	States
@@ -18,7 +18,7 @@ class NightmareDoomImp : DoomImp
 		Melee:
 		Missile:
 			TROO EF 8 A_FaceTarget;
-			TROO G 6 A_PSXTroopAttack ;
+			TROO G 6 A_TroopAttack ;
 			Goto See;
 	}
 }
@@ -48,7 +48,7 @@ class NightmareDoomImpBall : DoomImpBall
 
 extend class NightmareDoomImp
 {
-	void A_PSXTroopAttack()
+	void A_TroopAttack()
 	{
 		let targ = target;
 		if (targ)

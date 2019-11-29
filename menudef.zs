@@ -99,14 +99,14 @@ OptionMenu "Union Doom: Monster Options"
 {
 	Title "Union Doom: Monster Options"
 	StaticText " "
-	//StaticText "Zombieman", 1
-	//Option "Damage", "union_zombieman_damage", "HUD_OPTION_psxed_zombieman_damage"
-	//StaticText " "
-	//StaticText " "
-	//StaticText "Demon / Spectre / Nightmare Spectre", 1
-	//Option "Damage", "union_demon_damage", "HUD_OPTION_psxed_demon_damage"
-	//StaticText " "
-	//StaticText " "
+	StaticText "Zombieman", 1
+	Option "Damage", "union_zombieman_damage", "HUD_OPTION_psxed_zombieman_damage"
+	StaticText " "
+	StaticText " "
+	StaticText "Demon / Spectre / Nightmare Spectre", 1
+	Option "Damage", "union_demon_damage", "HUD_OPTION_psxed_demon_damage"
+	StaticText " "
+	StaticText " "
 	StaticText "Cacodemon", 1
 	Option "Speed", "union_cacodemon_speed", "HUD_OPTION_psxed_cacodemon_speed"
 	StaticText " "

@@ -1,14 +1,15 @@
 //===========================================================================
 //
-// Nightmare Spectre
+// Nightmare Chaingunner
 //
 //===========================================================================
-
-class NightmareSpectre : Spectre
+class NightmareChaingunGuy : ChaingunGuy
 {
 	Default
 	{
-		renderstyle "Subtract";
-		health 300;
-	}
+		Health 140;
+		Speed 16;
+        renderstyle "Subtract";
+        Alpha 0.7;
+    }
 }

@@ -1,14 +1,15 @@
 //===========================================================================
 //
-// Nightmare Spectre
+// Nightmare Mancubus
 //
 //===========================================================================
-
-class NightmareSpectre : Spectre
+class NightmareFatso : Fatso
 {
 	Default
 	{
-		renderstyle "Subtract";
-		health 300;
+		Health 1200;
+		Speed 16;
+        renderstyle "Subtract";
+		Alpha 0.7;
 	}
 }

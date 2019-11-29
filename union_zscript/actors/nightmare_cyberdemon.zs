@@ -1,14 +1,16 @@
 //===========================================================================
 //
-// Nightmare Spectre
+// Nightmare Cyberdemon
 //
 //===========================================================================
-
-class NightmareSpectre : Spectre
+class NightmareCyberdemon : Cyberdemon
 {
 	Default
 	{
-		renderstyle "Subtract";
-		health 300;
+		Health 8000;
+		Speed 32;
+        renderstyle "Subtract";
+		Alpha 0.7;
 	}
 }
+

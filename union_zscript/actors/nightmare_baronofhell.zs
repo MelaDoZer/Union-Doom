@@ -1,14 +1,15 @@
 //===========================================================================
 //
-// Nightmare Spectre
+// Nightmare Baron of Hell
 //
 //===========================================================================
-
-class NightmareSpectre : Spectre
+class NightmareBaronOfHell : BaronOfHell
 {
 	Default
 	{
-		renderstyle "Subtract";
-		health 300;
+		Health 2000;
+		Speed 16;
+        renderstyle "Subtract";
+        Alpha 0.7;
 	}
 }
