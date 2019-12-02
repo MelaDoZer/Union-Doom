@@ -3,8 +3,8 @@ extend class UnionDoom_Events
 	//
 	//Colored lights 
 	//
-	int old_union_colored_lighting;
 	bool colored_lighting_changed;
+	int old_union_colored_lighting;
 	
 	void ChangeColoredLighting() 
 	{

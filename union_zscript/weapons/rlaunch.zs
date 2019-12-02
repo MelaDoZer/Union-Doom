@@ -38,9 +38,6 @@ class Union_RocketLauncher : DoomWeapon Replaces RocketLauncher
 		MISG B 0 A_ReFire;
 		Goto Ready;
     PitchedRecoiledFire:
-        TNT1 A 0 A_JumpIf((GetCVAR("union_rlaunch_pitched") == 0), "Fire");
-        TNT1 A 0 A_JumpIf((GetCVAR("union_rlaunch_pitched") == 2), "PitchedFire");
-        TNT1 A 0 A_JumpIf((GetCVAR("union_rlaunch_pitched") == 3), "RecoiledFire");
         MISG B 8 A_GunFlash;
         MISG B 0 A_FireMissile;
         //Recoil
@@ -53,9 +50,6 @@ class Union_RocketLauncher : DoomWeapon Replaces RocketLauncher
 		MISG B 0 A_ReFire;
 		Goto Ready;
     PitchedFire:
-        TNT1 A 0 A_JumpIf((GetCVAR("union_rlaunch_pitched") == 0), "Fire");
-        TNT1 A 0 A_JumpIf((GetCVAR("union_rlaunch_pitched") == 1), "PitchedRecoiledFire");
-        TNT1 A 0 A_JumpIf((GetCVAR("union_rlaunch_pitched") == 3), "RecoiledFire");
 		MISG B 8 A_GunFlash;
         MISG B 0 A_FireMissile;
         //Pitch
@@ -66,9 +60,6 @@ class Union_RocketLauncher : DoomWeapon Replaces RocketLauncher
 		MISG B 0 A_ReFire;
 		Goto Ready;
     RecoiledFire:
-        TNT1 A 0 A_JumpIf((GetCVAR("union_rlaunch_pitched") == 0), "Fire");
-        TNT1 A 0 A_JumpIf((GetCVAR("union_rlaunch_pitched") == 1), "PitchedRecoiledFire");
-        TNT1 A 0 A_JumpIf((GetCVAR("union_rlaunch_pitched") == 2), "PitchedFire");
         MISG B 8 A_GunFlash;
         //Recoil
         MISG B 0 A_Recoil(2);

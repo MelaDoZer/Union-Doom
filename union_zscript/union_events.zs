@@ -1,16 +1,17 @@
 #include "union_zscript/events/colored_lights.zs"
 #include "union_zscript/events/reverbs.zs"
+
 #include "union_zscript/events/zombieman_damage.zs"
+#include "union_zscript/events/demon_damage.zs"
 #include "union_zscript/events/lostsoul_health.zs"
 #include "union_zscript/events/cacodemon_speed.zs"
 #include "union_zscript/events/bruisers_infighting.zs"
+
 #include "union_zscript/events/revenant_speed.zs"
 #include "union_zscript/events/revenant_tracer_speed.zs"
 
 #include "union_zscript/events/health_bonuses.zs"
 #include "union_zscript/events/armor_bonuses.zs"
-
-#include "union_zscript/events/demon_damage.zs"
 
 #include "union_zscript/events/world_loaded.zs"
 #include "union_zscript/events/world_thing_spawned.zs"

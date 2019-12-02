@@ -44,9 +44,6 @@ class Union_SuperShotgun : DoomWeapon Replaces SuperShotgun
 		SHT2 A 5 A_ReFire;
 		Goto Ready;
     PitchedRecoiledFire:
-        TNT1 A 0 A_JumpIf(GetCVAR("union_ssg_pitched") == 0, "Fire");
-        TNT1 A 0 A_JumpIf((GetCVAR("union_ssg_pitched") == 2), "PitchedFire");
-        TNT1 A 0 A_JumpIf((GetCVAR("union_ssg_pitched") == 3), "RecoiledFire");
 		SHT2 A 3;
         SHT2 A 0 A_FireShotgun2;
         //Recoil
@@ -70,9 +67,6 @@ class Union_SuperShotgun : DoomWeapon Replaces SuperShotgun
 		SHT2 A 5 A_ReFire;
 		Goto Ready;
     PitchedFire:
-        TNT1 A 0 A_JumpIf(GetCVAR("union_ssg_pitched") == 0, "Fire");
-        TNT1 A 0 A_JumpIf((GetCVAR("union_ssg_pitched") == 1), "PitchedRecoiledFire");
-        TNT1 A 0 A_JumpIf((GetCVAR("union_ssg_pitched") == 3), "RecoiledFire");
 		SHT2 A 3;
         SHT2 A 0 A_FireShotgun2;
         //Pitch
@@ -94,9 +88,6 @@ class Union_SuperShotgun : DoomWeapon Replaces SuperShotgun
 		SHT2 A 5 A_ReFire;
 		Goto Ready;
     RecoiledFire:
-        TNT1 A 0 A_JumpIf(GetCVAR("union_ssg_pitched") == 0, "Fire");
-        TNT1 A 0 A_JumpIf((GetCVAR("union_ssg_pitched") == 1), "PitchedRecoiledFire");
-        TNT1 A 0 A_JumpIf((GetCVAR("union_ssg_pitched") == 2), "PitchedFire");
 		SHT2 A 3;
         SHT2 A 0 A_FireShotgun2;
         //Recoil

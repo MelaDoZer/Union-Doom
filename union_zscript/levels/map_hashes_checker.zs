@@ -1,5 +1,10 @@
 class UnionDoom_Colored_Lights play
 {
+	static void NewCheckMapHashes(out Name checksum)
+	{
+		
+	}
+
 	static void CheckMapHashes()
 	{
 		/*																  ////
@@ -116,14 +121,14 @@ class UnionDoom_Colored_Lights play
 								
 		////																*/
 		
-		if(level.GetChecksum() == 'C9E4A1B09187A7C2B6AFDE0E63C3C173') // - Sigil E5M1: Baphomet's Demesne (v. 1.1)
+		if(level.GetChecksum() == '4A4832BEBE16A3D56912490A4E61F59B') // - Sigil E5M1: Baphomet's Demesne (v. 1.21)
 		{
-			PWADs_ColoredLightsValues.SigilE5M1ColoredLights();
+			Sigil_ColoredLightsValues.SigilE5M1ColoredLights();
 		}
 		
-		if(level.GetChecksum() == 'E9EB4D16CA7E491E98D61615E4613E70') // - Sigil E5M2: Sheol (v. 1.1)
+		if(level.GetChecksum() == '38028DC7E09DC5C91068AAC565A3962B') // - Sigil E5M2: Sheol (v. 1.21)
 		{
-			PWADs_ColoredLightsValues.SigilE5M2ColoredLights();
+			Sigil_ColoredLightsValues.SigilE5M2ColoredLights();
 		}
 		
 	}

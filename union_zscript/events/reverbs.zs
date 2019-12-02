@@ -4,8 +4,8 @@ extend class UnionDoom_Events
 	//Reverbs
 	//
 	actor GlobalReverb;
-	int old_union_reverb;
 	bool reverb_changed;
+	int old_union_reverb;
 	
 	void ChangeReverbs() 
 	{

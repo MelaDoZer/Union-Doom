@@ -39,10 +39,9 @@ class UnionShotgun : DoomWeapon Replaces Shotgun
 		SHTG A 7 A_ReFire;
 		Goto Ready;
 	PitchedFire:
-		TNT1 A 0 A_JumpIf(GetCVAR("union_shotgun_pitched") == 0, "Fire");
 		SHTG A 3;
-		SHTG A 0 A_FireShotgun;
 		SHTG A 0 A_SetPitch(pitch-2.0);
+		SHTG A 0 A_FireShotgun;
 		SHTG A 2 A_SetPitch(pitch+0.8);
 		SHTG A 1 A_SetPitch(pitch+0.24);
 		SHTG A 1 A_SetPitch(pitch+0.24);
@@ -64,41 +63,3 @@ class UnionShotgun : DoomWeapon Replaces Shotgun
 		Stop;
 	}
 }
-	
-//===========================================================================
-//
-// Code (must be attached to StateProvider)
-//
-//===========================================================================
-
-/*extend class StateProvider
-{
-
-	action void A_FireShotgun()
-	{
-		if (player == null)
-		{
-			return;
-		}
-
-		A_PlaySound ("weapons/shotgf", CHAN_WEAPON);
-		Weapon weap = player.ReadyWeapon;
-		if (weap != null && invoker == weap && stateinfo != null && stateinfo.mStateType == STATE_Psprite)
-		{
-			if (!weap.DepleteAmmo (weap.bAltFire, true, 1))
-				return;
-			
-			player.SetPsprite(PSP_FLASH, weap.FindState('Flash'), true);
-		}
-		player.mo.PlayAttacking2 ();
-
-		double pitch = BulletSlope ();
-
-		for (int i = 0; i < 7; i++)
-		{
-			GunShot (false, "BulletPuff", pitch);
-		}
-	}
-
-}	*/
-

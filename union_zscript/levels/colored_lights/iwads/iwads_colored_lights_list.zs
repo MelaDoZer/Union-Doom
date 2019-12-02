@@ -19,7 +19,6 @@
 #include "union_zscript/levels/colored_lights/iwads/ultimate_doom/e2m8.zs"
 
 /* Ultimate Doom 1.9 Custom Values */
-#include "union_zscript/levels/colored_lights/iwads/ultimate_doom/custom_values/meladozer/e1m1.zs"
 
 class IWADs_ColoredLightsValues play
 {

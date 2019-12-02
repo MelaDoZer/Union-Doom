@@ -16,26 +16,19 @@ OptionMenu "Union Doom"
 	Submenu "Union Doom: Credits","Union Doom: Credits"
 }
 
-OptionValue "HUD_OPTION_union_colored_lighting"
+OptionValue "HUD_OPTION_No_Yes"
 {
 	0, "No"
 	1, "Yes"
-}
-
-OptionValue "HUD_OPTION_No-PC_Yes-PSX"
-{
-	0, "Default"
-	1, "No (PC)"
-	2, "Yes (PSX)"
 }
 
 OptionMenu "Union Doom: Levels Options"
 {
 	Title "Union Doom: Levels Options"
 	StaticText " "
-	option "PSX Doom Colored Lighting", "union_colored_lighting", "HUD_OPTION_union_colored_lighting"
+	option "PSX Doom Colored Lighting", "union_colored_lighting", "HUD_OPTION_No_Yes"
 	StaticText " "
-	option "PSX Doom Sounds Reverb", "union_reverb", "HUD_OPTION_No-PC_Yes-PSX"
+	option "PSX Doom Sounds Reverb", "union_reverb", "HUD_OPTION_No_Yes"
 }
 
 OptionMenu "Union Doom: Spawn Options"
@@ -95,17 +88,24 @@ OptionValue "HUD_OPTION_psxed_revenant_tracer_speed"
 	2, "PSX Doom (Max. 5)"
 }
 
+OptionValue "HUD_OPTION_No-PC_Yes-PSX"
+{
+	0, "Default"
+	1, "No (PC)"
+	2, "Yes (PSX)"
+}
+
 OptionMenu "Union Doom: Monster Options"
 {
 	Title "Union Doom: Monster Options"
-	StaticText " "
-	StaticText "Zombieman", 1
-	Option "Damage", "union_zombieman_damage", "HUD_OPTION_psxed_zombieman_damage"
-	StaticText " "
-	StaticText " "
-	StaticText "Demon / Spectre / Nightmare Spectre", 1
-	Option "Damage", "union_demon_damage", "HUD_OPTION_psxed_demon_damage"
-	StaticText " "
+	//StaticText " "
+	//StaticText "Zombieman", 1
+	//Option "Damage (Not working)", "union_zombieman_damage", "HUD_OPTION_psxed_zombieman_damage"
+	//StaticText " "
+	//StaticText " "
+	//StaticText "Demon / Spectre / Nightmare Spectre", 1
+	//Option "Damage (Not working)", "union_demon_damage", "HUD_OPTION_psxed_demon_damage"
+	//StaticText " "
 	StaticText " "
 	StaticText "Cacodemon", 1
 	Option "Speed", "union_cacodemon_speed", "HUD_OPTION_psxed_cacodemon_speed"
@@ -117,7 +117,6 @@ OptionMenu "Union Doom: Monster Options"
 	StaticText " "
 	StaticText "Revenant", 1
 	Option "Speed", "union_revenant_speed", "HUD_OPTION_psxed_revenant_speed"
-	StaticText " "
 	Option "Rocket Speed", "union_revenant_tracer_speed", "HUD_OPTION_psxed_revenant_tracer_speed"
 	StaticText " "
 	StaticText " "
@@ -168,9 +167,9 @@ OptionMenu "Union Doom: Weapon Options"
 	StaticText " "
 	StaticText "Super Shotgun", 1
 	option "Super Shotgun Pitch", "union_ssg_pitched", "HUD_OPTION_union_pitched_and_recoiled"
-	StaticText " "
-	StaticText "Chaingun (Not Working Currently)", 1
-	option "Chaingun Recoil", "union_chaingun_pitched", "HUD_OPTION_union_pitched"
+	//StaticText " "
+	//StaticText "Chaingun", 1
+	//option "Chaingun Recoil (Not Working)", "union_chaingun_pitched", "HUD_OPTION_union_pitched"
 	StaticText " "
 	StaticText "Rocket Launcher", 1
 	option "Rocket Launcher Pitch", "union_rlaunch_pitched", "HUD_OPTION_union_pitched_and_recoiled"

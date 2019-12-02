@@ -10,7 +10,7 @@ extend class UnionDoom_Events
 	{
 		switch(union_armorbonus)
 		{
-			case 1:
+			case 0:
 			thing.SaveAmount = thing.Default.SaveAmount;
 			break;
 
