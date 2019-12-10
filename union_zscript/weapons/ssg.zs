@@ -4,7 +4,7 @@
 //
 // --------------------------------------------------------------------------
 
-class Union_SuperShotgun : DoomWeapon Replaces SuperShotgun
+class Union_SuperShotgun : SuperShotgun Replaces SuperShotgun
 {
 	Default
 	{
@@ -19,15 +19,6 @@ class Union_SuperShotgun : DoomWeapon Replaces SuperShotgun
 	}
 	States
 	{
-	Ready:
-		SHT2 A 1 A_WeaponReady;
-		Loop;
-	Deselect:
-		SHT2 A 1 A_Lower;
-		Loop;
-	Select:
-		SHT2 A 1 A_Raise;
-		Loop;
 	Fire:
         TNT1 A 0 A_JumpIf((GetCVAR("union_ssg_pitched") == 1), "PitchedRecoiledFire");
         TNT1 A 0 A_JumpIf((GetCVAR("union_ssg_pitched") == 2), "PitchedFire");
@@ -107,12 +98,5 @@ class Union_SuperShotgun : DoomWeapon Replaces SuperShotgun
 		SHT2 B 7;
 		SHT2 A 3;
 		Goto Deselect;
-	Flash:
-		SHT2 I 4 Bright A_Light1;
-		SHT2 J 3 Bright A_Light2;
-		Goto LightDone;
-	Spawn:
-		SGN2 A -1;
-		Stop;
 	}
 }

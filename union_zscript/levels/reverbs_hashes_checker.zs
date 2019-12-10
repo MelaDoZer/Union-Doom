@@ -9,94 +9,58 @@ class UnionDoom_MapHashesChecker_Reverbs play
 		////																*/
 																			
 		if((level.GetChecksum() == 'B49F7A6C519757D390D52667DB7D8793')&&(union_reverb)) // - Ultimate Doom E1M1: Hangar
-		{
-			IWADsReverbs_UltimateDoom_E1M1.PlaceReverb();
-		}
+		IWADsReverbs_UltimateDoom_E1M1.PlaceReverb();
 		
 		if((level.GetChecksum() == 'B49F7A6C519757D390D52667DB7D8793')&&(!union_reverb)) // - Ultimate Doom E1M1: Hangar
-		{
-			IWADsReverbs_UltimateDoom_E1M1.RemoveReverb();
-		}
+		IWADsReverbs_UltimateDoom_E1M1.RemoveReverb();
 			
 		if((level.GetChecksum() == '81A4CC5136CBFA49345654190A626C09')&&(union_reverb)) // - Ultimate Doom E1M2: Nuclear Plant
-		{
-			IWADsReverbs_UltimateDoom_E1M2.PlaceReverb();
-		}
+		IWADsReverbs_UltimateDoom_E1M2.PlaceReverb();
 		
 		if((level.GetChecksum() == '81A4CC5136CBFA49345654190A626C09')&&(!union_reverb)) // - Ultimate Doom E1M2: Nuclear Plant
-		{
-			IWADsReverbs_UltimateDoom_E1M2.RemoveReverb();
-		}
+		IWADsReverbs_UltimateDoom_E1M2.RemoveReverb();
 			
 		if((level.GetChecksum() == 'C7FF2282BC606FFB28DDCB90357094E6')&&(union_reverb)) // - Ultimate Doom E1M3: Toxin Refinery
-		{
-			IWADsReverbs_UltimateDoom_E1M3.PlaceReverb(); // 
-		}
+		IWADsReverbs_UltimateDoom_E1M3.PlaceReverb(); // 
 		
 		if((level.GetChecksum() == 'C7FF2282BC606FFB28DDCB90357094E6')&&(!union_reverb)) // - Ultimate Doom E1M3: Toxin Refinery
-		{
-			IWADsReverbs_UltimateDoom_E1M3.RemoveReverb();
-		}
+		IWADsReverbs_UltimateDoom_E1M3.RemoveReverb();
 		
 		if(level.GetChecksum() == '5B26545FF21B051CA06D389CE535684C') // - Ultimate Doom E1M4: Command Control
-		{
-			IWADsReverbs_UltimateDoom_E1M4.PlaceReverb(); // 
-		}
+		IWADsReverbs_UltimateDoom_E1M4.PlaceReverb(); // 
 
 		if((level.GetChecksum() == '5B26545FF21B051CA06D389CE535684C')&&(!union_reverb)) // - Ultimate Doom E1M4: Command Control
-		{
-			IWADsReverbs_UltimateDoom_E1M4.RemoveReverb();
-		}
+		IWADsReverbs_UltimateDoom_E1M4.RemoveReverb();
 		
 		if(level.GetChecksum() == '66D8E54B173041F981A11CCE766C4215') // - Ultimate Doom E1M5: Phobos Lab
-		{
-			IWADsReverbs_UltimateDoom_E1M5.PlaceReverb(); // 
-		}
+		IWADsReverbs_UltimateDoom_E1M5.PlaceReverb(); // 
 		
 		if((level.GetChecksum() == '66D8E54B173041F981A11CCE766C4215')&&(!union_reverb)) // - Ultimate Doom E1M5: Phobos Lab
-		{
-			IWADsReverbs_UltimateDoom_E1M5.RemoveReverb();
-		}
+		IWADsReverbs_UltimateDoom_E1M5.RemoveReverb();
 
 		if(level.GetChecksum() == '5FAA25F5A6AAB3409CAE0AF87F910341') // - Ultimate Doom E1M6: Central Processing
-		{
-			IWADsReverbs_UltimateDoom_E1M6.PlaceReverb();
-		}
+		IWADsReverbs_UltimateDoom_E1M6.PlaceReverb();
 		
 		if((level.GetChecksum() == '5FAA25F5A6AAB3409CAE0AF87F910341')&&(!union_reverb)) // - Ultimate Doom E1M6: Central Processing
-		{
-			IWADsReverbs_UltimateDoom_E1M6.RemoveReverb();
-		}
+		IWADsReverbs_UltimateDoom_E1M6.RemoveReverb();
 
 		if(level.GetChecksum() == '9007F68E7F351A5758198933336F6B9F') // - Ultimate Doom E1M7: Computer Station
-		{
-			IWADsReverbs_UltimateDoom_E1M7.PlaceReverb();
-		}
+		IWADsReverbs_UltimateDoom_E1M7.PlaceReverb();
 
 		if((level.GetChecksum() == '9007F68E7F351A5758198933336F6B9F')&&(!union_reverb)) // - Ultimate Doom E1M7: Computer Station
-		{
-			IWADsReverbs_UltimateDoom_E1M7.RemoveReverb();
-		}
+		IWADsReverbs_UltimateDoom_E1M7.RemoveReverb();
 		
 		if(level.GetChecksum() == '058FB092EA1B70DA1E3CBF501C4A91A1') // - Ultimate Doom E1M8: Phobos Anomaly
-		{
-			IWADsReverbs_UltimateDoom_E1M8.PlaceReverb();
-		}
+		IWADsReverbs_UltimateDoom_E1M8.PlaceReverb();
 		
 		if((level.GetChecksum() == '058FB092EA1B70DA1E3CBF501C4A91A1')&&(!union_reverb)) // - Ultimate Doom E1M8: Phobos Anomaly
-		{
-			IWADsReverbs_UltimateDoom_E1M8.RemoveReverb();
-		}
+		IWADsReverbs_UltimateDoom_E1M8.RemoveReverb();
 
 		if(level.GetChecksum() == '1DBF91738492FB0E29836A2D66406CF1') // - Ultimate Doom E1M9: Military Base
-		{
-			IWADsReverbs_UltimateDoom_E1M9.PlaceReverb();
-		}
+		IWADsReverbs_UltimateDoom_E1M9.PlaceReverb();
 		
 		if((level.GetChecksum() == '1DBF91738492FB0E29836A2D66406CF1')&&(!union_reverb)) // - Ultimate Doom E1M8: Phobos Anomaly
-		{
-			IWADsReverbs_UltimateDoom_E1M9.RemoveReverb();
-		}
+		IWADsReverbs_UltimateDoom_E1M9.RemoveReverb();
 
 		/*																  ////
 		

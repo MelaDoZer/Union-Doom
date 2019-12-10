@@ -4,7 +4,7 @@
 //
 // --------------------------------------------------------------------------
 
-class UnionChaingun : DoomWeapon Replaces Chaingun
+class UnionChaingun : Chaingun Replaces Chaingun
 {
 	Default
 	{

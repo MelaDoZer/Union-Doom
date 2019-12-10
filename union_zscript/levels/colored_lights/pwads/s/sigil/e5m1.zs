@@ -1,4 +1,4 @@
-extend class Sigil_ColoredLightsValues
+extend class UnionDoom_Colored_Lights
 {
     static void SigilE5M1ColoredLights()	//4A4832BEBE16A3D56912490A4E61F59B  - Sigil E5M1: Baphomet's Demesne
     {

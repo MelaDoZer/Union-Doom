@@ -19,8 +19,3 @@
 #include "union_zscript/levels/colored_lights/iwads/ultimate_doom/e2m8.zs"
 
 /* Ultimate Doom 1.9 Custom Values */
-
-class IWADs_ColoredLightsValues play
-{
-
-}

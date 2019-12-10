@@ -4,7 +4,7 @@
 //
 // --------------------------------------------------------------------------
 
-class Union_RocketLauncher : DoomWeapon Replaces RocketLauncher
+class Union_RocketLauncher : RocketLauncher Replaces RocketLauncher
 {
 	Default
 	{
@@ -19,17 +19,7 @@ class Union_RocketLauncher : DoomWeapon Replaces RocketLauncher
 	}
 	States
 	{
-	Ready:
-		MISG A 1 A_WeaponReady;
-		Loop;
-	Deselect:
-		MISG A 1 A_Lower;
-		Loop;
-	Select:
-		MISG A 1 A_Raise;
-		Loop;
 	Fire:
-        TNT1 A 0 A_JumpIf((GetCVAR("union_rlaunch_pitched") == 0), "Fire");
         TNT1 A 0 A_JumpIf((GetCVAR("union_rlaunch_pitched") == 1), "PitchedRecoiledFire");
         TNT1 A 0 A_JumpIf((GetCVAR("union_rlaunch_pitched") == 2), "PitchedFire");
         TNT1 A 0 A_JumpIf((GetCVAR("union_rlaunch_pitched") == 3), "RecoiledFire");
@@ -67,13 +57,5 @@ class Union_RocketLauncher : DoomWeapon Replaces RocketLauncher
 		MISG B 12 A_FireMissile;
 		MISG B 0 A_ReFire;
 		Goto Ready;
-	Flash:
-		MISF A 3 Bright A_Light1;
-		MISF B 4 Bright;
-		MISF CD 4 Bright A_Light2;
-		Goto LightDone;
-	Spawn:
-		LAUN A -1;
-		Stop;
 	}
 }
