@@ -12,8 +12,8 @@ class UnionDoom_Colored_Lights play
 								Knee-Deep in the Dead
 		////																*/
 																			
-		//if(level.GetChecksum() == 'B49F7A6C519757D390D52667DB7D8793') // - Ultimate Doom E1M1: Hangar
-		//UltimateDoomE1M1ColoredLights();
+		if(level.GetChecksum() == 'B49F7A6C519757D390D52667DB7D8793') // - Ultimate Doom E1M1: Hangar
+		UltimateDoomE1M1ColoredLights();
 			
 		if(level.GetChecksum() == '81A4CC5136CBFA49345654190A626C09') // - Ultimate Doom E1M2: Nuclear Plant
 		UltimateDoomE1M2ColoredLights();
