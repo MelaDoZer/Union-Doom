@@ -1,10 +1,10 @@
-class UnionDoom_Colored_Lights play
+/*class UnionDoom_Colored_Lights play
 {
     //virtual void ColoredLightsEnable(){}
 
 	//static void NewCheckMapHashes(in Name checksum){}
 
-	static void CheckMapHashes()
+	/*static void CheckMapHashes()
 	{
 		/*																  ////
 		
@@ -15,7 +15,7 @@ class UnionDoom_Colored_Lights play
 		//if(level.GetChecksum() == 'B49F7A6C519757D390D52667DB7D8793') // - Ultimate Doom E1M1: Hangar
 		//UltimateDoomE1M1ColoredLights();
 			
-		if(level.GetChecksum() == '81A4CC5136CBFA49345654190A626C09') // - Ultimate Doom E1M2: Nuclear Plant
+		/*if(level.GetChecksum() == '81A4CC5136CBFA49345654190A626C09') // - Ultimate Doom E1M2: Nuclear Plant
 		UltimateDoomE1M2ColoredLights();
 			
 		if(level.GetChecksum() == 'C7FF2282BC606FFB28DDCB90357094E6') // - Ultimate Doom E1M3: Toxin Refinery
@@ -45,7 +45,7 @@ class UnionDoom_Colored_Lights play
 								The Shores of Hell
 		////																*/
 		
-		if(level.GetChecksum() == '65455AC523799F8DCE19F3D1968776A2') // - Ultimate Doom E2M1: Deimos Anomaly
+		/*if(level.GetChecksum() == '65455AC523799F8DCE19F3D1968776A2') // - Ultimate Doom E2M1: Deimos Anomaly
 		UltimateDoomE2M1ColoredLights();
 		
 		if(level.GetChecksum() == 'A24FE135D5B6FD427FE27BEF89717A65') // - Ultimate Doom E2M2: Deimos Anomaly
@@ -86,7 +86,7 @@ class UnionDoom_Colored_Lights play
 								
 		////																*/
 		
-		if(level.GetChecksum() == '4A4832BEBE16A3D56912490A4E61F59B') // - Sigil E5M1: Baphomet's Demesne (v. 1.21)
+		/*if(level.GetChecksum() == '4A4832BEBE16A3D56912490A4E61F59B') // - Sigil E5M1: Baphomet's Demesne (v. 1.21)
 		SigilE5M1ColoredLights();
 		
 		if(level.GetChecksum() == '38028DC7E09DC5C91068AAC565A3962B') // - Sigil E5M2: Sheol (v. 1.21)

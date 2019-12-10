@@ -21,7 +21,7 @@ extend class UnionDoom_Events
 				break;
 				
 				case 1:
-				UnionDoom_Colored_Lights.CheckMapHashes();
+				//UnionDoom_Colored_Lights.CheckMapHashes();
 				//console.printf("Colored lights were enabled");
 				break;
 			}
