@@ -1,6 +1,6 @@
-extend class IWADs_ColoredLightsValues
+extend class UnionDoom_Colored_Lights
 {
-	static void UltimateDoomE1M8ColoredLights()	//9007F68E7F351A5758198933336F6B9F - Ultimate Doom E1M8: Phobos Anomaly
+	static void UltimateDoomE1M8ColoredLights() //9007F68E7F351A5758198933336F6B9F - Ultimate Doom E1M8: Phobos Anomaly
 	{
 		//Soulsphere Secret
 		Level.Sectors[24].SetColor("043E8B", 0);

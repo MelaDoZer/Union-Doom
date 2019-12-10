@@ -4,7 +4,7 @@
 //
 // --------------------------------------------------------------------------
 
-class UnionShotgun : DoomWeapon Replaces Shotgun
+class UnionShotgun : Shotgun Replaces Shotgun
 {
 	Default
 	{
@@ -19,15 +19,6 @@ class UnionShotgun : DoomWeapon Replaces Shotgun
 	}
 	States
 	{
-	Ready:
-		SHTG A 1 A_WeaponReady;
-		Loop;
-	Deselect:
-		SHTG A 1 A_Lower;
-		Loop;
-	Select:
-		SHTG A 1 A_Raise;
-		Loop;
 	Fire:
 		TNT1 A 0 A_JumpIf(GetCVAR("union_shotgun_pitched") == 1, "PitchedFire");
 		SHTG A 3;
@@ -54,12 +45,5 @@ class UnionShotgun : DoomWeapon Replaces Shotgun
 		SHTG A 3;
 		SHTG A 7 A_ReFire;
 		Goto Ready;
-	Flash:
-		SHTF A 4 Bright A_Light1;
-		SHTF B 3 Bright A_Light2;
-		Goto LightDone;
-	Spawn:
-		SHOT A -1;
-		Stop;
 	}
 }

@@ -1,4 +1,4 @@
-extend class Sigil_ColoredLightsValues
+extend class UnionDoom_Colored_Lights
 {
     static void SigilE5M2ColoredLights()	//38028DC7E09DC5C91068AAC565A3962B  - Sigil E5M2: Sheol
     {

@@ -1,4 +1,4 @@
-extend class IWADs_ColoredLightsValues
+extend class UnionDoom_Colored_Lights
 {
 	static void UltimateDoomE1M7ColoredLights()	//9007F68E7F351A5758198933336F6B9F - Ultimate Doom E1M7: Computer Station
 	{

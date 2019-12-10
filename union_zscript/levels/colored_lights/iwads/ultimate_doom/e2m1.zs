@@ -1,4 +1,4 @@
-extend class IWADs_ColoredLightsValues
+extend class UnionDoom_Colored_Lights
 {
 	static void UltimateDoomE2M1ColoredLights()	//65455AC523799F8DCE19F3D1968776A2 - Ultimate Doom E2M1: Deimos Anomaly
 	{

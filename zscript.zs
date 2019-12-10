@@ -34,6 +34,7 @@ version "4.1"
 #include "union_zscript/levels/reverbs/iwads/iwads_reverbs.zs"
 
 
+#include "union_zscript/actors/nightmare_flag.zs"
 
 #include "union_zscript/actors/nightmare_zombieman.zs"
 #include "union_zscript/actors/nightmare_shotgunguy.zs"
@@ -55,6 +56,6 @@ version "4.1"
 
 //Weapons
 #include "union_zscript/weapons/shotgun.zs"
-#include "union_zscript/weapons/chaingun.zs"
+//#include "union_zscript/weapons/chaingun.zs"
 #include "union_zscript/weapons/ssg.zs"
 #include "union_zscript/weapons/rlaunch.zs"

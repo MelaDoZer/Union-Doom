@@ -1,4 +1,4 @@
-extend class IWADs_ColoredLightsValues
+extend class UnionDoom_Colored_Lights
 {
 	static void UltimateDoomE2M2ColoredLights()	//A24FE135D5B6FD427FE27BEF89717A65 - Ultimate Doom E2M2: Containment Area
 	{

@@ -1,4 +1,4 @@
-extend class IWADs_ColoredLightsValues
+extend class UnionDoom_Colored_Lights
 {
 	static void UltimateDoomE2M7ColoredLights()	//8590F489879870C098CD7029C3187159 - Ultimate Doom E2M7: Spawning Vats
 	{

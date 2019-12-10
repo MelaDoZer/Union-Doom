@@ -1,4 +1,4 @@
-extend class IWADs_ColoredLightsValues
+extend class UnionDoom_Colored_Lights
 {
 	static void UltimateDoomE2M8ColoredLights()	//EFFE91DF41AD41F6973C06F0AD67DDB9 - Ultimate Doom E2M8: Tower of Babel
 	{

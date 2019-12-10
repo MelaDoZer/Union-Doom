@@ -8,7 +8,7 @@ extend class UnionDoom_Events
 
 		if ((union_psx_monster_placement)&&(!e.IsSaveGame)&&(!e.IsReopen))
 		{
-			PSXedDoom_MapHashesChecker_Monsters.PSXedDoom_CheckMapHashes_Monsters();
+			UnionDoom_MapHashesChecker_Monsters.CheckMapHashes();
 		}
 	}  
 }

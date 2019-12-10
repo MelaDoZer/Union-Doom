@@ -9,11 +9,11 @@ OptionMenu "Union Doom"
 	Title "Union Doom Settings"
 	Submenu "Levels Options","Union Doom: Levels Options"
 	Submenu "Spawn Options","Union Doom: Spawn Options"
-	Submenu "Monster Options","Union Doom: Monster Options"
+	Submenu "Monsters Options","Union Doom: Monsters Options"
 	Submenu "Items Options","Union Doom: Items Options"
-	Submenu "Weapon Options","Union Doom: Weapon Options"
+	Submenu "Weapons Options","Union Doom: Weapons Options"
 	StaticText " "
-	Submenu "Union Doom: Credits","Union Doom: Credits"
+	//Submenu "Union Doom: Credits","Union Doom: Credits"
 }
 
 OptionValue "HUD_OPTION_No_Yes"
@@ -35,7 +35,7 @@ OptionMenu "Union Doom: Spawn Options"
 {
 	Title "Union Doom: Spawn Options"
 	StaticText " "
-	StaticText "Changes made to these options requires the level to", 1
+	StaticText "Changes made to these options requires current level to", 1
 	StaticText "be restarted or they will take effect on next level.", 1
 	StaticText " "
 	Option "PSX Doom Monsters Placement", "union_psx_monster_placement", "onoff"
@@ -95,9 +95,9 @@ OptionValue "HUD_OPTION_No-PC_Yes-PSX"
 	2, "Yes (PSX)"
 }
 
-OptionMenu "Union Doom: Monster Options"
+OptionMenu "Union Doom: Monsters Options"
 {
-	Title "Union Doom: Monster Options"
+	Title "Union Doom: Monsters Options"
 	//StaticText " "
 	//StaticText "Zombieman", 1
 	//Option "Damage (Not working)", "union_zombieman_damage", "HUD_OPTION_psxed_zombieman_damage"
@@ -158,9 +158,9 @@ OptionValue "HUD_OPTION_union_pitched_and_recoiled"
 	3, "On - Doom 64 alike - Recoil only"
 }
 
-OptionMenu "Union Doom: Weapon Options"
+OptionMenu "Union Doom: Weapons Options"
 {
-	Title "Union Doom: Weapon Options"
+	Title "Union Doom: Weapons Options"
 	StaticText " "
 	StaticText "Shotgun", 1
 	option "Shotgun Pitch", "union_shotgun_pitched", "HUD_OPTION_union_pitched"
@@ -180,18 +180,9 @@ OptionMenu "Union Doom: Credits"
 {
 	Title "Union Doom: Credits"
 	StaticText " "
-	StaticText "Idea", 1
-	StaticText "MelaDoZer"
-	StaticText " "
 	StaticText "Code", 1
 	StaticText "MelaDoZer"
 	StaticText "DragonRasp"
 	StaticText "KaMiKaZa"
 	StaticText " "
-	StaticText "Testing", 1
-	StaticText "Warrior"
-	StaticText " "
-	StaticText "Help", 1
-	StaticText "ZZYZX"
-	
 }

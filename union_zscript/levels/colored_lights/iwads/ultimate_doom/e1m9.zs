@@ -1,4 +1,4 @@
-extend class IWADs_ColoredLightsValues
+extend class UnionDoom_Colored_Lights
 {
 	static void UltimateDoomE1M9ColoredLights()	//1DBF91738492FB0E29836A2D66406CF1 - Ultimate Doom E1M9: Phobos Anomaly
 	{

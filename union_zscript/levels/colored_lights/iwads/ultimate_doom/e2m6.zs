@@ -1,4 +1,4 @@
-extend class IWADs_ColoredLightsValues
+extend class UnionDoom_Colored_Lights
 {
 	static void UltimateDoomE2M6ColoredLights()	//3838AB29292587A7EE3CA71E7040868D - Ultimate Doom E2M6: Halls of the Damned
 	{

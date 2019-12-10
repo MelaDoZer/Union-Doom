@@ -1,4 +1,4 @@
-extend class IWADs_ColoredLightsValues
+extend class UnionDoom_Colored_Lights
 {
 	static void UltimateDoomE1M4ColoredLights()	//5B26545FF21B051CA06D389CE535684C - Ultimate Doom E1M4: Command Control
 	{
