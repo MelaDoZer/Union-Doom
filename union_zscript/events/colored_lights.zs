@@ -5,6 +5,8 @@ extend class UnionDoom_Events
 	//
 	bool colored_lighting_changed;
 	int old_union_colored_lighting;
+
+	string Checksum;
 	
 	void ChangeColoredLighting() 
 	{
@@ -21,7 +23,8 @@ extend class UnionDoom_Events
 				break;
 				
 				case 1:
-				UnionDoom_Colored_Lights.CheckMapHashes();
+				Checksum = Level.GetChecksum();
+				//UnionDoom_Colored_Lights.CheckMapHashes();
 				//console.printf("Colored lights were enabled");
 				break;
 			}
