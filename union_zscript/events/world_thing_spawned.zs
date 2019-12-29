@@ -104,15 +104,19 @@ extend class UnionDoom_Events
 			switch (union_zombieman_damage)
 			{
 				case 0:
-				e.thing.SetDamage(e.thing.Default.Damage);
+				e.thing.RestoreDamage();
 				break;
 
 				case 1:
-				e.thing.SetDamage(100);
+				e.thing.SetDamage(20);
 				break;
 				
 				case 2:
 				e.thing.SetDamage(60);
+				break;
+
+				case 3:
+				e.thing.SetDamage(100);
 				break;
 			}
 		}

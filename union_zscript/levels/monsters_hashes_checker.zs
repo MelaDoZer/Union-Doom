@@ -42,13 +42,13 @@ class UnionDoom_MapHashesChecker_Monsters play
 		//////////////				Ultimate Doom				//////////////
 								The Shores of Hell
 		////																*/
-		/*
+		
 		if(level.GetChecksum() == '65455AC523799F8DCE19F3D1968776A2') // - Ultimate Doom E2M1: Deimos Anomaly
 		{
 			IWADsMonsters_UltimateDoom_E2M1.PlaceMonsters();
 		}
 		
-		if(level.GetChecksum() == 'A24FE135D5B6FD427FE27BEF89717A65') // - Ultimate Doom E2M2: Deimos Anomaly
+		if(level.GetChecksum() == 'A24FE135D5B6FD427FE27BEF89717A65') // - Ultimate Doom E2M2: Containment Area
 		{
 			IWADsMonsters_UltimateDoom_E2M2.PlaceMonsters();
 		}
@@ -81,11 +81,6 @@ class UnionDoom_MapHashesChecker_Monsters play
 		if(level.GetChecksum() == 'EFFE91DF41AD41F6973C06F0AD67DDB9') // - Ultimate Doom E2M8: Tower of Babel (it's map23 (e3m8) in PS1)
 		{
 			IWADsMonsters_UltimateDoom_E2M8.PlaceMonsters();
-		}
-		
-		if(level.GetChecksum() == '8A6399FAAA2E68649D4E4B16642074BE') // - Ultimate Doom E2M9: Fortress of Mystery
-		{
-			IWADsMonsters_UltimateDoom_E2M9.PlaceMonsters();
 		}
 		
 		/*																  ////

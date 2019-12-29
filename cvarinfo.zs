@@ -1,7 +1,5 @@
 /* PSXed Doom defined Console variables */
 
-
-
 /* PSXed Colored Lighting - responsible for scripted apply of colored lighting.
 Disable - 0 / Enable - 1 */
 

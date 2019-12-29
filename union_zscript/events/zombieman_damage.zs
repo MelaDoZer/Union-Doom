@@ -13,17 +13,22 @@ extend class UnionDoom_Events
 		{
 			case 0:
 			//thing.SetDamage(Random(1, 5) * 3);
-			thing.SetDamage(thing.Default.Damage);
+			thing.RestoreDamage();
 			break;
 			
 			case 1:
 			//thing.SetDamage(Random(1, 7) * 3);
-			thing.SetDamage(Random(75, 100));
+			thing.SetDamage(20);
 			break;
 			
 			case 2:
 			//thing.SetDamage(Random(1, 8) * 3);
-			thing.SetDamage(Random(75, 100));
+			thing.SetDamage(60);
+			break;
+
+			case 3:
+			//thing.SetDamage(Random(1, 8) * 3);
+			thing.SetDamage(100);
 			break;
 		}
 	}

@@ -36,34 +36,28 @@ class UnionDoom_Events : EventHandler
 		EventHandler.SendNetworkEvent("UpdateReverbs");
 		
 		if (union_old_cacodemon_speed != union_cacodemon_speed) 
-		{
-			EventHandler.SendNetworkEvent("UpdateCacodemonSpeed");
-		}
+		EventHandler.SendNetworkEvent("UpdateCacodemonSpeed");
 		
 		if (union_old_revenant_speed != union_revenant_speed) 
-		{
-			EventHandler.SendNetworkEvent("UpdateRevenantSpeed");
-		}
+		EventHandler.SendNetworkEvent("UpdateRevenantSpeed");
 
 		if (union_old_revenant_tracer_speed != union_revenant_tracer_speed)
-		{
-			EventHandler.SendNetworkEvent("UpdateRevenantTracerSpeed");
-		}
+		EventHandler.SendNetworkEvent("UpdateRevenantTracerSpeed");
 		
 		if (union_old_bruiser_infighting != union_bruiser_infighting)
 		EventHandler.SendNetworkEvent("UpdateSpeciesBaronOfHell");
 		
 		if (union_old_healthbonus != union_healthbonus)
-		{
-			EventHandler.SendNetworkEvent("UpdateHealthBonus");
-		}
+		EventHandler.SendNetworkEvent("UpdateHealthBonus");
+
 		if (union_old_armorbonus != union_armorbonus)
-		{
 		EventHandler.SendNetworkEvent("UpdateArmorBonus");
-		}
 
 		if (union_old_lostsoul_health_speed != union_lostsoul_health)
 		EventHandler.SendNetworkEvent("UpdateLostSoulMaxHealth");
+
+		if(union_old_zombieman_damage != union_zombieman_damage)
+		EventHandler.SendNetworkEvent("UpdateZombiemanDamage");
 
 		if(union_old_demon_damage != union_demon_damage)
 		EventHandler.SendNetworkEvent("UpdateDemonDamage");
@@ -86,6 +80,7 @@ class UnionDoom_Events : EventHandler
 
 		if (e.Name == "UpdateLostSoulMaxHealth") ChangeLostSoulMaxHealth();
 
+		if (e.Name == "UpdateZombiemanDamage") ChangeZombiemanDamage();
 		if (e.Name == "UpdateDemonDamage") ChangeDemonDamage();
 	}
 }
