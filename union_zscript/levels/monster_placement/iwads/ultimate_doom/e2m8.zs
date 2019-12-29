@@ -42,6 +42,6 @@ class IWADsMonsters_UltimateDoom_E2M8 : LevelCompatibility
 	
 	protected void Apply(Name checksum, String mapname)
     {  
-       
+
     }
 }
