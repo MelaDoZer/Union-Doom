@@ -43,5 +43,6 @@ extend class UnionDoom_Colored_Lights
 		
 		//Exit
 		Level.Sectors[113].SetColor("FF7F7F", 0);
+		Level.Sectors[114].SetColor("FF7F7F", 0);
 	}
 }
