@@ -1,4 +1,4 @@
-class IWADsMonsters_UltimateDoom_E1M7 : LevelCompatibility
+class IWADsMonsters_UltimateDoom_E1M7 : LevelPostProcessor
 {
 	static void PlaceMonsters() // 9007F68E7F351A5758198933336F6B9F - Ultimate Doom E1M7: Computer Station
     {

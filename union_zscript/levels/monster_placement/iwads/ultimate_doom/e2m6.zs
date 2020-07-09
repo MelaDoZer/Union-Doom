@@ -1,4 +1,4 @@
-class IWADsMonsters_UltimateDoom_E2M6 : LevelCompatibility
+class IWADsMonsters_UltimateDoom_E2M6 : LevelPostProcessor
 {
 	static void PlaceMonsters() // 3838AB29292587A7EE3CA71E7040868D - Ultimate Doom E2M6: Halls of the Damned
     {

@@ -1,4 +1,4 @@
-class IWADsMonsters_UltimateDoom_E1M1 : LevelCompatibility
+class IWADsMonsters_UltimateDoom_E1M1 : LevelPostProcessor 
 {
 	static void PlaceMonsters() // B49F7A6C519757D390D52667DB7D8793 - Ultimate Doom E1M1: Hangar
     {

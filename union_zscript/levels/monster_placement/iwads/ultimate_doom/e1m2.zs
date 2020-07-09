@@ -1,4 +1,4 @@
-class IWADsMonsters_UltimateDoom_E1M2 : LevelCompatibility
+class IWADsMonsters_UltimateDoom_E1M2 : LevelPostProcessor
 {
 	static void PlaceMonsters() // 81A4CC5136CBFA49345654190A626C09 - Ultimate Doom E1M2: Nuclear Plant
     {

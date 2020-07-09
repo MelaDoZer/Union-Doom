@@ -1,4 +1,4 @@
-class IWADsReverbs_UltimateDoom_E2M3 : LevelCompatibility
+class IWADsReverbs_UltimateDoom_E2M3 : LevelPostProcessor
 {
 	static void PlaceReverb()	//918436B3C2D0AD4F2C108183414B4612 - Ultimate Doom E2M3: Refinery
 	{

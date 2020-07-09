@@ -1,4 +1,4 @@
-class IWADsReverbs_UltimateDoom_E2M8 : LevelCompatibility
+class IWADsReverbs_UltimateDoom_E2M8 : LevelPostProcessor
 {
 	static void PlaceReverb()	//EFFE91DF41AD41F6973C06F0AD67DDB9 - Ultimate Doom E2M8: Tower of Babel
 	{

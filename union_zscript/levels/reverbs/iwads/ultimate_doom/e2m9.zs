@@ -1,4 +1,4 @@
-class IWADsReverbs_UltimateDoom_E2M9 : LevelCompatibility
+class IWADsReverbs_UltimateDoom_E2M9 : LevelPostProcessor
 {
 	static void PlaceReverb()	//8A6399FAAA2E68649D4E4B16642074BE - Ultimate Doom E2M9: Fortress of Mystery
 	{

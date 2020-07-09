@@ -1,4 +1,4 @@
-class IWADsMonsters_UltimateDoom_E1M3 : LevelCompatibility
+class IWADsMonsters_UltimateDoom_E1M3 : LevelPostProcessor
 {
 	static void PlaceMonsters() // C7FF2282BC606FFB28DDCB90357094E6 - Ultimate Doom E1M3: Toxin Refinery
     {

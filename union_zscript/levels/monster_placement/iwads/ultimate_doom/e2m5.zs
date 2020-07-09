@@ -1,4 +1,4 @@
-class IWADsMonsters_UltimateDoom_E2M5 : LevelCompatibility
+class IWADsMonsters_UltimateDoom_E2M5 : LevelPostProcessor
 {
 	static void PlaceMonsters() // 99C580AD8FABE923CAB485CB7F3C5E5D - Ultimate Doom E2M5: Command Center
     {

@@ -1,4 +1,4 @@
-class IWADsMonsters_UltimateDoom_E2M7 : LevelCompatibility
+class IWADsMonsters_UltimateDoom_E2M7 : LevelPostProcessor
 {
 	static void PlaceMonsters() // 8590F489879870C098CD7029C3187159 - Ultimate Doom E2M7: Spawning Vats
     {

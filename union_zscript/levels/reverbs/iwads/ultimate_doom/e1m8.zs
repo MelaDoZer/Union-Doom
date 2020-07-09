@@ -1,4 +1,4 @@
-class IWADsReverbs_UltimateDoom_E1M8 : LevelCompatibility
+class IWADsReverbs_UltimateDoom_E1M8 : LevelPostProcessor
 {
 	static void PlaceReverb()	//058FB092EA1B70DA1E3CBF501C4A91A1 - Ultimate Doom E1M8: Phobos Anomaly
 	{

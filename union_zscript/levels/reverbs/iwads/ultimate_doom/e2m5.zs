@@ -1,4 +1,4 @@
-class IWADsReverbs_UltimateDoom_E2M5 : LevelCompatibility
+class IWADsReverbs_UltimateDoom_E2M5 : LevelPostProcessor
 {
 	static void PlaceReverb()	//1BC04D646B32D3A3E411DAF3C1A38FF8 - Ultimate Doom E2M4: Deimos Lab
 	{

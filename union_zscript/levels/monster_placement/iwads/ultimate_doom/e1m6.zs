@@ -1,4 +1,4 @@
-class IWADsMonsters_UltimateDoom_E1M6 : LevelCompatibility
+class IWADsMonsters_UltimateDoom_E1M6 : LevelPostProcessor
 {
 	static void PlaceMonsters() // 5FAA25F5A6AAB3409CAE0AF87F910341 - Ultimate Doom E1M6: Central Processing
     {

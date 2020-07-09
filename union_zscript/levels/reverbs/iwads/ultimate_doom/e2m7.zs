@@ -1,4 +1,4 @@
-class IWADsReverbs_UltimateDoom_E2M7 : LevelCompatibility
+class IWADsReverbs_UltimateDoom_E2M7 : LevelPostProcessor
 {
 	static void PlaceReverb()	//8590F489879870C098CD7029C3187159 - Ultimate Doom E2M7: Spawning Vats
 	{

@@ -1,4 +1,4 @@
-class IWADsMonsters_UltimateDoom_E1M4 : LevelCompatibility
+class IWADsMonsters_UltimateDoom_E1M4 : LevelPostProcessor
 {
 	static void PlaceMonsters() // 5B26545FF21B051CA06D389CE535684C - Ultimate Doom E1M4: Command Control
     {
