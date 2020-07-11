@@ -14,12 +14,14 @@ version "4.3"
 //Map Hashes Checker for Reverbs
 #include "union_zscript/levels/reverbs_hashes_checker.zs"
 
+//Map Hashes Checker for Skies
+#include "union_zscript/levels/skies_hashes_checker.zs"
+
 //IWADs Colored Lighting
 #include "union_zscript/levels/colored_lights/iwads/iwads_colored_lights_list.zs"
 
 //PWADs Colored Lighting
 #include "union_zscript/levels/colored_lights/pwads/pwads_colored_lights_list.zs"
-
 
 
 
@@ -32,6 +34,14 @@ version "4.3"
 #include "union_zscript/levels/reverbs/iwads/iwads_reverbs.zs"
 
 
+
+//IWADs Bonuses Placement
+#include "union_zscript/levels/bonus_placement/iwads/iwads_bonus_placement_list.zs"
+
+
+
+//IWADs Skies
+#include "union_zscript/levels/skies/iwads/iwads_skies.zs"
 
 #include "union_zscript/actors/nightmare_flag.zs"
 

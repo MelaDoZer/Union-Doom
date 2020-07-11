@@ -6,6 +6,8 @@ extend class UnionDoom_Events
 
 		ChangeReverbs();
 
+		ChangeSky();
+
 		if ((union_psx_monster_placement)&&(!e.IsSaveGame)&&(!e.IsReopen))
 		{
 			UnionDoom_MapHashesChecker_Monsters.CheckMapHashes();

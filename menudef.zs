@@ -29,6 +29,8 @@ OptionMenu "Union Doom: Levels Options"
 	option "PSX Doom Colored Lighting", "union_colored_lighting", "HUD_OPTION_No_Yes"
 	StaticText " "
 	option "PSX Doom Sounds Reverb", "union_reverb", "HUD_OPTION_No_Yes"
+	StaticText " "
+	option "PSX Doom Fire Skies", "union_sky", "HUD_OPTION_No_Yes"
 }
 
 OptionMenu "Union Doom: Spawn Options"
@@ -95,6 +97,12 @@ OptionValue "HUD_OPTION_No-PC_Yes-PSX"
 	2, "Yes (PSX)"
 }
 
+OptionValue "HUD_OPTION_Bonuses-PC-PSX"
+{
+	0, "Default/More (PC)"
+	1, "Less (PSX)"
+}
+
 OptionMenu "Union Doom: Monsters Options"
 {
 	Title "Union Doom: Monsters Options"
@@ -134,6 +142,10 @@ OptionValue "HUD_OPTION_union_bonuses"
 OptionMenu "Union Doom: Items Options"
 {
 	Title "Union Doom: Items Options"
+	StaticText " "
+	StaticText "PSX Bonus placement on maps", 1
+	Option "Amount of Bonuses", "union_psx_bonus_placement", "HUD_OPTION_Bonuses-PC-PSX"
+	StaticText " "
 	StaticText " "
 	StaticText "Armor Bonus", 1
 	Option "Armor Bonus Amount", "union_armorbonus", "HUD_OPTION_union_bonuses"

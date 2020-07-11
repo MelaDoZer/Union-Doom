@@ -1,7 +1,7 @@
 extend class UnionDoom_Colored_Lights
 {
 	static void UltimateDoomE1M1ColoredLights() //81A4CC5136CBFA49345654190A626C09 - Ultimate Doom E1M2: Nuclear Plant
-	{
+	{	
 		//Start Room
 		Level.Sectors[29].SetColor("EEC06B", 0);
 		Level.Sectors[30].SetColor("EEC06B", 0);

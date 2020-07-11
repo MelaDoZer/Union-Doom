@@ -5,24 +5,25 @@ Disable - 0 / Enable - 1 */
 
 server int union_colored_lighting = 1;
 
-/* PSX Firesky - responsible for scripted apply of PSX firesky
-Disable - 0 / Enable - 1 */
-
-server int union_sky = 1;
-
 /* PSX Reverbs - responsible for scripted apply of reverbs.
 Disable - 0 / Enable - 1 */
 
 server int union_reverb = 1;
 
+/* PSX Firesky - responsible for scripted apply of PSX firesky
+Disable - 0 / Enable - 1 */
+
+server bool union_sky = true;
+
 /* Union Spawn Variables - responsible for scripted spawning of new monsters.
 union_psx_monster_placement - spawns of non-custom monsters, like Doom 2 monsters at Doom 1 UV maps in PS1 version of game
 union_psx_nightmare_spectres_placement - spawns of non-custom monster from PS1 version of game, nightmarish version of spectre
-union_nightmare_imps_placement - spawns of custom implementation of Nightmare Imp monsters, that was deleted from released PS1 version of game*/
-
+union_nightmare_imps_placement - spawns of custom implementation of Nightmare Imp monsters, that was deleted from released PS1 version of game
+union_psx_bonus_placement - removes extra PC-only armor and health bonuses (somehow emulates console Doom balance)*/
 server bool union_psx_monster_placement = true;
 server bool union_psx_nightmare_spectres_placement = true;
 server bool union_nightmare_imps_placement = false;
+server bool union_psx_bonus_placement = false;
 
 /*  Union Monster Variables - responsible for various gameplay changes, which affects monsters behaviour */
 

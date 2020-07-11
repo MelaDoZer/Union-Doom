@@ -1,5 +1,6 @@
 #include "union_zscript/events/colored_lights.zs"
 #include "union_zscript/events/reverbs.zs"
+#include "union_zscript/events/changesky.zs"
 
 #include "union_zscript/events/zombieman_damage.zs"
 #include "union_zscript/events/demon_damage.zs"
@@ -34,6 +35,9 @@ class UnionDoom_Events : StaticEventHandler
 
 		if(old_union_reverb != union_reverb)
 		EventHandler.SendNetworkEvent("UpdateReverbs");
+
+		if(old_union_sky != union_sky)
+		EventHandler.SendNetworkEvent("UpdateSky");
 		
 		if (union_old_cacodemon_speed != union_cacodemon_speed) 
 		EventHandler.SendNetworkEvent("UpdateCacodemonSpeed");
@@ -67,6 +71,7 @@ class UnionDoom_Events : StaticEventHandler
 	{
 		if (e.Name == "UpdateColoredLights") ChangeColoredLighting();
 		if (e.Name == "UpdateReverbs") ChangeReverbs();
+		if (e.Name == "UpdateSky") ChangeSky();
 		
 		if (e.Name == "UpdateCacodemonSpeed") ChangeCacodemonSpeed();
 		if (e.Name == "UpdateRevenantSpeed") ChangeRevenantSpeed();
