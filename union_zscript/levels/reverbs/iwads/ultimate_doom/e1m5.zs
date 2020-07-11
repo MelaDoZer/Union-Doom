@@ -3,7 +3,7 @@ class IWADsReverbs_UltimateDoom_E1M5 : LevelPostProcessor
 	static void PlaceReverb()	//66D8E54B173041F981A11CCE766C4215 - Ultimate Doom E1M5: Phobos Lab
 	{
 		UnionDoom_Events Event;
-		Event = UnionDoom_Events(EventHandler.Find("UnionDoom_Events"));
+		Event = UnionDoom_Events(StaticEventHandler.Find("UnionDoom_Events"));
 		if (Event)
 		{
 			if (Event.GlobalReverb)
@@ -19,7 +19,7 @@ class IWADsReverbs_UltimateDoom_E1M5 : LevelPostProcessor
 	static void RemoveReverb()	//66D8E54B173041F981A11CCE766C4215 - Ultimate Doom E1M5: Phobos Lab
 	{
 		UnionDoom_Events Event;
-		Event = UnionDoom_Events(EventHandler.Find("UnionDoom_Events"));
+		Event = UnionDoom_Events(StaticEventHandler.Find("UnionDoom_Events"));
 		if (Event)
 		{
 			if (Event.GlobalReverb)

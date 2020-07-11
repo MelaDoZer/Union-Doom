@@ -3,7 +3,7 @@ class IWADsReverbs_UltimateDoom_E2M6 : LevelPostProcessor
 	static void PlaceReverb()	//3838AB29292587A7EE3CA71E7040868D - Ultimate Doom E2M6: Halls of the Damned
 	{
 		UnionDoom_Events Event;
-		Event = UnionDoom_Events(EventHandler.Find("UnionDoom_Events"));
+		Event = UnionDoom_Events(StaticEventHandler.Find("UnionDoom_Events"));
 		if (Event)
 		{
 			if (Event.GlobalReverb)
@@ -23,7 +23,7 @@ class IWADsReverbs_UltimateDoom_E2M6 : LevelPostProcessor
 	static void RemoveReverb()	//3838AB29292587A7EE3CA71E7040868D - Ultimate Doom E2M6: Halls of the Damned
 	{
 		UnionDoom_Events Event;
-		Event = UnionDoom_Events(EventHandler.Find("UnionDoom_Events"));
+		Event = UnionDoom_Events(StaticEventHandler.Find("UnionDoom_Events"));
 		if (Event)
 		{	
 			if (Event.GlobalReverb)

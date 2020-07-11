@@ -18,7 +18,7 @@
 #include "union_zscript/events/world_thing_revived.zs"
 
 
-class UnionDoom_Events : EventHandler
+class UnionDoom_Events : StaticEventHandler
 {	
 	/*private static readonly<Actor> getDefault(Actor thing)
 	{
@@ -27,7 +27,7 @@ class UnionDoom_Events : EventHandler
 		return tmp;
 	}*/
 	
-	override void UiTick() 
+	override void UiTick()
 	{
 		if(old_union_colored_lighting != union_colored_lighting)
 		EventHandler.SendNetworkEvent("UpdateColoredLights");

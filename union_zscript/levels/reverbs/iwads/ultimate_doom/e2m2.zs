@@ -3,7 +3,7 @@ class IWADsReverbs_UltimateDoom_E2M2 : LevelPostProcessor
 	static void PlaceReverb()	//A24FE135D5B6FD427FE27BEF89717A65 - Ultimate Doom E2M2: Containment Area
 	{
 		UnionDoom_Events Event;
-		Event = UnionDoom_Events(EventHandler.Find("UnionDoom_Events"));
+		Event = UnionDoom_Events(StaticEventHandler.Find("UnionDoom_Events"));
 		if (Event)
 		{
 			if (Event.GlobalReverb)
@@ -19,7 +19,7 @@ class IWADsReverbs_UltimateDoom_E2M2 : LevelPostProcessor
 	static void RemoveReverb()	//A24FE135D5B6FD427FE27BEF89717A65 - Ultimate Doom E2M2: Containment Area
 	{
 		UnionDoom_Events Event;
-		Event = UnionDoom_Events(EventHandler.Find("UnionDoom_Events"));
+		Event = UnionDoom_Events(StaticEventHandler.Find("UnionDoom_Events"));
 		if (Event)
 		{	
 			if (Event.GlobalReverb)

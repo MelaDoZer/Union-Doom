@@ -1,4 +1,4 @@
-version "4.1"
+version "4.3"
 
 //Events
 #include "union_zscript/union_events.zs"
@@ -13,8 +13,6 @@ version "4.1"
 
 //Map Hashes Checker for Reverbs
 #include "union_zscript/levels/reverbs_hashes_checker.zs"
-
-
 
 //IWADs Colored Lighting
 #include "union_zscript/levels/colored_lights/iwads/iwads_colored_lights_list.zs"
@@ -32,6 +30,7 @@ version "4.1"
 
 //IWADs Reverbs
 #include "union_zscript/levels/reverbs/iwads/iwads_reverbs.zs"
+
 
 
 #include "union_zscript/actors/nightmare_flag.zs"

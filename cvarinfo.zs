@@ -8,7 +8,7 @@ server int union_colored_lighting = 1;
 /* PSX Firesky - responsible for scripted apply of PSX firesky
 Disable - 0 / Enable - 1 */
 
-server int union_firesky = 1;
+server int union_sky = 1;
 
 /* PSX Reverbs - responsible for scripted apply of reverbs.
 Disable - 0 / Enable - 1 */

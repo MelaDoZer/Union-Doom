@@ -3,7 +3,7 @@ class IWADsReverbs_UltimateDoom_E2M7 : LevelPostProcessor
 	static void PlaceReverb()	//8590F489879870C098CD7029C3187159 - Ultimate Doom E2M7: Spawning Vats
 	{
 		UnionDoom_Events Event;
-		Event = UnionDoom_Events(EventHandler.Find("UnionDoom_Events"));
+		Event = UnionDoom_Events(StaticEventHandler.Find("UnionDoom_Events"));
 		if (Event)
 		{
 			if (Event.GlobalReverb)
@@ -31,7 +31,7 @@ class IWADsReverbs_UltimateDoom_E2M7 : LevelPostProcessor
 	static void RemoveReverb()	//8590F489879870C098CD7029C3187159 - Ultimate Doom E2M7: Spawning Vats
 	{
 		UnionDoom_Events Event;
-		Event = UnionDoom_Events(EventHandler.Find("UnionDoom_Events"));
+		Event = UnionDoom_Events(StaticEventHandler.Find("UnionDoom_Events"));
 		if (Event)
 		{	
 			if (Event.GlobalReverb)

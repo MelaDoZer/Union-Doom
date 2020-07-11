@@ -3,7 +3,7 @@ class IWADsReverbs_UltimateDoom_E2M1 : LevelPostProcessor
 	static void PlaceReverb()	//65455AC523799F8DCE19F3D1968776A2 - Ultimate Doom E2M1: Deimos Anomaly
 	{
 		UnionDoom_Events Event;
-		Event = UnionDoom_Events(EventHandler.Find("UnionDoom_Events"));
+		Event = UnionDoom_Events(StaticEventHandler.Find("UnionDoom_Events"));
 		if (Event)
 		{
 			if (Event.GlobalReverb)
@@ -39,7 +39,7 @@ class IWADsReverbs_UltimateDoom_E2M1 : LevelPostProcessor
 	static void RemoveReverb()	//65455AC523799F8DCE19F3D1968776A2 - Ultimate Doom E2M1: Deimos Anomaly
 	{
 		UnionDoom_Events Event;
-		Event = UnionDoom_Events(EventHandler.Find("UnionDoom_Events"));
+		Event = UnionDoom_Events(StaticEventHandler.Find("UnionDoom_Events"));
 		if (Event)
 		{	
 			if (Event.GlobalReverb)
