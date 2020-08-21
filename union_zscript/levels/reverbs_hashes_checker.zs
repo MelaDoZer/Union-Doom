@@ -128,6 +128,41 @@ class UnionDoom_MapHashesChecker_Reverbs play
 										Inferno
 		////																*/
 		
+		if(level.GetChecksum() == 'C4A89A481A32BFEDDEB82E818F2BDEC5') // - Ultimate Doom E3M1: Hell Keep
+		IWADsReverbs_UltimateDoom_E3M1.PlaceReverb();
+
+		if((level.GetChecksum() == 'C4A89A481A32BFEDDEB82E818F2BDEC5') && (!union_reverb))// - Ultimate Doom E3M1: Hell Keep
+		IWADsReverbs_UltimateDoom_E3M1.RemoveReverb();
+
+		if(level.GetChecksum() == 'BBDC4253AE277DA5FCE2F19561627496') // - Ultimate Doom E3M2: Slough of Despair
+		IWADsReverbs_UltimateDoom_E3M2.PlaceReverb();
+
+		if((level.GetChecksum() == 'BBDC4253AE277DA5FCE2F19561627496') && (!union_reverb))// - Ultimate Doom E3M2: Slough of Despair
+		IWADsReverbs_UltimateDoom_E3M2.RemoveReverb();
+
+		if(level.GetChecksum() == 'F951882CB5A8DEF910F0ED966A1054C5') // - Ultimate Doom E3M3: Pandemonium
+		IWADsReverbs_UltimateDoom_E3M3.PlaceReverb();
+
+		if((level.GetChecksum() == 'F951882CB5A8DEF910F0ED966A1054C5') && (!union_reverb))// - Ultimate Doom E3M3: Pandemonium
+		IWADsReverbs_UltimateDoom_E3M3.RemoveReverb();
+
+		if(level.GetChecksum() == '2B65CB046EA40D2E44576949381769CA') // - Ultimate Doom E3M4: House of Pain
+		IWADsReverbs_UltimateDoom_E3M4.PlaceReverb();
+
+		if((level.GetChecksum() == '2B65CB046EA40D2E44576949381769CA') && (!union_reverb))// - Ultimate Doom E3M4: House of Pain
+		IWADsReverbs_UltimateDoom_E3M4.RemoveReverb();
+
+		if(level.GetChecksum() == '100106C75157B7DECB0DCAD2A59C1919') // - Ultimate Doom E3M5: Unholy Cathedral
+		IWADsReverbs_UltimateDoom_E3M5.PlaceReverb();
+
+		if((level.GetChecksum() == '100106C75157B7DECB0DCAD2A59C1919') && (!union_reverb))// - Ultimate Doom E3M5: Unholy Cathedral
+		IWADsReverbs_UltimateDoom_E3M5.RemoveReverb();
+
+		if(level.GetChecksum() == '2BAF49B4CC36155B60B5330660AC0976') // - Ultimate Doom E3M6: Mt. Erebus
+		IWADsReverbs_UltimateDoom_E3M6.PlaceReverb();
+
+		if((level.GetChecksum() == '2BAF49B4CC36155B60B5330660AC0976') && (!union_reverb))// - Ultimate Doom E3M6: Mt. Erebus
+		IWADsReverbs_UltimateDoom_E3M6.RemoveReverb();
 		/*																  ////
 		
 		//////////////			Sigil by John Romero			//////////////

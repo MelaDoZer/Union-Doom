@@ -36,7 +36,7 @@ version "4.3"
 
 
 //IWADs Bonuses Placement
-#include "union_zscript/levels/bonus_placement/iwads/iwads_bonus_placement_list.zs"
+//#include "union_zscript/levels/bonus_placement/iwads/iwads_bonus_placement_list.zs"
 
 
 

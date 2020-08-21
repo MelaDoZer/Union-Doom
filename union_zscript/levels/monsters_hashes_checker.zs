@@ -89,6 +89,26 @@ class UnionDoom_MapHashesChecker_Monsters play
 										Inferno
 		////																*/
 		
+		if(level.GetChecksum() == 'F951882CB5A8DEF910F0ED966A1054C5') // - Ultimate Doom E3M3: Pandemonium
+		{
+			IWADsMonsters_UltimateDoom_E3M3.PlaceMonsters();
+		}
+
+		if(level.GetChecksum() == '2B65CB046EA40D2E44576949381769CA') // - Ultimate Doom E3M4: House of Pain
+		{
+			IWADsMonsters_UltimateDoom_E3M4.PlaceMonsters();
+		}
+
+		if(level.GetChecksum() == '100106C75157B7DECB0DCAD2A59C1919') // - Ultimate Doom E3M5: Unholy Cathedral
+		{
+			IWADsMonsters_UltimateDoom_E3M5.PlaceMonsters();
+		}
+
+		if(level.GetChecksum() == '2BAF49B4CC36155B60B5330660AC0976') // - Ultimate Doom E3M6: Mt. Erebus
+		{
+			IWADsMonsters_UltimateDoom_E3M6.PlaceMonsters();
+		}
+
 		/*																  ////
 		
 		//////////////			Sigil by John Romero			//////////////

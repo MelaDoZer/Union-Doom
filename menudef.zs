@@ -142,10 +142,10 @@ OptionValue "HUD_OPTION_union_bonuses"
 OptionMenu "Union Doom: Items Options"
 {
 	Title "Union Doom: Items Options"
-	StaticText " "
-	StaticText "PSX Bonus placement on maps", 1
-	Option "Amount of Bonuses", "union_psx_bonus_placement", "HUD_OPTION_Bonuses-PC-PSX"
-	StaticText " "
+	//StaticText " "
+	//StaticText "PSX Bonus placement on maps", 1
+	//Option "Amount of Bonuses", "union_psx_bonus_placement", "HUD_OPTION_Bonuses-PC-PSX"
+	//StaticText " "
 	StaticText " "
 	StaticText "Armor Bonus", 1
 	Option "Armor Bonus Amount", "union_armorbonus", "HUD_OPTION_union_bonuses"

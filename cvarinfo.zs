@@ -23,7 +23,7 @@ union_psx_bonus_placement - removes extra PC-only armor and health bonuses (some
 server bool union_psx_monster_placement = true;
 server bool union_psx_nightmare_spectres_placement = true;
 server bool union_nightmare_imps_placement = false;
-server bool union_psx_bonus_placement = false;
+//server bool union_psx_bonus_placement = false;
 
 /*  Union Monster Variables - responsible for various gameplay changes, which affects monsters behaviour */
 
