@@ -42,7 +42,7 @@ class IWADsReverbs_UltimateDoom_E3M1 : LevelPostProcessor
 	
 	protected void Apply(Name checksum, String mapname)
     {
-		if ((union_reverb) && ('C4A89A481A32BFEDDEB82E818F2BDEC5' == checksum)) // - Ultimate Doom E1M1: Hangar
+		if ((union_reverb) && ('C4A89A481A32BFEDDEB82E818F2BDEC5' == checksum)) // - Ultimate Doom E3M1: Hell Keep
 		{
 			SetLineFlags(8, Line.ML_ZONEBOUNDARY);
 			SetLineFlags(205, Line.ML_ZONEBOUNDARY);

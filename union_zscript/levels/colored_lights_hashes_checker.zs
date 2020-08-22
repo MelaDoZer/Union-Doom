@@ -98,6 +98,17 @@ class UnionDoom_Colored_Lights play
 		if(level.GetChecksum() == '2BAF49B4CC36155B60B5330660AC0976') // - Ultimate Doom E3M6: Mt. Erebus
 		UltimateDoomE3M6ColoredLights();
 
+		if(level.GetChecksum() == '5AC51CA9F1B57D4538049422A5E37291') // - Ultimate Doom E3M7: Limbo
+		UltimateDoomE3M7ColoredLights();
+
+		if(level.GetChecksum() == 'EF128313112110ED6C1549AF96AF26C9') // - Ultimate Doom E3M8: Dis
+		UltimateDoomE3M8ColoredLights();
+
+		if(level.GetChecksum() == 'FE97DCB9E6235FB3C52AE7C143160D73') // - Ultimate Doom E3M9: Warrens
+		UltimateDoomE3M9ColoredLights();
+
+		
+
 		/*																  ////
 		
 		//////////////			Sigil by John Romero			//////////////

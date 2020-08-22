@@ -163,6 +163,26 @@ class UnionDoom_MapHashesChecker_Reverbs play
 
 		if((level.GetChecksum() == '2BAF49B4CC36155B60B5330660AC0976') && (!union_reverb))// - Ultimate Doom E3M6: Mt. Erebus
 		IWADsReverbs_UltimateDoom_E3M6.RemoveReverb();
+
+		if(level.GetChecksum() == '5AC51CA9F1B57D4538049422A5E37291') // - Ultimate Doom E3M7: Limbo
+		IWADsReverbs_UltimateDoom_E3M7.PlaceReverb();
+
+		if((level.GetChecksum() == '5AC51CA9F1B57D4538049422A5E37291') && (!union_reverb))// - Ultimate Doom E3M7: Limbo
+		IWADsReverbs_UltimateDoom_E3M7.RemoveReverb();
+
+		if(level.GetChecksum() == 'EF128313112110ED6C1549AF96AF26C9') // - Ultimate Doom E3M8: Dis
+		IWADsReverbs_UltimateDoom_E3M8.PlaceReverb();
+
+		if((level.GetChecksum() == 'EF128313112110ED6C1549AF96AF26C9') && (!union_reverb))// - Ultimate Doom E3M8: Dis
+		IWADsReverbs_UltimateDoom_E3M8.RemoveReverb();
+
+		if(level.GetChecksum() == 'FE97DCB9E6235FB3C52AE7C143160D73') // - Ultimate Doom E3M9: Warrens
+		IWADsReverbs_UltimateDoom_E3M9.PlaceReverb();
+
+		if((level.GetChecksum() == 'FE97DCB9E6235FB3C52AE7C143160D73') && (!union_reverb))// - Ultimate Doom E3M9: Warrens
+		IWADsReverbs_UltimateDoom_E3M9.RemoveReverb();
+
+		
 		/*																  ////
 		
 		//////////////			Sigil by John Romero			//////////////

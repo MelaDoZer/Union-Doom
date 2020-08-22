@@ -24,5 +24,8 @@
 #include "union_zscript/levels/colored_lights/iwads/ultimate_doom/e3m4.zs"
 #include "union_zscript/levels/colored_lights/iwads/ultimate_doom/e3m5.zs"
 #include "union_zscript/levels/colored_lights/iwads/ultimate_doom/e3m6.zs"
+#include "union_zscript/levels/colored_lights/iwads/ultimate_doom/e3m7.zs"
+#include "union_zscript/levels/colored_lights/iwads/ultimate_doom/e3m8.zs"
+#include "union_zscript/levels/colored_lights/iwads/ultimate_doom/e3m9.zs"
 
 /* Ultimate Doom 1.9 Custom Values */

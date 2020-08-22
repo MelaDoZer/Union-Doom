@@ -6,7 +6,7 @@ version "4.3"
 
 
 //Map Hashes Checker for Colored Lights
-#include "union_zscript/levels/map_hashes_checker.zs"
+#include "union_zscript/levels/colored_lights_hashes_checker.zs"
 
 //Map Hashes Checker for Monster Placement
 #include "union_zscript/levels/monsters_hashes_checker.zs"
