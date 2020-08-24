@@ -17,3 +17,8 @@
 #include "union_zscript/levels/monster_placement/iwads/ultimate_doom/e2m6.zs"
 #include "union_zscript/levels/monster_placement/iwads/ultimate_doom/e2m7.zs"
 #include "union_zscript/levels/monster_placement/iwads/ultimate_doom/e2m8.zs"
+
+#include "union_zscript/levels/monster_placement/iwads/ultimate_doom/e3m3.zs"
+#include "union_zscript/levels/monster_placement/iwads/ultimate_doom/e3m4.zs"
+#include "union_zscript/levels/monster_placement/iwads/ultimate_doom/e3m5.zs"
+#include "union_zscript/levels/monster_placement/iwads/ultimate_doom/e3m6.zs"

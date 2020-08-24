@@ -1,4 +1,4 @@
-class IWADsMonsters_UltimateDoom_E2M2 : LevelCompatibility
+class IWADsMonsters_UltimateDoom_E2M2 : LevelPostProcessor
 {
 	static void PlaceMonsters() // A24FE135D5B6FD427FE27BEF89717A65 - Ultimate Doom E2M2: Containment Area
     {

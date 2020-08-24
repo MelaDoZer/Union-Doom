@@ -7,7 +7,7 @@ extend class UnionDoom_Events
     
 	override void WorldThingSpawned(WorldEvent e)
 	{
-		/*if (e.Thing.GetClassName() == "Demon")
+		if (e.Thing.GetClassName() == "Demon")
 		{
 			switch (union_demon_damage)			
 			{
@@ -16,16 +16,14 @@ extend class UnionDoom_Events
 				break;
 			
 				case 1:
-				//e.thing.SetDamage(Random(1, 10) * 4);
 				e.thing.SetDamage(Random(1, 10) * 4);
 				break;
 			
 				case 2:
-				//e.thing.SetDamage(Random(1, 8) * 4);
 				e.thing.SetDamage(Random(1, 8) * 4);
 				break;
 			}
-		}*/
+		}
 
 		if (e.Thing.GetClassName() == "Revenant")
 		{
@@ -104,19 +102,15 @@ extend class UnionDoom_Events
 			switch (union_zombieman_damage)
 			{
 				case 0:
-				e.thing.RestoreDamage();
+				e.thing.SetDamage(e.thing.Default.Damage);
 				break;
 
 				case 1:
-				e.thing.SetDamage(20);
+				e.thing.SetDamage(Random(1, 5) * 3);
 				break;
 				
 				case 2:
-				e.thing.SetDamage(60);
-				break;
-
-				case 3:
-				e.thing.SetDamage(100);
+				e.thing.SetDamage(Random(1, 8) * 3);
 				break;
 			}
 		}

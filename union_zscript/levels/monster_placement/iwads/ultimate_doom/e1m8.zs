@@ -1,4 +1,4 @@
-class IWADsMonsters_UltimateDoom_E1M8 : LevelCompatibility
+class IWADsMonsters_UltimateDoom_E1M8 : LevelPostProcessor
 {
 	static void PlaceMonsters() // 1DBF91738492FB0E29836A2D66406CF1 - Ultimate Doom E1M8: Phobos Anomaly
     {

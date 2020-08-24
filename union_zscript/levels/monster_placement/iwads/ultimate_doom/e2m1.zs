@@ -1,4 +1,4 @@
-class IWADsMonsters_UltimateDoom_E2M1 : LevelCompatibility
+class IWADsMonsters_UltimateDoom_E2M1 : LevelPostProcessor
 {
 	static void PlaceMonsters() // 65455AC523799F8DCE19F3D1968776A2 - Ultimate Doom E2M1: Deimos Anomaly
     {

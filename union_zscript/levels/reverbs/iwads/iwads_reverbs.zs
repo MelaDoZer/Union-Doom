@@ -18,3 +18,13 @@
 #include "union_zscript/levels/reverbs/iwads/ultimate_doom/e2m7.zs"
 #include "union_zscript/levels/reverbs/iwads/ultimate_doom/e2m8.zs"
 #include "union_zscript/levels/reverbs/iwads/ultimate_doom/e2m9.zs"
+
+#include "union_zscript/levels/reverbs/iwads/ultimate_doom/e3m1.zs"
+#include "union_zscript/levels/reverbs/iwads/ultimate_doom/e3m2.zs"
+#include "union_zscript/levels/reverbs/iwads/ultimate_doom/e3m3.zs"
+#include "union_zscript/levels/reverbs/iwads/ultimate_doom/e3m4.zs"
+#include "union_zscript/levels/reverbs/iwads/ultimate_doom/e3m5.zs"
+#include "union_zscript/levels/reverbs/iwads/ultimate_doom/e3m6.zs"
+#include "union_zscript/levels/reverbs/iwads/ultimate_doom/e3m7.zs"
+#include "union_zscript/levels/reverbs/iwads/ultimate_doom/e3m8.zs"
+#include "union_zscript/levels/reverbs/iwads/ultimate_doom/e3m9.zs"

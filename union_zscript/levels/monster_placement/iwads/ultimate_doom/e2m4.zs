@@ -1,4 +1,4 @@
-class IWADsMonsters_UltimateDoom_E2M4 : LevelCompatibility
+class IWADsMonsters_UltimateDoom_E2M4 : LevelPostProcessor
 {
 	static void PlaceMonsters() // 1BC04D646B32D3A3E411DAF3C1A38FF8 - Ultimate Doom E2M4: Deimos Lab
     {

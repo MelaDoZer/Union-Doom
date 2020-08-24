@@ -1,9 +1,9 @@
-class IWADsReverbs_UltimateDoom_E2M9 : LevelCompatibility
+class IWADsReverbs_UltimateDoom_E2M9 : LevelPostProcessor
 {
 	static void PlaceReverb()	//8A6399FAAA2E68649D4E4B16642074BE - Ultimate Doom E2M9: Fortress of Mystery
 	{
 		UnionDoom_Events Event;
-		Event = UnionDoom_Events(EventHandler.Find("UnionDoom_Events"));
+		Event = UnionDoom_Events(StaticEventHandler.Find("UnionDoom_Events"));
 		if (Event)
 		{
 			if (Event.GlobalReverb)
@@ -19,7 +19,7 @@ class IWADsReverbs_UltimateDoom_E2M9 : LevelCompatibility
 	static void RemoveReverb()	//8A6399FAAA2E68649D4E4B16642074BE - Ultimate Doom E2M9: Fortress of Mystery
 	{
 		UnionDoom_Events Event;
-		Event = UnionDoom_Events(EventHandler.Find("UnionDoom_Events"));
+		Event = UnionDoom_Events(StaticEventHandler.Find("UnionDoom_Events"));
 		if (Event)
 		{	
 			if (Event.GlobalReverb)

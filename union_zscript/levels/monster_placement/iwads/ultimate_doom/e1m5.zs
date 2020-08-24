@@ -1,4 +1,4 @@
-class IWADsMonsters_UltimateDoom_E1M5 : LevelCompatibility
+class IWADsMonsters_UltimateDoom_E1M5 : LevelPostProcessor
 {
 	static void PlaceMonsters() // 66D8E54B173041F981A11CCE766C4215 - Ultimate Doom E1M5: Phobos Lab
     {

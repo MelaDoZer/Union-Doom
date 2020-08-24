@@ -1,9 +1,9 @@
-class IWADsReverbs_UltimateDoom_E2M4 : LevelCompatibility
+class IWADsReverbs_UltimateDoom_E2M4 : LevelPostProcessor
 {
 	static void PlaceReverb()	//1BC04D646B32D3A3E411DAF3C1A38FF8 - Ultimate Doom E2M4: Deimos Lab
 	{
 		UnionDoom_Events Event;
-		Event = UnionDoom_Events(EventHandler.Find("UnionDoom_Events"));
+		Event = UnionDoom_Events(StaticEventHandler.Find("UnionDoom_Events"));
 		if (Event)
 		{
 			if (Event.GlobalReverb)
@@ -23,7 +23,7 @@ class IWADsReverbs_UltimateDoom_E2M4 : LevelCompatibility
 	static void RemoveReverb()	//1BC04D646B32D3A3E411DAF3C1A38FF8 - Ultimate Doom E2M4: Deimos Lab
 	{
 		UnionDoom_Events Event;
-		Event = UnionDoom_Events(EventHandler.Find("UnionDoom_Events"));
+		Event = UnionDoom_Events(StaticEventHandler.Find("UnionDoom_Events"));
 		if (Event)
 		{	
 			if (Event.GlobalReverb)

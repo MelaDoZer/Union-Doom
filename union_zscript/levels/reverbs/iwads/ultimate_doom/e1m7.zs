@@ -1,9 +1,9 @@
-class IWADsReverbs_UltimateDoom_E1M7 : LevelCompatibility
+class IWADsReverbs_UltimateDoom_E1M7 : LevelPostProcessor
 {
 	static void PlaceReverb()	//9007F68E7F351A5758198933336F6B9F - Ultimate Doom E1M7: Computer Station
 	{
 		UnionDoom_Events Event;
-		Event = UnionDoom_Events(EventHandler.Find("UnionDoom_Events"));
+		Event = UnionDoom_Events(StaticEventHandler.Find("UnionDoom_Events"));
 		if (Event)
 		{
 			if (Event.GlobalReverb)
@@ -19,7 +19,7 @@ class IWADsReverbs_UltimateDoom_E1M7 : LevelCompatibility
 	static void RemoveReverb()	//9007F68E7F351A5758198933336F6B9F - Ultimate Doom E1M7: Computer Station
 	{
 		UnionDoom_Events Event;
-		Event = UnionDoom_Events(EventHandler.Find("UnionDoom_Events"));
+		Event = UnionDoom_Events(StaticEventHandler.Find("UnionDoom_Events"));
 		if (Event)
 		{
 			if (Event.GlobalReverb)

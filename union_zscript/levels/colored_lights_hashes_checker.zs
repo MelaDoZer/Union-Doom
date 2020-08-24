@@ -80,6 +80,35 @@ class UnionDoom_Colored_Lights play
 										Inferno
 		////																*/
 		
+		if(level.GetChecksum() == 'C4A89A481A32BFEDDEB82E818F2BDEC5') // - Ultimate Doom E3M1: Hell Keep
+		UltimateDoomE3M1ColoredLights();
+
+		if(level.GetChecksum() == 'BBDC4253AE277DA5FCE2F19561627496') // - Ultimate Doom E3M2: Slough of Despair
+		UltimateDoomE3M2ColoredLights();
+
+		if(level.GetChecksum() == 'F951882CB5A8DEF910F0ED966A1054C5') // - Ultimate Doom E3M3: Pandemonium
+		UltimateDoomE3M3ColoredLights();
+
+		if(level.GetChecksum() == '2B65CB046EA40D2E44576949381769CA') // - Ultimate Doom E3M4: House of Pain
+		UltimateDoomE3M4ColoredLights();
+
+		if(level.GetChecksum() == '100106C75157B7DECB0DCAD2A59C1919') // - Ultimate Doom E3M5: Unholy Cathedral
+		UltimateDoomE3M5ColoredLights();
+
+		if(level.GetChecksum() == '2BAF49B4CC36155B60B5330660AC0976') // - Ultimate Doom E3M6: Mt. Erebus
+		UltimateDoomE3M6ColoredLights();
+
+		if(level.GetChecksum() == '5AC51CA9F1B57D4538049422A5E37291') // - Ultimate Doom E3M7: Limbo
+		UltimateDoomE3M7ColoredLights();
+
+		if(level.GetChecksum() == 'EF128313112110ED6C1549AF96AF26C9') // - Ultimate Doom E3M8: Dis
+		UltimateDoomE3M8ColoredLights();
+
+		if(level.GetChecksum() == 'FE97DCB9E6235FB3C52AE7C143160D73') // - Ultimate Doom E3M9: Warrens
+		UltimateDoomE3M9ColoredLights();
+
+		
+
 		/*																  ////
 		
 		//////////////			Sigil by John Romero			//////////////
