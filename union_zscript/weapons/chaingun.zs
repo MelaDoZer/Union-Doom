@@ -29,21 +29,29 @@ class UnionChaingun : Chaingun Replaces Chaingun
 		CHGG A 1 A_Raise;
 		Loop;
 	Fire:
-		CHGG AB 4 A_FireCGun;
+		CHGG AB 4 A_FireCGun; 
 		CHGG B 0 A_ReFire;
 		Goto Ready;
 	Flash:
-		TNT1 A 0 A_JumpIf(GetCVAR("union_chaingun_pitched") == 1, "PitchedFlash");
-		CHGF A 5 Bright A_Light1;
+		CHGF A 5 Bright 
+		{
+		if(GetCVAR('union_chaingun_pitched') == 0)
+		A_Light1();
+		
+		if(GetCVAR('union_chaingun_pitched') == 1)
+		A_SetPitch(pitch-1.0);
+		A_Light1();
+		}
 		Goto LightDone;
-		CHGF B 5 Bright A_Light2;
-		Goto LightDone;
-	PitchedFlash:
-		CHGF A 5 Bright A_Light1;
-			TNT1 A 0 A_SetPitch(pitch-1.0);
-		Goto LightDone;
-		CHGF B 5 Bright A_Light2;
-			TNT1 A 0 A_SetPitch(pitch+1.0);
+		CHGF B 5 Bright 
+		{
+		if(GetCVAR('union_chaingun_pitched') == 0)
+		A_Light2();
+		
+		if(GetCVAR('union_chaingun_pitched') == 1)
+		A_SetPitch(pitch+1.0);
+		A_Light2();
+		}
 		Goto LightDone;
 	Spawn:
 		MGUN A -1;

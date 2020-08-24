@@ -179,9 +179,9 @@ OptionMenu "Union Doom: Weapons Options"
 	StaticText " "
 	StaticText "Super Shotgun", 1
 	option "Super Shotgun Pitch", "union_ssg_pitched", "HUD_OPTION_union_pitched_and_recoiled"
-	//StaticText " "
-	//StaticText "Chaingun", 1
-	//option "Chaingun Recoil (Not Working)", "union_chaingun_pitched", "HUD_OPTION_union_pitched"
+	StaticText " "
+	StaticText "Chaingun", 1
+	option "Chaingun Recoil", "union_chaingun_pitched", "HUD_OPTION_union_pitched"
 	StaticText " "
 	StaticText "Rocket Launcher", 1
 	option "Rocket Launcher Pitch", "union_rlaunch_pitched", "HUD_OPTION_union_pitched_and_recoiled"
