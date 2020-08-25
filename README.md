@@ -8,6 +8,7 @@ Features:
 * Player can enable/disable almost every Union Doom option on the fly
 * Almost accurate colored lighting from PSX version of Doom
 * Sound reverb effect from PSX version of Doom
+* Option to enable/disable animated fire sky from PSX version of Doom (affects E2M8 and E3 completely)
 * Extra spawn points for monsters from PSX version of Doom
 * Nightmare Spectres and custom Nightmare Imps
 * Options to switch some monsters' properties, mimicking behavior of console Doom (switch between PC or PSX Lost Soul's health etc.) 
