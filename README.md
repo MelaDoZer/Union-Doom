@@ -1,6 +1,6 @@
 Union Doom is a GZDoom mod that merges some features of Console versions of game (such as Playstation Doom and Doom 64) with levels from PC version.
-
 To run Union Doom you need GZDoom 4.3.0 or newer and doom_complete.pk3 created via WadSmoosh.
+
 
 Features:
 
@@ -13,9 +13,11 @@ Options to switch some monsters' properties, mimicking behavior of console Doom 
 Options to change amount of health/armor  replenished by the corresponging bonus items (1 in PC, 2 in PSX)
 Enable/disable recoil and/or pitch for shotgun, supershotgun, chaingun and rocket launcher
 
+
 Union Doom supports:
 
 The Ultimate Doom: Knee-Deep in the Doom, The Shores of Hell, Inferno
+
 
 How to run Union Doom:
 1. Download and install GZDoom (https://zdoom.org/downloads) 
