@@ -1,6 +1,6 @@
 class IWADsMonsters_UltimateDoom_E2M8 : LevelPostProcessor
 {
-	static void PlaceMonsters() // 8590F489879870C098CD7029C3187159 - Ultimate Doom E2M7: Spawning Vats
+	static void PlaceMonsters() // EFFE91DF41AD41F6973C06F0AD67DDB9 - Ultimate Doom E2M8: Tower of Babel
     {
 		int skill_level = G_SkillPropertyInt(SKILLP_ACSReturn);
 
