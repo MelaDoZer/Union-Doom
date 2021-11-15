@@ -11,7 +11,7 @@ extend class UnionDoom_Events
 		int	DefaultStartHealth;//; = GetDefault(thing).SpawnHealth();
 		int	OldStartHealth;// = thing.SpawnHealth();
 		int	OldHealth;// = thing.health;
-		double HealthPercent;// = thing.health / thing.SpawnHealth();
+		float HealthPercent;// = thing.health / thing.SpawnHealth(); 
 		int	NewStartHealth;// = 60; //(defStartHealth * multiplier * ldlMultiplier);
 		int	NewHealth;// = (60 * HealthPercent) + 0.5;
 		//thing.StartHealth = NewStartHealth;
@@ -22,7 +22,7 @@ extend class UnionDoom_Events
 				//DefaultStartHealth = thing.Default.SpawnHealth();
 				OldStartHealth = thing.SpawnHealth();
 				OldHealth = thing.health;
-				HealthPercent = double(OldHealth) / OldStartHealth;
+				HealthPercent = float(OldHealth) / OldStartHealth;
 				NewHealth = (thing.Default.SpawnHealth() * HealthPercent) + 0.5;
 				thing.StartHealth = thing.Default.SpawnHealth();
 				thing.A_SetHealth(NewHealth);
@@ -32,7 +32,7 @@ extend class UnionDoom_Events
 				//DefaultStartHealth = thing.Default.SpawnHealth();
 				OldStartHealth = thing.SpawnHealth();
 				OldHealth = thing.health;
-				HealthPercent = double(OldHealth) / OldStartHealth;
+				HealthPercent = float(OldHealth) / OldStartHealth;
 				newStartHealth = 100;
 				NewHealth = (newStartHealth * HealthPercent) + 0.5;
 				thing.StartHealth = 100;
@@ -43,7 +43,7 @@ extend class UnionDoom_Events
 				//DefaultStartHealth = thing.Default.SpawnHealth();
 				OldStartHealth = thing.SpawnHealth();
 				OldHealth = thing.health;
-				HealthPercent = double(OldHealth) / OldStartHealth;
+				HealthPercent = float(OldHealth) / OldStartHealth;
 				newStartHealth = 60;
 				NewHealth = (newStartHealth * HealthPercent) + 0.5;
 				thing.StartHealth = 60;

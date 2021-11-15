@@ -15,7 +15,7 @@ version "4.3"
 #include "union_zscript/levels/reverbs_hashes_checker.zs"
 
 //Map Hashes Checker for Skies
-#include "union_zscript/levels/skies_hashes_checker.zs"
+#include "union_zscript/levels/skies_replacer.zs"
 
 //IWADs Colored Lighting
 #include "union_zscript/levels/colored_lights/iwads/iwads_colored_lights_list.zs"
@@ -43,28 +43,28 @@ version "4.3"
 //IWADs Skies
 #include "union_zscript/levels/skies/iwads/iwads_skies.zs"
 
-#include "union_zscript/actors/nightmare_flag.zs"
+#include "union_zscript/actors/union_nightmare/nightmare_flag.zs"
 
-#include "union_zscript/actors/nightmare_zombieman.zs"
-#include "union_zscript/actors/nightmare_shotgunguy.zs"
-#include "union_zscript/actors/nightmare_chaingunguy.zs"
-#include "union_zscript/actors/nightmare_cacodemon.zs"
-#include "union_zscript/actors/nightmare_lostsoul.zs"
-#include "union_zscript/actors/nightmare_baronofhell.zs"
-#include "union_zscript/actors/nightmare_spidermastermind.zs"
-#include "union_zscript/actors/nightmare_cyberdemon.zs"
+#include "union_zscript/actors/union_nightmare/nightmare_zombieman.zs"
+#include "union_zscript/actors/union_nightmare/nightmare_shotgunguy.zs"
+#include "union_zscript/actors/union_nightmare/nightmare_chaingunguy.zs"
+#include "union_zscript/actors/union_nightmare/nightmare_cacodemon.zs"
+#include "union_zscript/actors/union_nightmare/nightmare_lostsoul.zs"
+#include "union_zscript/actors/union_nightmare/nightmare_baronofhell.zs"
+#include "union_zscript/actors/union_nightmare/nightmare_spidermastermind.zs"
+#include "union_zscript/actors/union_nightmare/nightmare_cyberdemon.zs"
 
-#include "union_zscript/actors/nightmare_hellknight.zs"
-#include "union_zscript/actors/nightmare_fatso.zs"
+#include "union_zscript/actors/union_nightmare/nightmare_hellknight.zs"
+#include "union_zscript/actors/union_nightmare/nightmare_fatso.zs"
 
 //Nightmare Imp
-#include "union_zscript/actors/nightmare_doomimp.zs"
+#include "union_zscript/actors/union_nightmare/nightmare_doomimp.zs"
 
 //Nightmare Spectre
-#include "union_zscript/actors/nightmare_spectre.zs"
+#include "union_zscript/actors/union_nightmare/nightmare_spectre.zs"
 
 //Weapons
-#include "union_zscript/weapons/shotgun.zs"
-#include "union_zscript/weapons/chaingun.zs"
-#include "union_zscript/weapons/ssg.zs"
-#include "union_zscript/weapons/rlaunch.zs"
+#include "union_zscript/weapons/union/shotgun.zs"
+#include "union_zscript/weapons/union/chaingun.zs"
+#include "union_zscript/weapons/union/ssg.zs"
+#include "union_zscript/weapons/union/rlaunch.zs"

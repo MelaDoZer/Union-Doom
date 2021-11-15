@@ -2,26 +2,11 @@ class UnionDoom_MapHashesChecker_Skies play
 {
 	static void CheckMapHashes()
 	{
-		/*																  ////
-		
-		//////////////				Ultimate Doom				//////////////
-								The Shores of Hell
-		////																*/
 		string LevelChecksum = level.GetChecksum().MakeUpper();
-
-		string E2M8 = 'EFFE91DF41AD41F6973C06F0AD67DDB9'; // Ultimate Doom E2M8: Tower of Babel
 		
-		if(LevelChecksum == E2M8) 
+		Array<string> UltimateDoom_Checksums =
 		{
-			if (union_sky)
-				IWADsSkies_UltimateDoom_E2M8.ChangeSky();
-			else
-				IWADsSkies_UltimateDoom_E2M8.ChangeSkytoDefault();
-			return;
-		}
-		
-		Array<string> E3Checksums =
-		{
+			'EFFE91DF41AD41F6973C06F0AD67DDB9', // Ultimate Doom E2M8: Tower of Babel
 			'C4A89A481A32BFEDDEB82E818F2BDEC5', // Ultimate Doom E3M1: Hell Keep
 			'BBDC4253AE277DA5FCE2F19561627496', // Ultimate Doom E3M2: Slough of Despair
 			'F951882CB5A8DEF910F0ED966A1054C5', // Ultimate Doom E3M3: Pandemonium
@@ -33,12 +18,12 @@ class UnionDoom_MapHashesChecker_Skies play
 			'FE97DCB9E6235FB3C52AE7C143160D73'  // Ultimate Doom E3M9: Warrens
 		};
 
-		if (E3Checksums.Find(LevelChecksum) < E3Checksums.Size())
+		if (UltimateDoom_Checksums.Find(LevelChecksum) < UltimateDoom_Checksums.Size())
 		{
 			if (union_sky)
-				IWADsSkies_UltimateDoom_E3.ChangeSky();
+				ChangeSkyToUnionSky3();
 			else
-				IWADsSkies_UltimateDoom_E3.ChangeSkytoDefault();
+				ChangeSkytoDefault();
 			return;
 		}
 	}
