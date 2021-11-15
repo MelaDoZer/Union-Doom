@@ -1,14 +1,14 @@
 extend class UnionDoom_Events
 {
 	//
-	//Colored lights 
+	//Skies Changer
 	//
 	bool sky_changed;
 	int old_union_sky;
 	
 	void ChangeSky() 
 	{
-		switch(union_colored_lighting)
+		switch(union_sky)
 		{
 			case 0:
 			UnionDoom_MapHashesChecker_Skies.CheckMapHashes();

@@ -2,8 +2,7 @@ class IWADsReverbs_UltimateDoom_E1M1 : LevelPostProcessor
 {
 	static void PlaceReverb()	//B49F7A6C519757D390D52667DB7D8793 - Ultimate Doom E1M1: Hangar
 	{
-		UnionDoom_Events Event;
-		Event = UnionDoom_Events(StaticEventHandler.Find("UnionDoom_Events"));
+		UnionDoom_Events Event = UnionDoom_Events(StaticEventHandler.Find("UnionDoom_Events"));
 		if (Event)
 		{
 			if (Event.GlobalReverb)

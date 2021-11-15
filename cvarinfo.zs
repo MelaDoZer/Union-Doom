@@ -117,3 +117,5 @@ server int union_ssg_pitched = 1;
 3 - Only Doom 64 Recoil*/
 
 server int union_rlaunch_pitched = 1;
+
+user bool union_debug = false;

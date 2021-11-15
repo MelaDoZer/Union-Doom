@@ -15,12 +15,12 @@ extend class UnionDoom_Events
 			{
 				Level.Sectors[i].SetColor("FFFFFF", 0.0);
 			}
-			//console.printf("Colored lights were disabled");
+			//console.printf("Colored lights were disabled"); // DEBUG
 			break;
 				
 			case 1:
 			UnionDoom_Colored_Lights.CheckMapHashes();
-			//console.printf("Colored lights were enabled");
+			//console.printf("Colored lights were enabled"); // DEBUG
 			break;
 		}
 		old_union_colored_lighting = union_colored_lighting;

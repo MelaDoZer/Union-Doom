@@ -30,62 +30,62 @@ class UnionDoom_Events : StaticEventHandler
 	
 	override void UiTick()
 	{
-		if(old_union_colored_lighting != union_colored_lighting)
+		if (old_union_colored_lighting != union_colored_lighting)
 		EventHandler.SendNetworkEvent("UpdateColoredLights");
 
-		if(old_union_reverb != union_reverb)
+		else if (old_union_reverb != union_reverb)
 		EventHandler.SendNetworkEvent("UpdateReverbs");
 
-		if(old_union_sky != union_sky)
+		else if (old_union_sky != union_sky)
 		EventHandler.SendNetworkEvent("UpdateSky");
 		
-		if (union_old_cacodemon_speed != union_cacodemon_speed) 
+		else if (union_old_cacodemon_speed != union_cacodemon_speed) 
 		EventHandler.SendNetworkEvent("UpdateCacodemonSpeed");
 		
-		if (union_old_revenant_speed != union_revenant_speed) 
+		else if (union_old_revenant_speed != union_revenant_speed) 
 		EventHandler.SendNetworkEvent("UpdateRevenantSpeed");
 
-		if (union_old_revenant_tracer_speed != union_revenant_tracer_speed)
+		else if (union_old_revenant_tracer_speed != union_revenant_tracer_speed)
 		EventHandler.SendNetworkEvent("UpdateRevenantTracerSpeed");
 		
-		if (union_old_bruiser_infighting != union_bruiser_infighting)
+		else if (union_old_bruiser_infighting != union_bruiser_infighting)
 		EventHandler.SendNetworkEvent("UpdateSpeciesBaronOfHell");
 		
-		if (union_old_healthbonus != union_healthbonus)
+		else if (union_old_healthbonus != union_healthbonus)
 		EventHandler.SendNetworkEvent("UpdateHealthBonus");
 
-		if (union_old_armorbonus != union_armorbonus)
+		else if (union_old_armorbonus != union_armorbonus)
 		EventHandler.SendNetworkEvent("UpdateArmorBonus");
 
-		if (union_old_lostsoul_health_speed != union_lostsoul_health)
+		else if (union_old_lostsoul_health_speed != union_lostsoul_health)
 		EventHandler.SendNetworkEvent("UpdateLostSoulMaxHealth");
 
-		if(union_old_zombieman_damage != union_zombieman_damage)
+		else if (union_old_zombieman_damage != union_zombieman_damage)
 		EventHandler.SendNetworkEvent("UpdateZombiemanDamage");
 
-		if(union_old_demon_damage != union_demon_damage)
+		else if (union_old_demon_damage != union_demon_damage)
 		EventHandler.SendNetworkEvent("UpdateDemonDamage");
 	}
 	
 	override void NetworkProcess(ConsoleEvent e)
 	{
 		if (e.Name == "UpdateColoredLights") ChangeColoredLighting();
-		if (e.Name == "UpdateReverbs") ChangeReverbs();
-		if (e.Name == "UpdateSky") ChangeSky();
+		else if (e.Name == "UpdateReverbs") ChangeReverbs();
+		else if (e.Name == "UpdateSky") ChangeSky();
 		
-		if (e.Name == "UpdateCacodemonSpeed") ChangeCacodemonSpeed();
-		if (e.Name == "UpdateRevenantSpeed") ChangeRevenantSpeed();
+		else if (e.Name == "UpdateCacodemonSpeed") ChangeCacodemonSpeed();
+		else if (e.Name == "UpdateRevenantSpeed") ChangeRevenantSpeed();
 
-		if (e.Name == "UpdateRevenantTracerSpeed") ChangeRevenantTracerSpeed();
+		else if (e.Name == "UpdateRevenantTracerSpeed") ChangeRevenantTracerSpeed();
 		
-		if(e.Name == "UpdateSpeciesBaronOfHell") ChangeSpeciesBaronOfHell();
+		else if (e.Name == "UpdateSpeciesBaronOfHell") ChangeSpeciesBaronOfHell();
 		
-		if (e.Name == "UpdateHealthBonus") ChangeHealthBonus();
-		if (e.Name == "UpdateArmorBonus") ChangeArmorBonus();
+		else if (e.Name == "UpdateHealthBonus") ChangeHealthBonus();
+		else if (e.Name == "UpdateArmorBonus") ChangeArmorBonus();
 
-		if (e.Name == "UpdateLostSoulMaxHealth") ChangeLostSoulMaxHealth();
+		else if (e.Name == "UpdateLostSoulMaxHealth") ChangeLostSoulMaxHealth();
 
-		if (e.Name == "UpdateZombiemanDamage") ChangeZombiemanDamage();
-		if (e.Name == "UpdateDemonDamage") ChangeDemonDamage();
+		else if (e.Name == "UpdateZombiemanDamage") ChangeZombiemanDamage();
+		else if (e.Name == "UpdateDemonDamage") ChangeDemonDamage();
 	}
 }
